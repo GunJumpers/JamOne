@@ -32,8 +32,9 @@ public class PlayerController : UnitySingleton<PlayerController>
     [SerializeField] private float _FOV;
     [SerializeField] private float _lookSensitivity = 1.0f;
 
-    private void Awake()
+    public override void Awake()
     {
+        base.Awake();
         _vcam.m_Lens.FieldOfView = _FOV;
     }
     // Start is called before the first frame update
@@ -47,7 +48,9 @@ public class PlayerController : UnitySingleton<PlayerController>
     {
         ApplyLook();
         LimitMovement();
+        RaycastGrabbablePivot();
         ApplyGrab();
+        
     }
 
     private void FixedUpdate()
@@ -110,12 +113,15 @@ public class PlayerController : UnitySingleton<PlayerController>
 
     }
 
-    void TryGrab()
+    void TryInteract()
     {
         RaycastHit info;
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out info, 1, interactableLayers))
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out info, 2, interactableLayers))
         {
-
+            if(LayerMask.LayerToName(info.transform.gameObject.layer) == "Interactable")
+            {
+                info.transform.GetComponent<Interactable>().InteractAction();
+            }
         }
 
     }
@@ -124,10 +130,60 @@ public class PlayerController : UnitySingleton<PlayerController>
     {
         if(currentGrabbable != null)
         {
-            Vector3 forceDirection = (_grabPivot.position - currentGrabbable.transform.position).normalized * grabbableForce;
-
-            currentGrabbable.GetRigidbody().AddForce(forceDirection, ForceMode.Force);
+            float grabbableOffset = Vector3.Distance(currentGrabbable.transform.position, _grabPivot.transform.position);
+            Vector3 forceDirection = (_grabPivot.position - currentGrabbable.transform.position).normalized * grabbableForce * grabbableOffset;
+            if (!currentGrabbable.isLocked)
+            {
+                currentGrabbable.GetRigidbody().AddForce(forceDirection, ForceMode.Acceleration);
+                if (grabbableOffset < 0.5f)
+                {
+                    currentGrabbable.transform.position = _grabPivot.position;
+                    currentGrabbable.LockGrabbable();
+                    currentGrabbable.transform.SetParent(_grabPivot);
+                }
+            }
+            
         }
+    }
+
+    void RaycastGrabbablePivot()
+    {
+        RaycastHit info;
+        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+        float offset = interactableDistance;
+
+        if(currentGrabbable != null)
+        {
+            offset += currentGrabbable.offset;
+        }
+
+
+        if (Physics.Raycast(ray, out info, interactableDistance, interactableLayers))
+        {
+            _grabPivot.position = info.point;
+        }
+        else
+        {
+            _grabPivot.position = ray.GetPoint(interactableDistance);
+        }
+    }
+
+    public void SetCurrentGrabbable(Grabbable grabbable)
+    {
+        currentGrabbable = grabbable;
+    }
+
+    public void OnInteract()
+    {
+        if(currentGrabbable == null)
+        {
+            TryInteract();
+        }
+        else
+        {
+            currentGrabbable.IsNoLongerBeingGrabbed();
+        }
+        
     }
 
 

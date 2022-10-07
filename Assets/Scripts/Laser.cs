@@ -8,6 +8,7 @@ public class Laser
 
     public GameObject laserObject;
     public LineRenderer lineRenderer;
+    public LayerMask layers;
     public List<Vector3> laserIndices = new List<Vector3>();
 
     public Laser(Vector3 pos, Vector3 direction, Material mat, float alpha)
@@ -38,7 +39,7 @@ public class Laser
         Ray ray = new Ray(pos, dir);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, 30, 1))
+        if(Physics.Raycast(ray, out hit, 30, layers))
         {
             CheckHit(hit, dir, laser, ray);
         }

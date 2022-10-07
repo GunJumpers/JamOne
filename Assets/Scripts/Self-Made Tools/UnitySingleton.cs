@@ -5,7 +5,7 @@ public abstract class UnitySingleton<T> : MonoBehaviour where T : MonoBehaviour
     public static T Instance;
     public static bool shouldNotDestroyOnLoad;
 
-    private void Awake()
+    public virtual void Awake()
     {
         if (Instance == null)
         {
@@ -23,6 +23,11 @@ public abstract class UnitySingleton<T> : MonoBehaviour where T : MonoBehaviour
                 Destroy(this);
             }
         }
+    }
+
+    private void OnApplicationQuit()
+    {
+        Destroy(this);
     }
 
 }
