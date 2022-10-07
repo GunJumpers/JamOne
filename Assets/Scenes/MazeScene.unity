@@ -190,6 +190,13 @@ MonoBehaviour:
   _vcam: {fileID: 1915478566}
   moveDirection: {x: 0, y: 0, z: 0}
   lookDirection: {x: 0, y: 0}
+  _grabPivot: {fileID: 0}
+  currentGrabbable: {fileID: 0}
+  grabbableForce: 0
+  interactableDistance: 0
+  interactableLayers:
+    serializedVersion: 2
+    m_Bits: 0
   _maximumSpeed: 6
   _movementAcceleration: 20
   _movementDrag: 3
@@ -376,6 +383,7 @@ GameObject:
   - component: {fileID: 274073360}
   - component: {fileID: 274073359}
   - component: {fileID: 274073358}
+  - component: {fileID: 274073363}
   m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
@@ -1590,6 +1598,19 @@ Transform:
   m_Father: {fileID: 947891809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &274073363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274073357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a2bba66be8bd5409a1b82f1ce54853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2169,7 +2190,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32082
+  m_Name: pb_Mesh35330
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
