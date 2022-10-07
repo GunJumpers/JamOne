@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Cinemachine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : UnitySingleton<PlayerController>
 {
     [Header("Serialized Variables")]
     [SerializeField] private Rigidbody _rigidbody;
@@ -18,6 +18,12 @@ public class PlayerController : MonoBehaviour
     private Vector3 _currentVelocity;
     private float xRotation = 0f;
 
+    [Header("Interaction System")]
+    [SerializeField] private Transform _grabPivot;
+    public Grabbable currentGrabbable;
+    public float grabbableForce;
+    public float interactableDistance;
+    public LayerMask interactableLayers;
 
     [Header("Base Movement Stats [Reset on Play]")]
     [SerializeField] private float _maximumSpeed;
@@ -41,6 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         ApplyLook();
         LimitMovement();
+        ApplyGrab();
     }
 
     private void FixedUpdate()
@@ -103,6 +110,25 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void TryGrab()
+    {
+        RaycastHit info;
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out info, 1, interactableLayers))
+        {
+
+        }
+
+    }
+
+    void ApplyGrab()
+    {
+        if(currentGrabbable != null)
+        {
+            Vector3 forceDirection = (_grabPivot.position - currentGrabbable.transform.position).normalized * grabbableForce;
+
+            currentGrabbable.GetRigidbody().AddForce(forceDirection, ForceMode.Force);
+        }
+    }
 
 
 }
