@@ -6,6 +6,8 @@ public class Grabbable : Interactable
 {
     public Rigidbody _rb;
     public PlayerController playerController;
+    public bool usesGravity;
+    public bool dontDisableCollider;
     public bool isLocked;
     public float offset;
 
@@ -29,7 +31,11 @@ public class Grabbable : Interactable
     {
         PlayerController.Instance.SetCurrentGrabbable(this);
         _rb.constraints = RigidbodyConstraints.FreezeRotation;
-        _rb.useGravity = false;
+        if (usesGravity)
+        {
+            _rb.useGravity = false;
+        }
+        
         gameObject.layer = 2;
     }
 
@@ -40,7 +46,10 @@ public class Grabbable : Interactable
             UnlockGrabbable();
             PlayerController.Instance.currentGrabbable = null;
             _rb.constraints = RigidbodyConstraints.None;
-            _rb.useGravity = true;
+            if (usesGravity)
+            {
+                _rb.useGravity = true;
+            }
             gameObject.layer = 9;
         }
     }
@@ -49,6 +58,11 @@ public class Grabbable : Interactable
     {
         isLocked = true;
         _rb.isKinematic = true;
+        if (!dontDisableCollider)
+        {
+            GetComponent<Collider>().enabled = false;
+        }
+        
     }
 
     public void UnlockGrabbable()
@@ -61,6 +75,10 @@ public class Grabbable : Interactable
         isLocked = false;
         _rb.isKinematic = false;
         transform.parent = null;
+        if (!dontDisableCollider)
+        {
+            GetComponent<Collider>().enabled = true;
+        }
 
     }
 

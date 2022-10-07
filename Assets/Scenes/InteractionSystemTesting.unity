@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 274073363}
   m_Layer: 6
   m_Name: Plane
-  m_TagString: Reflective
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2640,7 +2640,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33734
+  m_Name: pb_Mesh34094
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5037,8 +5037,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 0}
   playerController: {fileID: 0}
+  usesGravity: 1
+  dontDisableCollider: 0
   isLocked: 0
-  offset: 0.5
+  offset: 0.6
 --- !u!54 &758165420
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5054,7 +5056,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &758165421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5127,7 +5129,7 @@ Transform:
   m_GameObject: {fileID: 758165418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.49, y: 1.4, z: -6.4452467}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6440,6 +6442,9 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: b735d971367030f4f84b9d0ce64cc723, type: 2}
   targetAlpha: 1
   isEmitting: 0
+  layers:
+    serializedVersion: 2
+    m_Bits: 581
 --- !u!4 &1144390453
 Transform:
   m_ObjectHideFlags: 0
@@ -6463,7 +6468,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33682
+  m_Name: pb_Mesh33982
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7484,6 +7489,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 0}
   playerController: {fileID: 0}
+  usesGravity: 0
+  dontDisableCollider: 1
   isLocked: 0
   offset: 0.2
 --- !u!54 &1268124912
@@ -7497,10 +7504,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1323391697
 GameObject:
@@ -7551,6 +7558,9 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: b735d971367030f4f84b9d0ce64cc723, type: 2}
   targetAlpha: 1
   isEmitting: 1
+  layers:
+    serializedVersion: 2
+    m_Bits: 581
 --- !u!1 &1391483991
 GameObject:
   m_ObjectHideFlags: 0
@@ -7723,7 +7733,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh96840
+  m_Name: pb_Mesh33744
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9651,6 +9661,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
         type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_ActionId
+      value: 7a2560ef-e4e9-4c8b-8609-ede5b6adcbf5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_ActionName
+      value: Player/LookInspect[/Mouse/rightButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2597432}
@@ -9664,6 +9699,31 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2597432}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2597432}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnInspect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155408867868487309, guid: 5eb81a453836dc847bc19a2afed9706a,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb81a453836dc847bc19a2afed9706a, type: 3}
 --- !u!1001 &6059941663168143919

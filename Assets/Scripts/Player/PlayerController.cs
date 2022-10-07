@@ -14,7 +14,7 @@ public class PlayerController : UnitySingleton<PlayerController>
     [Header("Current Player State")]
     public Vector3 moveDirection;
     public Vector2 lookDirection;
-
+    public bool isInspecting;
     private Vector3 _currentVelocity;
     private float xRotation = 0f;
 
@@ -46,7 +46,15 @@ public class PlayerController : UnitySingleton<PlayerController>
     // Update is called once per frame
     void Update()
     {
-        ApplyLook();
+        if (isInspecting)
+        {
+            ApplyInspect();
+        }
+        else
+        {
+            ApplyLook();
+        }
+        
         LimitMovement();
         RaycastGrabbablePivot();
         ApplyGrab();
@@ -70,6 +78,19 @@ public class PlayerController : UnitySingleton<PlayerController>
         _playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         transform.Rotate(Vector3.up * lookX);
+    }
+
+    private void ApplyInspect()
+    {
+        if(currentGrabbable == null) {
+            return;
+        }
+        Vector2 looking = GetPlayerLook();
+        float lookX = looking.x * _lookSensitivity * Time.deltaTime;
+        float lookY = looking.y * _lookSensitivity * Time.deltaTime;
+
+        currentGrabbable.transform.Rotate((Vector3.up * lookX) + (Vector3.forward * lookY));
+
     }
 
 
@@ -158,9 +179,16 @@ public class PlayerController : UnitySingleton<PlayerController>
         }
 
 
-        if (Physics.Raycast(ray, out info, interactableDistance, interactableLayers))
+        if (Physics.Raycast(ray, out info, offset, interactableLayers))
         {
-            _grabPivot.position = info.point;
+            float newDistance = info.distance;
+            if (currentGrabbable != null)
+            {
+                newDistance -= currentGrabbable.offset;
+            }
+             
+
+            _grabPivot.position = ray.GetPoint(newDistance);
         }
         else
         {
@@ -184,6 +212,18 @@ public class PlayerController : UnitySingleton<PlayerController>
             currentGrabbable.IsNoLongerBeingGrabbed();
         }
         
+    }
+
+    public void OnInspect(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            isInspecting = true;
+        }
+        if (context.canceled)
+        {
+            isInspecting = false;
+        }
     }
 
 

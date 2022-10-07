@@ -62,6 +62,15 @@ public partial class @JamOneAudioPuzzleInput : IInputActionCollection2, IDisposa
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LookInspect"",
+                    ""type"": ""Button"",
+                    ""id"": ""7a2560ef-e4e9-4c8b-8609-ede5b6adcbf5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -304,6 +313,17 @@ public partial class @JamOneAudioPuzzleInput : IInputActionCollection2, IDisposa
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""56f0facc-019c-45b8-9ac1-f6631dd2ecd9"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""LookInspect"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -895,6 +915,7 @@ public partial class @JamOneAudioPuzzleInput : IInputActionCollection2, IDisposa
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        m_Player_LookInspect = m_Player.FindAction("LookInspect", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -970,6 +991,7 @@ public partial class @JamOneAudioPuzzleInput : IInputActionCollection2, IDisposa
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Fire;
     private readonly InputAction m_Player_Interact;
+    private readonly InputAction m_Player_LookInspect;
     public struct PlayerActions
     {
         private @JamOneAudioPuzzleInput m_Wrapper;
@@ -978,6 +1000,7 @@ public partial class @JamOneAudioPuzzleInput : IInputActionCollection2, IDisposa
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
+        public InputAction @LookInspect => m_Wrapper.m_Player_LookInspect;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -999,6 +1022,9 @@ public partial class @JamOneAudioPuzzleInput : IInputActionCollection2, IDisposa
                 @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @LookInspect.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookInspect;
+                @LookInspect.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookInspect;
+                @LookInspect.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookInspect;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -1015,6 +1041,9 @@ public partial class @JamOneAudioPuzzleInput : IInputActionCollection2, IDisposa
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @LookInspect.started += instance.OnLookInspect;
+                @LookInspect.performed += instance.OnLookInspect;
+                @LookInspect.canceled += instance.OnLookInspect;
             }
         }
     }
@@ -1175,6 +1204,7 @@ public partial class @JamOneAudioPuzzleInput : IInputActionCollection2, IDisposa
         void OnLook(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnLookInspect(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
