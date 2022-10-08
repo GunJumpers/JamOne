@@ -19,7 +19,6 @@ public class ButtonController : Interactable
 
         base.InteractAction();
         onCooldown = true;
-        Debug.Log("Button Pressed");
         buttonEvent.Invoke();
         if(anim != null)
         {
