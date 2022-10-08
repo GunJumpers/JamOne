@@ -24,6 +24,7 @@ public class PlayerController : UnitySingleton<PlayerController>
     public float grabbableForce;
     public float interactableDistance;
     public LayerMask interactableLayers;
+    public float inspectMinimumSensitivity;
 
     [Header("Base Movement Stats [Reset on Play]")]
     [SerializeField] private float _maximumSpeed;
@@ -86,10 +87,22 @@ public class PlayerController : UnitySingleton<PlayerController>
             return;
         }
         Vector2 looking = GetPlayerLook();
-        float lookX = looking.x * _lookSensitivity * Time.deltaTime;
-        float lookY = looking.y * _lookSensitivity * Time.deltaTime;
 
-        currentGrabbable.transform.Rotate((Vector3.up * lookX) + (Vector3.forward * lookY));
+        float lookX = 0;
+        float lookY = 0;
+
+        if (Mathf.Abs(looking.x) > inspectMinimumSensitivity)
+        {
+            lookX = looking.x * _lookSensitivity * Time.deltaTime;
+        }
+
+        if (Mathf.Abs(looking.y) > inspectMinimumSensitivity)
+        {
+            lookY = looking.y * _lookSensitivity * Time.deltaTime;
+        }
+        
+
+        currentGrabbable.transform.Rotate((Vector3.up * lookX) + (Camera.main.transform.right * lookY), Space.World);
 
     }
 
@@ -201,8 +214,13 @@ public class PlayerController : UnitySingleton<PlayerController>
         currentGrabbable = grabbable;
     }
 
-    public void OnInteract()
+    public void OnInteract(InputAction.CallbackContext context)
     {
+        if (!context.started)
+        {
+            return;
+        }
+
         if(currentGrabbable == null)
         {
             TryInteract();
