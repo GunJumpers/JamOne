@@ -73,6 +73,17 @@ public class Laser
             CastRay(newHit.point, direction, laser, layers);
 
         }
+        else if (info.collider.gameObject.tag == "LaserReciever")
+        {
+            Ray newRay = new Ray(ray.GetPoint(100000), -ray.direction);
+            RaycastHit newHit;
+            info.collider.Raycast(newRay, out newHit, Mathf.Infinity);
+
+            info.collider.gameObject.transform.GetComponent<LaserReciever>().EnableReciever();
+
+            CastRay(newHit.point, direction, laser, layers);
+
+        }
         else
         {
             laserIndices.Add(info.point);

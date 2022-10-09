@@ -17,11 +17,17 @@ public class PlayerController : UnitySingleton<PlayerController>
     public bool isInspecting;
     private Vector3 _currentVelocity;
     private float xRotation = 0f;
+    public float scrollDirection;
+    public float scrollModifier;
 
     [Header("Interaction System")]
     [SerializeField] private Transform _grabPivot;
     public Grabbable currentGrabbable;
     public float grabbableForce;
+    public float baseInteractableDistance;
+    public float maxInteractableDistance;
+    public float minInteractableDistance;
+    public float interactableDistanceChangeRate;
     public float interactableDistance;
     public LayerMask interactableLayers;
     public float inspectMinimumSensitivity;
@@ -86,6 +92,7 @@ public class PlayerController : UnitySingleton<PlayerController>
         if(currentGrabbable == null) {
             return;
         }
+
         Vector2 looking = GetPlayerLook();
 
         float lookX = 0;
@@ -152,7 +159,7 @@ public class PlayerController : UnitySingleton<PlayerController>
         RaycastHit info;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out info, 2, interactableLayers))
         {
-            if(LayerMask.LayerToName(info.transform.gameObject.layer) == "Interactable")
+            if(LayerMask.LayerToName(info.transform.gameObject.layer) == "Interactable" || LayerMask.LayerToName(info.transform.gameObject.layer) == "InteractableNoPlayerCollide")
             {
                 info.transform.GetComponent<Interactable>().InteractAction();
             }
@@ -221,7 +228,8 @@ public class PlayerController : UnitySingleton<PlayerController>
             return;
         }
 
-        if(currentGrabbable == null)
+        interactableDistance = baseInteractableDistance;
+        if (currentGrabbable == null)
         {
             TryInteract();
         }
@@ -237,11 +245,28 @@ public class PlayerController : UnitySingleton<PlayerController>
         if (context.started)
         {
             isInspecting = true;
+
         }
         if (context.canceled)
         {
             isInspecting = false;
         }
+    }
+
+    public void OnScroll(InputAction.CallbackContext context)
+    {
+        scrollDirection = context.ReadValue<float>();
+
+        if (isInspecting)
+        {
+            interactableDistance += interactableDistanceChangeRate * scrollDirection;
+
+            interactableDistance = Mathf.Clamp(interactableDistance, minInteractableDistance, maxInteractableDistance);
+        }
+
+        
+
+
     }
 
 

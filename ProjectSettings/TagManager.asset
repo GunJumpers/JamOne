@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Reflective
   - RedirectionCube
+  - LaserReciever
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - TeleportGround
   - Interactable
   - EditorOnly
-  - 
+  - InteractableNoPlayerCollide
   - 
   - 
   - 

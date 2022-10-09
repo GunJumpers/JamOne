@@ -10,6 +10,7 @@ public class Grabbable : Interactable
     public bool dontDisableCollider;
     public bool dontAlterConstraints;
     public bool isLocked;
+    public bool dontCollideWithPlayer;
     public float offset;
 
     public override void Start()
@@ -59,7 +60,15 @@ public class Grabbable : Interactable
             {
                 _rb.useGravity = true;
             }
-            gameObject.layer = 9;
+
+            if (dontCollideWithPlayer)
+            {
+                gameObject.layer = 11;
+            }
+            else
+            {
+                gameObject.layer = 9;
+            }
         }
     }
 
