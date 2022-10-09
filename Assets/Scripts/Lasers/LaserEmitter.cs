@@ -8,7 +8,7 @@ public class LaserEmitter : MonoBehaviour
     public Laser beam;
     public float targetAlpha;
     public bool isEmitting;
-
+    public LayerMask layers;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class LaserEmitter : MonoBehaviour
 
         if (isEmitting)
         {
-            beam = new Laser(transform.position, transform.right, mat, targetAlpha);
+            beam = new Laser(transform.position, transform.right, mat, targetAlpha, layers);
         }
 
         

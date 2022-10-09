@@ -9,15 +9,16 @@ public class Laser
     public GameObject laserObject;
     public LineRenderer lineRenderer;
     public List<Vector3> laserIndices = new List<Vector3>();
+    public LayerMask layers;
 
-    public Laser(Vector3 pos, Vector3 direction, Material mat, float alpha)
+    public Laser(Vector3 pos, Vector3 direction, Material mat, float alpha, LayerMask layers)
     {
         this.lineRenderer = new LineRenderer();
         this.laserObject = new GameObject();
         this.laserObject.name = "LaserBeam";
         this.position = pos;
         this.direction = direction;
-
+        this.layers = layers;
 
         this.lineRenderer = this.laserObject.AddComponent(typeof(LineRenderer)) as LineRenderer;
         this.lineRenderer.startWidth = 0.1f;
@@ -28,17 +29,17 @@ public class Laser
         this.lineRenderer.startColor = new Color(1,0,0,alpha);
         this.lineRenderer.endColor = new Color(1, 0, 0, alpha);
 
-        CastRay(pos, direction, lineRenderer);
+        CastRay(pos, direction, lineRenderer, layers);
     }
 
-    void CastRay(Vector3 pos, Vector3 dir, LineRenderer laser)
+    void CastRay(Vector3 pos, Vector3 dir, LineRenderer laser, LayerMask layers)
     {
         laserIndices.Add(pos);
 
         Ray ray = new Ray(pos, dir);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, 30, 1))
+        if(Physics.Raycast(ray, out hit, 30, layers))
         {
             CheckHit(hit, dir, laser, ray);
         }
@@ -58,7 +59,7 @@ public class Laser
             Vector3 pos = info.point;
             Vector3 newDirection = Vector3.Reflect(direction, info.normal);
 
-            CastRay(pos, newDirection, laser);
+            CastRay(pos, newDirection, laser, layers);
 
         }
         else if (info.collider.gameObject.tag == "RedirectionCube")
@@ -69,7 +70,18 @@ public class Laser
 
             info.collider.gameObject.transform.GetComponent<LaserRedirectionCube>().EnableLaser();
 
-            CastRay(newHit.point, direction, laser);
+            CastRay(newHit.point, direction, laser, layers);
+
+        }
+        else if (info.collider.gameObject.tag == "LaserReciever")
+        {
+            Ray newRay = new Ray(ray.GetPoint(100000), -ray.direction);
+            RaycastHit newHit;
+            info.collider.Raycast(newRay, out newHit, Mathf.Infinity);
+
+            info.collider.gameObject.transform.GetComponent<LaserReciever>().EnableReciever();
+
+            CastRay(newHit.point, direction, laser, layers);
 
         }
         else
