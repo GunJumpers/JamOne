@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Reflective
   - RedirectionCube
+  - Note
   layers:
   - Default
   - TransparentFX
