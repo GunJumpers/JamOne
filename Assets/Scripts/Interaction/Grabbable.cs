@@ -8,6 +8,7 @@ public class Grabbable : Interactable
     public PlayerController playerController;
     public bool usesGravity;
     public bool dontDisableCollider;
+    public bool dontAlterConstraints;
     public bool isLocked;
     public float offset;
 
@@ -30,7 +31,11 @@ public class Grabbable : Interactable
     public void IsBeingGrabbed()
     {
         PlayerController.Instance.SetCurrentGrabbable(this);
-        _rb.constraints = RigidbodyConstraints.FreezeRotation;
+        if (!dontAlterConstraints)
+        {
+            _rb.constraints = RigidbodyConstraints.FreezeRotation;
+        }
+        
         if (usesGravity)
         {
             _rb.useGravity = false;
@@ -45,7 +50,11 @@ public class Grabbable : Interactable
         {
             UnlockGrabbable();
             PlayerController.Instance.currentGrabbable = null;
-            _rb.constraints = RigidbodyConstraints.None;
+            if (!dontAlterConstraints)
+            {
+                _rb.constraints = RigidbodyConstraints.None;
+            }
+            
             if (usesGravity)
             {
                 _rb.useGravity = true;
