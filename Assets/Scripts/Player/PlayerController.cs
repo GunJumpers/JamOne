@@ -257,12 +257,11 @@ public class PlayerController : UnitySingleton<PlayerController>
     {
         scrollDirection = context.ReadValue<float>();
 
-        if (isInspecting)
-        {
+        
             interactableDistance += interactableDistanceChangeRate * scrollDirection;
 
             interactableDistance = Mathf.Clamp(interactableDistance, minInteractableDistance, maxInteractableDistance);
-        }
+        
 
         
 
