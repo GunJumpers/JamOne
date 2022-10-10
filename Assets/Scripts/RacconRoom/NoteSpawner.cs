@@ -36,7 +36,7 @@ public class NoteSpawner : MonoBehaviour
             {
                 for (int i = 0; i < NotesNumber; i++)
                 {
-                    Instantiate(Notes[0], new Vector3(Random.Range(-3f, 3f), 1f, NotesZ), Quaternion.identity);
+                    Instantiate(Notes[0], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
                     NotesZ += 0.5f;
                     GameManager.totalNotes++;
                 }
@@ -45,7 +45,7 @@ public class NoteSpawner : MonoBehaviour
             {
                 for (int i = 0; i < NotesNumber + 0.5; i++)
                 {
-                    Instantiate(Notes[1], new Vector3(Random.Range(-3f, 3f), 1f, NotesZ), Quaternion.identity);
+                    Instantiate(Notes[1], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
                     NotesZ += 0.5f;
                     GameManager.totalNotes++;
                 }
@@ -54,7 +54,7 @@ public class NoteSpawner : MonoBehaviour
             {
                 for (int i = 0; i < NotesNumber; i++)
                 {
-                    Instantiate(Notes[2], new Vector3(Random.Range(-3f, 3f), 1f, NotesZ), Quaternion.identity);
+                    Instantiate(Notes[2], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
                     NotesZ += 0.5f;
                     GameManager.totalNotes++;
                 }
