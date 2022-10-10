@@ -8,17 +8,17 @@ public class BulletShoot : MonoBehaviour
     public Transform bulletSpawner;
     public float bulletSpeed;
     public AudioSource shootSFX;
-    public GameManage GameManager;
+    public GameData GameManager;
     // Update is called once per frame
     void Update()
     {
 
-            if (Input.GetMouseButtonDown(0) && !GameManage.GameEnd)
-            {
-                shootSFX.Play();
-                GameObject bullet = Instantiate(bulletPrefab, bulletSpawner.position, bulletSpawner.rotation);
-                bullet.GetComponent<Rigidbody>().velocity = bulletSpawner.forward * bulletSpeed;
-                  
-            }
+        if (Input.GetMouseButtonDown(0) && !GameData.GameEnd)
+        {
+            shootSFX.Play();
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawner.position, bulletSpawner.rotation);
+            bullet.GetComponent<Rigidbody>().velocity = bulletSpawner.forward * bulletSpeed;
+
+        }
     }
 }

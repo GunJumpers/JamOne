@@ -52,10 +52,10 @@ public class Conductor : MonoBehaviour
             {
                 notesInAdvance = beats[i];
                 NoteSpawner.changeNoteTempo(Random.Range(1, 3), beats[i]);
-                
+
             }
         }
-        
+
     }
 
 }

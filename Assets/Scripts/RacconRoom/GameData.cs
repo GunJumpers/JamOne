@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class GameManage : MonoBehaviour
+public class GameData : MonoBehaviour 
 {
     public NoteSpawner Notes;
     public Bullet HitNotes;
@@ -32,7 +31,7 @@ public class GameManage : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 Announcement.gameObject.SetActive(false);
-               startPlaying = true;
+                startPlaying = true;
                 music.musicSource.Play();
                 Notes.hasStarted = true;
             }
@@ -68,7 +67,7 @@ public class GameManage : MonoBehaviour
             if (notesPercentage > 0.8)
             {
                 Win.text = "YOU WIN";
-                Score.text = ((int)(notesPercentage * 100)). ToString() + "%" ;
+                Score.text = ((int)(notesPercentage * 100)).ToString() + "%";
                 Win.gameObject.SetActive(true);
             }
             else
@@ -79,5 +78,4 @@ public class GameManage : MonoBehaviour
             }
         }
     }
-
 }

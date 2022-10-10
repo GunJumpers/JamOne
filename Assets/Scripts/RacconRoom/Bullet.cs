@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,7 @@ public class Bullet : MonoBehaviour
         if (other.gameObject.CompareTag("Note"))
         {
             other.gameObject.GetComponent<NoteMovement>().shoot = true;
-            GameManage.collectNotes ++ ;
+            GameData.collectNotes++;
             gameObject.GetComponent<AudioSource>().Play();
             Destroy(other.gameObject);
             Destroy(gameObject);

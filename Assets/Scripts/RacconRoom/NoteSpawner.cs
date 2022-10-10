@@ -8,7 +8,7 @@ public class NoteSpawner : MonoBehaviour
     public float delayTime;
     public float Interval;
     public Transform NoteSpawnerPoint;
-    public GameManage GameManager;
+    public GameData GameManager;
     public float NotesNumber;
     public float NotesZ;
     public bool hasStarted;
@@ -31,7 +31,7 @@ public class NoteSpawner : MonoBehaviour
     {
         if (hasStarted)
         {
-            
+
             if (NotesNumber == 1 || NotesNumber == 2)
             {
                 for (int i = 0; i < NotesNumber; i++)
