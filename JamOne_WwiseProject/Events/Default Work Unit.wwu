@@ -62,6 +62,54 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Thrisha" ID="{30BF873A-FD88-499B-8A83-AD80D9FE8053}" ShortID="64474748">
+					<ChildrenList>
+						<Event Name="evnt_thrishaNote1" ID="{D96A40A5-FC88-4337-8B23-AACBA6DE8BE1}">
+							<ChildrenList>
+								<Action Name="" ID="{1C2A14FF-9CAC-4A5A-863B-15D252EB2FA3}" ShortID="416276057">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote1" ID="{E2C0A009-E5A3-4AE5-9DF8-806B32127362}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_thrishaNote2" ID="{E5000165-476E-48FC-97EC-1337816ED1F7}">
+							<ChildrenList>
+								<Action Name="" ID="{921B0C1F-C2E6-43C5-ABF2-82A40C6AFE52}" ShortID="129265501">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote2" ID="{F3C5AAF6-C154-449E-9CC1-1308A1E45032}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_thrishaNote3" ID="{94782678-F6DE-45A8-B379-E09AB3CEE530}">
+							<ChildrenList>
+								<Action Name="" ID="{6CAB3E82-F6C3-4C67-9CBB-2D67D3DAA39B}" ShortID="684488091">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote3" ID="{EE5AA520-4D2E-4AD7-B8C1-05AAC177A4FC}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="evnt_noteTest_01" ID="{1B486154-4F7D-4268-BBFA-71B94C9C6164}">
+					<ChildrenList>
+						<Action Name="" ID="{8720227C-5621-44C0-A415-AC8468C9CEDD}" ShortID="921824852">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="src_noteBase" ID="{0C941DCD-6428-47A0-BEBE-9FD4841BE036}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

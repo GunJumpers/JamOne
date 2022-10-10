@@ -10,12 +10,12 @@
 						<Property Name="Voice1FilterQFactor" Type="Real32" Value="11.7"/>
 						<Property Name="Voice1FilterType" Type="int32" Value="7"/>
 						<Property Name="Voice1Gain" Type="Real32" Value="-4.5"/>
-						<Property Name="Voice1Pitch" Type="Real32" Value="400"/>
+						<Property Name="Voice1Pitch" Type="Real32" Value="1200"/>
 						<Property Name="Voice2Enable" Type="bool" Value="True"/>
 						<Property Name="Voice2FilterQFactor" Type="Real32" Value="16"/>
 						<Property Name="Voice2FilterType" Type="int32" Value="7"/>
 						<Property Name="Voice2Gain" Type="Real32" Value="-10"/>
-						<Property Name="Voice2Pitch" Type="Real32" Value="1200"/>
+						<Property Name="Voice2Pitch" Type="Real32" Value="800"/>
 						<Property Name="WetLevel" Type="Real32" Value="2"/>
 					</PropertyList>
 				</Effect>
@@ -63,6 +63,36 @@
 						<Property Name="PreDelay" Type="Real32" Value="0.05"/>
 						<Property Name="ReverbTime" Type="Real32" Value="2.2"/>
 						<Property Name="WetLevel" Type="Real32" Value="-28"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Meter" ID="{CE9342FC-8ECD-4D8A-9436-881720C22993}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="10"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_" ID="{16BEA94C-2984-49FB-B880-B274AA397374}" PluginName="iZotope Trash Distortion" CompanyID="259" PluginID="3" PluginType="3">
+					<PropertyList>
+						<Property Name="Distortion1InputGain" Type="Real32" Value="1"/>
+						<Property Name="Distortion1OutputGain" Type="Real32" Value="-2"/>
+						<Property Name="Distortion1Overdrive" Type="Real32" Value="4"/>
+						<Property Name="Distortion1Trash" Type="Real32" Value="0.3"/>
+						<Property Name="Distortion1Type" Type="int32" Value="18"/>
+						<Property Name="Distortion2Mix" Type="Real32" Value="11"/>
+						<Property Name="Distortion2Trash" Type="Real32" Value="1"/>
+						<Property Name="Distortion2Type" Type="int32" Value="3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Guitar_Distortion_01" ID="{8336AC08-27DC-4C5E-91E2-4A3B011B4F42}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="9"/>
+						<Property Name="Rectification" Type="Real32" Value="35"/>
+						<Property Name="WetDryMix" Type="Real32" Value="16"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="__01" ID="{BEF40488-8320-4BAC-B599-FEFC65944D33}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="TimeStretch" Type="Real32" Value="80"/>
+						<Property Name="TimeStretchRandom" Type="Real32" Value="185"/>
 					</PropertyList>
 				</Effect>
 			</ChildrenList>
