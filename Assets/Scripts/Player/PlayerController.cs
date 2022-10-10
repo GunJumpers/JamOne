@@ -19,6 +19,7 @@ public class PlayerController : UnitySingleton<PlayerController>
     private float xRotation = 0f;
     public float scrollDirection;
     public float scrollModifier;
+    public bool isRotate;
 
     [Header("Interaction System")]
     [SerializeField] private Transform _grabPivot;
@@ -82,7 +83,10 @@ public class PlayerController : UnitySingleton<PlayerController>
         xRotation -= lookY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        _playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        if (isRotate == true)
+        {
+            _playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        }
 
         transform.Rotate(Vector3.up * lookX);
     }
