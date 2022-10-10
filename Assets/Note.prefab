@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3392542919846006061}
   - component: {fileID: 3392542919846006060}
   - component: {fileID: 3392542919846006059}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Note
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -129,4 +129,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 10
   shoot: 0
-  beatTempo: 1
+  beatTempo: 3

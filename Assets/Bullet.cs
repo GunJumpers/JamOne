@@ -16,6 +16,8 @@ public class Bullet : MonoBehaviour
         if (other.gameObject.CompareTag("Note"))
         {
             other.gameObject.GetComponent<NoteMovement>().shoot = true;
+            GameManage.collectNotes ++ ;
+            gameObject.GetComponent<AudioSource>().Play();
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

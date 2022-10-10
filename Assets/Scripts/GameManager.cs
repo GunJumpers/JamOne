@@ -10,12 +10,12 @@ public class GameManager : UnitySingleton<GameManager>
     void Start()
     {
         puzzleRooms = new Dictionary<BasePuzzleRoom, bool>();
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
     {
-        
+
     }
 }

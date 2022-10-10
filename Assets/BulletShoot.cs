@@ -8,27 +8,17 @@ public class BulletShoot : MonoBehaviour
     public Transform bulletSpawner;
     public float bulletSpeed;
     public AudioSource shootSFX;
-    private bool hasStarted = false;
-
+    public GameManage GameManager;
     // Update is called once per frame
     void Update()
     {
-        if (!hasStarted)
-        {
-            if (Input.anyKeyDown)
-            {
-                hasStarted = true;
-            }
-        }
 
-        else
-        {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !GameManage.GameEnd)
             {
                 shootSFX.Play();
                 GameObject bullet = Instantiate(bulletPrefab, bulletSpawner.position, bulletSpawner.rotation);
                 bullet.GetComponent<Rigidbody>().velocity = bulletSpawner.forward * bulletSpeed;
+                  
             }
-        }
     }
 }

@@ -19,10 +19,8 @@ public class Conductor : MonoBehaviour
     //How many seconds have passed since the song started
     public float dspSongTime;
     public AudioSource musicSource;
-
     public float[] beats;
     public float notesInAdvance = 1;
-
     public NoteSpawner NoteSpawner;
     void Start()
     {
@@ -35,8 +33,6 @@ public class Conductor : MonoBehaviour
         //Record the time when the music starts
         dspSongTime = (float)AudioSettings.dspTime;
 
-        //Start the music
-        musicSource.Play();
 
     }
 
@@ -54,13 +50,12 @@ public class Conductor : MonoBehaviour
 
             if ((int)songPositionInBeats % beats[i] == 0 && beats[i] != notesInAdvance)
             {
-                //Debug.Log(notes[i]);
                 notesInAdvance = beats[i];
                 NoteSpawner.changeNoteTempo(Random.Range(1, 3), beats[i]);
                 
             }
         }
-
+        
     }
 
 }
