@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Test_Event" ID="{DEF5C961-DF0E-4D39-9E9E-38C4CF30A16B}">
+					<ChildrenList>
+						<Action Name="" ID="{C36807F2-5E29-4175-8366-F1C22EADEFFB}" ShortID="510254553">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp_Spoons" ID="{6329DE8F-2C28-44D1-A92B-3A30AF0936DE}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

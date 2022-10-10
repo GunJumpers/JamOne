@@ -14,16 +14,23 @@ public class PlayerController : UnitySingleton<PlayerController>
     [Header("Current Player State")]
     public Vector3 moveDirection;
     public Vector2 lookDirection;
-
+    public bool isInspecting;
     private Vector3 _currentVelocity;
     private float xRotation = 0f;
+    public float scrollDirection;
+    public float scrollModifier;
 
     [Header("Interaction System")]
     [SerializeField] private Transform _grabPivot;
     public Grabbable currentGrabbable;
     public float grabbableForce;
+    public float baseInteractableDistance;
+    public float maxInteractableDistance;
+    public float minInteractableDistance;
+    public float interactableDistanceChangeRate;
     public float interactableDistance;
     public LayerMask interactableLayers;
+    public float inspectMinimumSensitivity;
 
     [Header("Base Movement Stats [Reset on Play]")]
     [SerializeField] private float _maximumSpeed;
@@ -32,8 +39,9 @@ public class PlayerController : UnitySingleton<PlayerController>
     [SerializeField] private float _FOV;
     [SerializeField] private float _lookSensitivity = 1.0f;
 
-    private void Awake()
+    public override void Awake()
     {
+        base.Awake();
         _vcam.m_Lens.FieldOfView = _FOV;
     }
     // Start is called before the first frame update
@@ -45,9 +53,19 @@ public class PlayerController : UnitySingleton<PlayerController>
     // Update is called once per frame
     void Update()
     {
-        ApplyLook();
+        if (isInspecting)
+        {
+            ApplyInspect();
+        }
+        else
+        {
+            ApplyLook();
+        }
+        
         LimitMovement();
+        RaycastGrabbablePivot();
         ApplyGrab();
+        
     }
 
     private void FixedUpdate()
@@ -67,6 +85,32 @@ public class PlayerController : UnitySingleton<PlayerController>
         _playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         transform.Rotate(Vector3.up * lookX);
+    }
+
+    private void ApplyInspect()
+    {
+        if(currentGrabbable == null) {
+            return;
+        }
+
+        Vector2 looking = GetPlayerLook();
+
+        float lookX = 0;
+        float lookY = 0;
+
+        if (Mathf.Abs(looking.x) > inspectMinimumSensitivity)
+        {
+            lookX = looking.x * _lookSensitivity * Time.deltaTime;
+        }
+
+        if (Mathf.Abs(looking.y) > inspectMinimumSensitivity)
+        {
+            lookY = looking.y * _lookSensitivity * Time.deltaTime;
+        }
+        
+
+        currentGrabbable.transform.Rotate((Vector3.up * lookX) + (Camera.main.transform.right * lookY), Space.World);
+
     }
 
 
@@ -110,12 +154,15 @@ public class PlayerController : UnitySingleton<PlayerController>
 
     }
 
-    void TryGrab()
+    void TryInteract()
     {
         RaycastHit info;
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out info, 1, interactableLayers))
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out info, 2, interactableLayers))
         {
-
+            if(LayerMask.LayerToName(info.transform.gameObject.layer) == "Interactable" || LayerMask.LayerToName(info.transform.gameObject.layer) == "InteractableNoPlayerCollide")
+            {
+                info.transform.GetComponent<Interactable>().InteractAction();
+            }
         }
 
     }
@@ -124,10 +171,102 @@ public class PlayerController : UnitySingleton<PlayerController>
     {
         if(currentGrabbable != null)
         {
-            Vector3 forceDirection = (_grabPivot.position - currentGrabbable.transform.position).normalized * grabbableForce;
-
-            currentGrabbable.GetRigidbody().AddForce(forceDirection, ForceMode.Force);
+            float grabbableOffset = Vector3.Distance(currentGrabbable.transform.position, _grabPivot.transform.position);
+            Vector3 forceDirection = (_grabPivot.position - currentGrabbable.transform.position).normalized * grabbableForce * grabbableOffset;
+            if (!currentGrabbable.isLocked)
+            {
+                currentGrabbable.GetRigidbody().AddForce(forceDirection, ForceMode.Acceleration);
+                if (grabbableOffset < 0.5f)
+                {
+                    currentGrabbable.transform.position = _grabPivot.position;
+                    currentGrabbable.LockGrabbable();
+                    currentGrabbable.transform.SetParent(_grabPivot);
+                }
+            }
+            
         }
+    }
+
+    void RaycastGrabbablePivot()
+    {
+        RaycastHit info;
+        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+        float offset = interactableDistance;
+
+        if(currentGrabbable != null)
+        {
+            offset += currentGrabbable.offset;
+        }
+
+
+        if (Physics.Raycast(ray, out info, offset, interactableLayers))
+        {
+            float newDistance = info.distance;
+            if (currentGrabbable != null)
+            {
+                newDistance -= currentGrabbable.offset;
+            }
+             
+
+            _grabPivot.position = ray.GetPoint(newDistance);
+        }
+        else
+        {
+            _grabPivot.position = ray.GetPoint(interactableDistance);
+        }
+    }
+
+    public void SetCurrentGrabbable(Grabbable grabbable)
+    {
+        currentGrabbable = grabbable;
+    }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (!context.started)
+        {
+            return;
+        }
+
+        interactableDistance = baseInteractableDistance;
+        if (currentGrabbable == null)
+        {
+            TryInteract();
+        }
+        else
+        {
+            currentGrabbable.IsNoLongerBeingGrabbed();
+        }
+        
+    }
+
+    public void OnInspect(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            isInspecting = true;
+
+        }
+        if (context.canceled)
+        {
+            isInspecting = false;
+        }
+    }
+
+    public void OnScroll(InputAction.CallbackContext context)
+    {
+        scrollDirection = context.ReadValue<float>();
+
+        if (isInspecting)
+        {
+            interactableDistance += interactableDistanceChangeRate * scrollDirection;
+
+            interactableDistance = Mathf.Clamp(interactableDistance, minInteractableDistance, maxInteractableDistance);
+        }
+
+        
+
+
     }
 
 
