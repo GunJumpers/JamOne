@@ -7,6 +7,7 @@ public class GameManager : UnitySingleton<GameManager>
 
     public Dictionary<BasePuzzleRoom, bool> puzzleRooms;
 
+
     void Start()
     {
         puzzleRooms = new Dictionary<BasePuzzleRoom, bool>();
