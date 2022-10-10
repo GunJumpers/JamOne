@@ -12,6 +12,7 @@ public class Grabbable : Interactable
     public bool isLocked;
     public bool dontCollideWithPlayer;
     public float offset;
+    public bool destroyable;
 
     public override void Start()
     {
