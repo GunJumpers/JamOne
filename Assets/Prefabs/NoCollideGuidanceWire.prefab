@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8052674158949445474}
   - component: {fileID: 8052674158949445485}
   - component: {fileID: 8052674158949445484}
+  - component: {fileID: 1323340459112316696}
   m_Layer: 0
   m_Name: NoCollideGuidanceWire
   m_TagString: Untagged
@@ -301,3 +302,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8052674158949445486}
   m_Mesh: {fileID: 0}
+--- !u!114 &1323340459112316696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8052674158949445486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a955e4b4475af489fe8c4aeb5eb57d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
+  mat: {fileID: 0}
+  enableColor: {r: 0.50436395, g: 3.2111173, b: 2.5218198, a: 1}
+  disableColor: {r: 0, g: 0.254717, b: 0.22703873, a: 1}

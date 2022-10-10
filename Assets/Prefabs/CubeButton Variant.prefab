@@ -113,7 +113,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 764740739131237410}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5416568745631614145
+--- !u!114 &4412150249307232919
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 6423246805748253805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 830c195126ddfd64f9c38f1f9c444470, type: 3}
+  m_Script: {fileID: 11500000, guid: 75a5f94d4f11f844ebf92b4770be6770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedCubePrefab: {fileID: 3051995742122197888, guid: 3858058811559b74e969417c5550f350,
+    type: 3}
+  spawnedCube: {fileID: 0}
+  summonPosition: {fileID: 729258117}
+--- !u!114 &2820661969794554798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423246805748253805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a86104339f46047ab737ecff9c3223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonEvent:
@@ -140,22 +156,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  buttonOffCooldownEvent:
+    m_PersistentCalls:
+      m_Calls: []
   anim: {fileID: 0}
   onCooldown: 0
-  buttonCooldown: 2
---- !u!114 &4412150249307232919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6423246805748253805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a5f94d4f11f844ebf92b4770be6770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnedCubePrefab: {fileID: 3051995742122197888, guid: 3858058811559b74e969417c5550f350,
-    type: 3}
-  spawnedCube: {fileID: 0}
-  summonPosition: {fileID: 729258117}
+  buttonCooldown: 0

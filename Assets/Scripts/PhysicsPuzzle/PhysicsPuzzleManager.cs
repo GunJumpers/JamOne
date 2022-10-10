@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PhysicsPuzzleManager : BasePuzzleRoom
 {
     public List<PressurePlate> requiredPlates;
+    public UnityEvent onCompleteEvent;
     public override void Start()
     {
         base.Start();
@@ -30,6 +32,7 @@ public class PhysicsPuzzleManager : BasePuzzleRoom
 
         if (isComplete)
         {
+            onCompleteEvent.Invoke();
             CompleteRoom();
         }
     }
