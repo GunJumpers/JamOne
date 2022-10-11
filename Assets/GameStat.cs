@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,10 +12,11 @@ public class GameStat : MonoBehaviour
     public Text Announcement;
     public static bool playerIsEntered = false;
     public static bool isSoothed = false;
-    public static bool isBubbled = false;
     public static bool radioUsed = false;
+    public static bool isCompleted;
     private GameObject radioPrefab;
-    public Vector3 startPosition;
+    private Vector3 startPosition;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -31,9 +32,9 @@ public class GameStat : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            Announcement.text = "PRESS SPACE TO USE RADIO";
-            
-            if (Input.GetKeyDown(KeyCode.Space))
+            Announcement.text = "LEFT CLICK TO USE RADIO";
+
+            if (Input.GetMouseButtonDown(1))
             {
                 Announcement.gameObject.SetActive(false);
                 radioPrefab.SetActive(!radioPrefab.activeInHierarchy);
@@ -44,9 +45,13 @@ public class GameStat : MonoBehaviour
         {
             GameOverScreen();
         }
+        else
+        {
+            WinnerScreen();
+        }
     }
 
-    void GameOverScreen()
+    private void GameOverScreen()
     {
         Warning.text = "GAME OVER";
         Warning.gameObject.SetActive(true);
@@ -66,5 +71,12 @@ public class GameStat : MonoBehaviour
         }
     }
 
-
+    private void WinnerScreen()
+    {
+        if (isCompleted)
+        {
+            Announcement.text = "Fish ♡ Radio";
+            Announcement.gameObject.SetActive(true);
+        }
+    }
 }

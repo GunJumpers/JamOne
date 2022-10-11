@@ -5,9 +5,9 @@ using UnityEngine;
 public class music : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        Destroy(gameObject, 5f);
     }
 
     // Update is called once per frame
@@ -21,10 +21,6 @@ public class music : MonoBehaviour
         if (other.gameObject.CompareTag("Fish"))
         {
             GameStat.isSoothed = true;
-            Destroy(gameObject);
-        }
-        else if (other.gameObject.CompareTag("Wall"))
-        {
             Destroy(gameObject);
         }
     }
