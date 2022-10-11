@@ -66,7 +66,7 @@ public class Laser
         {
             Ray newRay = new Ray(ray.GetPoint(100000), -ray.direction);
             RaycastHit newHit;
-            info.collider.Raycast(newRay, out newHit, 200);
+            info.collider.Raycast(newRay, out newHit, Mathf.Infinity);
 
             info.collider.gameObject.transform.GetComponent<LaserRedirectionCube>().EnableLaser();
 
@@ -77,7 +77,7 @@ public class Laser
         {
             Ray newRay = new Ray(ray.GetPoint(100000), -ray.direction);
             RaycastHit newHit;
-            info.collider.Raycast(newRay, out newHit, 200);
+            info.collider.Raycast(newRay, out newHit, Mathf.Infinity);
 
             info.collider.gameObject.transform.GetComponent<LaserReciever>().EnableReciever();
 
