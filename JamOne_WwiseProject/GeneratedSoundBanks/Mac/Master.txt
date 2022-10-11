@@ -1,20 +1,48 @@
 Event	ID	Name			Wwise Object Path	Notes
+	91348688	evnt_sophiePlateDeactive			\Default Work Unit\Sophie\evnt_sophiePlateDeactive	
+	235107416	evnt_sophieTeleport			\Default Work Unit\Sophie\evnt_sophieTeleport	
+	404810138	evnt_thrishaNote2Stop			\Default Work Unit\Thrisha\evnt_thrishaNote2Stop	
 	752288469	evnt_yiyangShoot			\Default Work Unit\Yiyang\evnt_yiyangShoot	
+	777445139	evnt_thrishaNote3Stop			\Default Work Unit\Thrisha\evnt_thrishaNote3Stop	
+	893392301	evnt_noteTest_01			\Default Work Unit\evnt_noteTest_01	
+	1526560633	evnt_thrishaNote1Stop			\Default Work Unit\Thrisha\evnt_thrishaNote1Stop	
 	1648251437	evnt_yiyangEvilLaugh			\Default Work Unit\Yiyang\evnt_yiyangEvilLaugh	
 	2234716577	evnt_noteTest			\Default Work Unit\evnt_noteTest	
+	2412634145	evnt_thrishaNote1			\Default Work Unit\Thrisha\evnt_thrishaNote1	
+	2412634146	evnt_thrishaNote2			\Default Work Unit\Thrisha\evnt_thrishaNote2	
+	2412634147	evnt_thrishaNote3			\Default Work Unit\Thrisha\evnt_thrishaNote3	
+	2843533304	evnt_sophieCubeDespawn			\Default Work Unit\Sophie\evnt_sophieCubeDespawn	
+	3139527251	evnt_sophieCubeSpawn			\Default Work Unit\Sophie\evnt_sophieCubeSpawn	
+	4112389820	evnt_generalPauseAll			\Default Work Unit\General\evnt_generalPauseAll	
 	4193607900	evnt_yiyangBeat			\Default Work Unit\Yiyang\evnt_yiyangBeat	
+	4207864965	evnt_sophieButton			\Default Work Unit\Sophie\evnt_sophieButton	
 	4258653052	Test_Event			\Default Work Unit\Test_Event	
+	4271760505	evnt_sophiePlateActive			\Default Work Unit\Sophie\evnt_sophiePlateActive	
 
 Effect plug-ins	ID	Name	Type				Notes
-	922684830	New_Wwise_Guitar_Distortion	Wwise Guitar Distortion			
-	3013737263	Bass_Remover_1	Wwise Parametric EQ			
-	3036946058	Inside_Your_Head	Wwise RoomVerb			
-	4212217734	Personnel_Advisor	Wwise Stereo Delay			
+	506891147	Plate_Small	Wwise RoomVerb			
+	1232017842	LR_Slap_with_CrossFeed	Wwise Stereo Delay			
+	1844231364	New_Wwise_Harmonizer_06	Wwise Harmonizer			
+	2952825346	Dual_Filters_Radio_Comm	Wwise Parametric EQ			
+	2998002419	Boost_3dB_10KHz	Wwise Parametric EQ			
+	3164629247	Holy	Wwise RoomVerb			
+	4236290354	Many_Odd_Harm_Peaks	Wwise Flanger			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	19333414	sfx_yiyangShoot	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\temp_Spoons_BE71920E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangShoot		172160
+	19333414	sfx_yiyangShoot	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\temp_Spoons_FA49D30E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangShoot		82048
+	25089753	sfx_sophieCubeDespawn	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_A74677FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieCubeDespawn		180352
+	183444430	sfx_thrishaNote2	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_3865F1A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Thrisha SFX\sfx_thrishaNote2		493028
+	302578298	sfx_sophieCubeSpawn	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_CE5B824A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieCubeSpawn		491648
 	404550736	src_noteBase	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_noteBase		756128
-	483305637	sfx_yiyangBeat	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_9BCDDB13.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat		639104
-	629178186	sfx_yiyangEvilLaugh	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\src_evilRacoon_712EF38A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangEvilLaugh		356588
+	483305637	sfx_yiyangBeat	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_61AAD2FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat		446592
+	519067736	sfx_thrishaNote1	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_24550FFD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Thrisha SFX\sfx_thrishaNote1		292092
+	521004709	sfx_thrishaNote3	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_E061076F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Thrisha SFX\sfx_thrishaNote3		617680
+	629178186	sfx_yiyangEvilLaugh	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\src_evilRacoon_A0811FBC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangEvilLaugh		1794112
+	867212875	sfx_sophieTeleport	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_BAEC93BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieTeleport		1323136
 	875348528	src_spoons	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\temp_Spoons_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_spoons		131640
+	1048766804	sfx_sophieButton	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_81C5362A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieButton		209024
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	32595529	sfx_sophiePlateDeactive	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_830AE8A6.wem	32595529.wem	\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophiePlateDeactive	
+	1047212475	sfx_sophiePlateActive	C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_9C9D2F1A.wem	1047212475.wem	\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophiePlateActive	
 
