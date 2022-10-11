@@ -58,15 +58,6 @@ public class PlayerController : UnitySingleton<PlayerController>
         {
             return;
         }
-
-        if (isInspecting)
-        {
-            ApplyInspect();
-        }
-        else
-        {
-            ApplyLook();
-        }
         
         LimitMovement();
         RaycastGrabbablePivot();
@@ -79,6 +70,15 @@ public class PlayerController : UnitySingleton<PlayerController>
         if (!canControlMovement)
         {
             return;
+        }
+
+        if (isInspecting)
+        {
+            ApplyInspect();
+        }
+        else
+        {
+            ApplyLook();
         }
 
         ApplyMovement();
