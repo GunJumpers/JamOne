@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Linux\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
+		<ProjectRoot>D:\JamOne\JamOne_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\JamOne\JamOne_WwiseProject\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>D:\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="1684382211">
+		<SoundBank Id="4056684167" Language="SFX" Hash="68799302">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
