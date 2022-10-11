@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d719ab249f4cce439e3cabeb78d1192c
     GuidInternal: 
-    m_lastTime: -8585362271731643862
+    m_lastTime: -8585361508876394045
     List:
     - name: Master
       guid: a3f5d453ef0e1c469c0d272a1c809d4e
@@ -94,8 +94,162 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7f60739c4ca04240ac34bde0609bff6c
     GuidInternal: 
-    m_lastTime: -8585362271731803411
+    m_lastTime: -8585361508877085210
     List:
+    - name: evnt_noteTest
+      guid: 51821a8fd49389489fbc34bc6d8f8ef2
+      id: 2234716577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: evnt_noteTest
+        ObjectType: 3
+        guid: 51821a8fd49389489fbc34bc6d8f8ef2
+      Path: Events\Default Work Unit\evnt_noteTest
+      maxAttenuation: 0
+      maxDuration: 4.285714
+      minDuration: 4.285714
+    - name: evnt_noteTest_01
+      guid: 5461481b7d4f6842bbfa71b94c9c6164
+      id: 893392301
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: evnt_noteTest_01
+        ObjectType: 3
+        guid: 5461481b7d4f6842bbfa71b94c9c6164
+      Path: Events\Default Work Unit\evnt_noteTest_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_thrishaNote1
+      guid: a5406ad988fc37438b23aacba6de8be1
+      id: 2412634145
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote1
+        ObjectType: 3
+        guid: a5406ad988fc37438b23aacba6de8be1
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_thrishaNote2
+      guid: 650100e56e47fc4897ec1337816ed1f7
+      id: 2412634146
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote2
+        ObjectType: 3
+        guid: 650100e56e47fc4897ec1337816ed1f7
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_thrishaNote3
+      guid: 78267894def6a845b379e09ab3cee530
+      id: 2412634147
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote3
+        ObjectType: 3
+        guid: 78267894def6a845b379e09ab3cee530
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_yiyangBeat
+      guid: 48132b1c85b33b43aac0302b22efcf4f
+      id: 4193607900
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      - ElementName: evnt_yiyangBeat
+        ObjectType: 3
+        guid: 48132b1c85b33b43aac0302b22efcf4f
+      Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat
+      maxAttenuation: 0
+      maxDuration: 0.404373
+      minDuration: 0.404373
+    - name: evnt_yiyangEvilLaugh
+      guid: 909e0e17714e1b40aa96da25577f890d
+      id: 1648251437
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      - ElementName: evnt_yiyangEvilLaugh
+        ObjectType: 3
+        guid: 909e0e17714e1b40aa96da25577f890d
+      Path: Events\Default Work Unit\Yiyang\evnt_yiyangEvilLaugh
+      maxAttenuation: 0
+      maxDuration: 1.856903
+      minDuration: 1.856903
+    - name: evnt_yiyangShoot
+      guid: 5a4a269c6c5fac48a37a0d35c0ae7f04
+      id: 752288469
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      - ElementName: evnt_yiyangShoot
+        ObjectType: 3
+        guid: 5a4a269c6c5fac48a37a0d35c0ae7f04
+      Path: Events\Default Work Unit\Yiyang\evnt_yiyangShoot
+      maxAttenuation: 0
+      maxDuration: 0.08308
+      minDuration: 0.08308
     - name: Test_Event
       guid: 61c9f5de0edf394d9e9e38c4cf30a16b
       id: 4258653052
@@ -113,6 +267,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.745533
       minDuration: 0.745533
+    - name: Thrisha
+      guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      id: 2949072868
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      Path: Events\Default Work Unit\Thrisha
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Yiyang
+      guid: 82d7f70751498b4e9945e3b67708259f
+      id: 3196254168
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      Path: Events\Default Work Unit\Yiyang
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +358,7 @@ MonoBehaviour:
     m_lastTime: -8585362271731633887
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 03000000060000000b00000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}" SchemaVersion="103">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_Harmonizer" ID="{A06530B7-219B-4EF0-BF5D-9AD98356B25A}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-5"/>
+						<Property Name="Input" Type="int32" Value="5"/>
+						<Property Name="Voice1FilterQFactor" Type="Real32" Value="11.7"/>
+						<Property Name="Voice1FilterType" Type="int32" Value="7"/>
+						<Property Name="Voice1Gain" Type="Real32" Value="-4.5"/>
+						<Property Name="Voice1Pitch" Type="Real32" Value="1200"/>
+						<Property Name="Voice2Enable" Type="bool" Value="True"/>
+						<Property Name="Voice2FilterQFactor" Type="Real32" Value="16"/>
+						<Property Name="Voice2FilterType" Type="int32" Value="7"/>
+						<Property Name="Voice2Gain" Type="Real32" Value="-10"/>
+						<Property Name="Voice2Pitch" Type="Real32" Value="800"/>
+						<Property Name="WetLevel" Type="Real32" Value="2"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Guitar_Distortion" ID="{C4381A33-68C4-4E9A-A0F5-E87E95928288}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="25"/>
+						<Property Name="DistortionTone" Type="Real32" Value="32"/>
+						<Property Name="DistortionType" Type="int32" Value="3"/>
+						<Property Name="OutputLevel" Type="Real32" Value="-3"/>
+						<Property Name="Rectification" Type="Real32" Value="7"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_iZotope_Trash_Distortion" ID="{F595F619-8E98-4C0C-B675-D2639FCCEF56}" PluginName="iZotope Trash Distortion" CompanyID="259" PluginID="3" PluginType="3">
+					<PropertyList>
+						<Property Name="Distortion1InputGain" Type="Real32" Value="20"/>
+						<Property Name="Distortion1Mix" Type="Real32" Value="66"/>
+						<Property Name="Distortion1OutputGain" Type="Real32" Value="-9"/>
+						<Property Name="Distortion1Overdrive" Type="Real32" Value="0"/>
+						<Property Name="Distortion1Type" Type="int32" Value="13"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Pitch_Shifter" ID="{61441CDA-512B-4384-83F7-2B0CE8153163}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+					<PropertyList>
+						<Property Name="DelayTime" Type="Real32" Value="100"/>
+						<Property Name="Pitch" Type="Real32" Value="1200"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_iZotope_Trash_Delay" ID="{2DE95282-0398-493B-86DF-A0BC357AA57E}" PluginName="iZotope Trash Delay" CompanyID="259" PluginID="4" PluginType="3">
+					<PropertyList>
+						<Property Name="DelayType" Type="int32" Value="1"/>
+						<Property Name="DryOut" Type="Real32" Value="63"/>
+						<Property Name="Feedback" Type="Real32" Value="80"/>
+						<Property Name="HighQ" Type="Real32" Value="2.9"/>
+						<Property Name="LowQ" Type="Real32" Value="1.9"/>
+						<Property Name="Time" Type="Real32" Value="160"/>
+						<Property Name="WetOut" Type="Real32" Value="32"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Recorder" ID="{0B2D1F50-AA25-4972-A23B-F2FF9836DEF2}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
+				<Effect Name="New_iZotope_Hybrid_Reverb" ID="{FF7CAE47-2265-43D1-B158-69C9D8190937}" PluginName="iZotope Hybrid Reverb" CompanyID="259" PluginID="2" PluginType="3"/>
+				<Effect Name="New_Wwise_Matrix_Reverb" ID="{7B12D63B-7A32-48E3-8624-F908EB171332}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-5.3"/>
+						<Property Name="HFRatio" Type="Real32" Value="10"/>
+						<Property Name="PreDelay" Type="Real32" Value="0.05"/>
+						<Property Name="ReverbTime" Type="Real32" Value="2.2"/>
+						<Property Name="WetLevel" Type="Real32" Value="-28"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Meter" ID="{CE9342FC-8ECD-4D8A-9436-881720C22993}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="10"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_" ID="{16BEA94C-2984-49FB-B880-B274AA397374}" PluginName="iZotope Trash Distortion" CompanyID="259" PluginID="3" PluginType="3">
+					<PropertyList>
+						<Property Name="Distortion1InputGain" Type="Real32" Value="1"/>
+						<Property Name="Distortion1OutputGain" Type="Real32" Value="-2"/>
+						<Property Name="Distortion1Overdrive" Type="Real32" Value="4"/>
+						<Property Name="Distortion1Trash" Type="Real32" Value="0.3"/>
+						<Property Name="Distortion1Type" Type="int32" Value="18"/>
+						<Property Name="Distortion2Mix" Type="Real32" Value="11"/>
+						<Property Name="Distortion2Trash" Type="Real32" Value="1"/>
+						<Property Name="Distortion2Type" Type="int32" Value="3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Guitar_Distortion_01" ID="{8336AC08-27DC-4C5E-91E2-4A3B011B4F42}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="9"/>
+						<Property Name="Rectification" Type="Real32" Value="35"/>
+						<Property Name="WetDryMix" Type="Real32" Value="16"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="__01" ID="{BEF40488-8320-4BAC-B599-FEFC65944D33}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="TimeStretch" Type="Real32" Value="80"/>
+						<Property Name="TimeStretchRandom" Type="Real32" Value="185"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

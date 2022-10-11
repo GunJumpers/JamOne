@@ -1,6 +1,20 @@
 Event	ID	Name			Wwise Object Path	Notes
+	752288469	evnt_yiyangShoot			\Default Work Unit\Yiyang\evnt_yiyangShoot	
+	1648251437	evnt_yiyangEvilLaugh			\Default Work Unit\Yiyang\evnt_yiyangEvilLaugh	
+	2234716577	evnt_noteTest			\Default Work Unit\evnt_noteTest	
+	4193607900	evnt_yiyangBeat			\Default Work Unit\Yiyang\evnt_yiyangBeat	
 	4258653052	Test_Event			\Default Work Unit\Test_Event	
 
+Effect plug-ins	ID	Name	Type				Notes
+	922684830	New_Wwise_Guitar_Distortion	Wwise Guitar Distortion			
+	3013737263	Bass_Remover_1	Wwise Parametric EQ			
+	3036946058	Inside_Your_Head	Wwise RoomVerb			
+	4212217734	Personnel_Advisor	Wwise Stereo Delay			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	875348528	temp_Spoons	D:\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\temp_Spoons_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\temp_Spoons		131640
+	19333414	sfx_yiyangShoot	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\temp_Spoons_BE71920E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangShoot		172160
+	404550736	src_noteBase	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\sfx_note_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_noteBase		756128
+	483305637	sfx_yiyangBeat	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\sfx_note_9BCDDB13.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat		639104
+	629178186	sfx_yiyangEvilLaugh	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\src_evilRacoon_712EF38A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangEvilLaugh		356588
+	875348528	src_spoons	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\temp_Spoons_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_spoons		131640
 

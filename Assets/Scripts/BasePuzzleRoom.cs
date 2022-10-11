@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class BasePuzzleRoom : MonoBehaviour
 {
-
+    public bool isComplete = false;
     // Start is called before the first frame update
     public virtual void Start()
     {
@@ -19,7 +19,7 @@ public abstract class BasePuzzleRoom : MonoBehaviour
         }
     }
 
-    public void CompleteRoom()
+    public virtual void CompleteRoom()
     {
         if (GameManager.Instance.puzzleRooms.ContainsKey(this))
         {
