@@ -9,6 +9,8 @@ TagManager:
   - LaserReciever
   - DestroyCube
   - DestroyableCube
+  - mazeMusicNote
+  - shrinkDetect
   layers:
   - Default
   - TransparentFX
