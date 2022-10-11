@@ -3,20 +3,25 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Reflective
+  - RedirectionCube
+  - LaserReciever
+  - DestroyCube
+  - DestroyableCube
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - IgnoreRaycastAndPlayerCollision
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Environment
+  - Player
+  - TeleportGround
+  - Interactable
+  - EditorOnly
+  - InteractableNoPlayerCollide
   - 
   - 
   - 

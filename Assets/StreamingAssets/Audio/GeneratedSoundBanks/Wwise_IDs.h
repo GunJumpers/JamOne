@@ -13,6 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID EVNT_NOTETEST = 2234716577U;
+        static const AkUniqueID EVNT_YIYANGBEAT = 4193607900U;
+        static const AkUniqueID EVNT_YIYANGEVILLAUGH = 1648251437U;
+        static const AkUniqueID EVNT_YIYANGSHOOT = 752288469U;
         static const AkUniqueID TEST_EVENT = 4258653052U;
     } // namespace EVENTS
 

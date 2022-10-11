@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class ButtonController : Interactable
 {
     public UnityEvent buttonEvent;
+    public UnityEvent buttonOffCooldownEvent;
     public Animator anim;
     public bool onCooldown;
     public float buttonCooldown;
@@ -32,6 +33,7 @@ public class ButtonController : Interactable
     IEnumerator ButtonCooldownRoutine()
     {
         yield return new WaitForSeconds(buttonCooldown);
+        buttonOffCooldownEvent.Invoke();
         onCooldown = false;
     }
 
