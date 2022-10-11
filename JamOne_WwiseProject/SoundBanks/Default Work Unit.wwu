@@ -6,10 +6,24 @@
 				<SoundBank Name="Master" ID="{53D4F5A3-0EEF-461C-9C0D-272A1C809D4E}">
 					<ObjectInclusionList>
 						<ObjectRef Name="evnt_yiyangEvilLaugh" ID="{170E9E90-4E71-401B-AA96-DA25577F890D}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_sophieCubeDespawn" ID="{82CA1911-F92B-418D-A460-50E81CB9E9AF}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_noteTest_01" ID="{1B486154-4F7D-4268-BBFA-71B94C9C6164}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_thrishaNote1" ID="{D96A40A5-FC88-4337-8B23-AACBA6DE8BE1}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_yiyangBeat" ID="{1C2B1348-B385-433B-AAC0-302B22EFCF4F}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_thrishaNote1Stop" ID="{2C03CC2A-8E82-43C5-848C-43103FB80194}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_thrishaNote3" ID="{94782678-F6DE-45A8-B379-E09AB3CEE530}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_sophieButton" ID="{24785071-61F2-474C-8BBF-F82FBCFC5C5B}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_sophieCubeSpawn" ID="{595001B5-A300-478F-97A9-5F599111141F}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_noteTest" ID="{8F1A8251-93D4-4889-9FBC-34BC6D8F8EF2}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_yiyangShoot" ID="{9C264A5A-5F6C-48AC-A37A-0D35C0AE7F04}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_thrishaNote2" ID="{E5000165-476E-48FC-97EC-1337816ED1F7}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_sophieTeleport" ID="{39E66A74-6B19-493E-8D1E-9FBE49719ED2}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_sophiePlateActive" ID="{7DC28859-50ED-4B1C-AB6D-9DECD9095BBB}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_sophiePlateDeactive" ID="{91555599-2085-4C45-B108-7897D71715AD}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_generalPauseAll" ID="{3E4D7F4C-9313-4CD3-9F66-F9D256737F2F}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_thrishaNote3Stop" ID="{AA89930E-8513-4CF9-93D2-DB3D93712E3C}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Test_Event" ID="{DEF5C961-DF0E-4D39-9E9E-38C4CF30A16B}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_thrishaNote2Stop" ID="{9513A6D6-C97C-4DF4-9D63-330CE73BA5ED}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

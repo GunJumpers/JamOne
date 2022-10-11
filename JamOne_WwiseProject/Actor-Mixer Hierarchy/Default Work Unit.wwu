@@ -37,6 +37,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="RenderEffect3" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -146,6 +151,28 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sfx_yiyangEvilLaugh" ID="{505E0788-2EDF-4F85-A4B6-B61A12B97325}" ShortID="535149341">
+							<PropertyList>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect2" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect3" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -174,7 +201,7 @@
 									<Language>SFX</Language>
 									<AudioFile>sfx_note.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="404550736"/>
+										<MediaID ID="16075449"/>
 									</MediaIDList>
 								</AudioFileSource>
 								<AudioFileSource Name="src_evilRacoon" ID="{43ADBA17-0DE4-48C2-9710-ECC069BCC3B2}">
@@ -299,8 +326,8 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
-								<Reference Name="Effect0" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
-									<ObjectRef Name="New_Wwise_Guitar_Distortion_01" ID="{8336AC08-27DC-4C5E-91E2-4A3B011B4F42}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<ObjectRef Name="Many_Odd_Harm_Peaks" ID="{227BF0C2-EE7F-4962-AEFD-BE4C86E48398}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<ObjectRef Name="Dual_Filters_Radio_Comm" ID="{69479ACD-2C87-4007-B83E-55210A3B36B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -349,8 +376,8 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
-								<Reference Name="Effect0" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
-									<ObjectRef Name="New_Wwise_Guitar_Distortion_01" ID="{8336AC08-27DC-4C5E-91E2-4A3B011B4F42}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<ObjectRef Name="Many_Odd_Harm_Peaks" ID="{227BF0C2-EE7F-4962-AEFD-BE4C86E48398}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<ObjectRef Name="Dual_Filters_Radio_Comm" ID="{69479ACD-2C87-4007-B83E-55210A3B36B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -398,8 +425,8 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
-								<Reference Name="Effect0" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
-									<ObjectRef Name="New_Wwise_Guitar_Distortion_01" ID="{8336AC08-27DC-4C5E-91E2-4A3B011B4F42}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<ObjectRef Name="Many_Odd_Harm_Peaks" ID="{227BF0C2-EE7F-4962-AEFD-BE4C86E48398}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<ObjectRef Name="Dual_Filters_Radio_Comm" ID="{69479ACD-2C87-4007-B83E-55210A3B36B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
@@ -418,9 +445,10 @@
 								<AudioFileSource Name="sfx_note" ID="{A736E3D1-A435-42FB-8B93-F6EB974F0966}">
 									<PropertyList>
 										<Property Name="CrossfadeShape" Type="int16" Value="6"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="1.55443675267464"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.06494095435531"/>
+										<Property Name="FadeOutShape" Type="int16" Value="0"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.27816236626809"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.50085144189834"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>sfx_note.wav</AudioFile>
@@ -432,6 +460,386 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_note" ID="{A736E3D1-A435-42FB-8B93-F6EB974F0966}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Sophie SFX" ID="{8A2BE4D0-98C9-4EF3-BA8D-6D5D173928B1}" ShortID="238734118">
+					<ChildrenList>
+						<Sound Name="sfx_sophieButton" ID="{5E5DBFBB-A740-416D-9F37-90C848E93A10}" ShortID="1064467198">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>700</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect2" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect3" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<ObjectRef Name="Many_Odd_Harm_Peaks" ID="{227BF0C2-EE7F-4962-AEFD-BE4C86E48398}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+									<ObjectRef Name="New_Wwise_Harmonizer_01" ID="{E0604079-49D4-4D1A-A07D-F8C57298583F}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Pumping_and_Breathing_1" ID="{87BE3270-3D27-45BB-9E46-7F2D9380F523}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_note" ID="{B61025AB-FBA4-4BE0-8CD1-B5EAE358339C}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.233193277310929"/>
+										<Property Name="FadeOutShape" Type="int16" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.472689075630257"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_note.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1048766804"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_note" ID="{B61025AB-FBA4-4BE0-8CD1-B5EAE358339C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_sophieCubeDespawn" ID="{F31171E4-E9F4-4E1D-A06D-892F8E2190C0}" ShortID="235451754">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1200</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect2" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect3" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="iZotope Trash Delay" CompanyID="259" PluginID="4" PluginType="3">
+									<ObjectRef Name="New_iZotope_Trash_Delay" ID="{2DE95282-0398-493B-86DF-A0BC357AA57E}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Static_Sibilance_Remover_Female" ID="{3E13EF40-7C1A-4EBC-9858-8CB584A642E5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<ObjectRef Name="Many_Odd_Harm_Peaks" ID="{227BF0C2-EE7F-4962-AEFD-BE4C86E48398}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+									<ObjectRef Name="New_Wwise_Guitar_Distortion" ID="{C4381A33-68C4-4E9A-A0F5-E87E95928288}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_note" ID="{A1BC5774-E0E4-4E3C-BC76-55194E516158}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.201680672268908"/>
+										<Property Name="FadeOutShape" Type="int16" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0630252100840336"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.271008403361347"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_note.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="25089753"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_note" ID="{A1BC5774-E0E4-4E3C-BC76-55194E516158}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_sophieTeleport" ID="{B4057847-40F7-4ADE-A682-EEAF36D43007}" ShortID="911341313">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>700</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect2" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect3" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="iZotope Trash Delay" CompanyID="259" PluginID="4" PluginType="3">
+									<ObjectRef Name="New_iZotope_Trash_Delay" ID="{2DE95282-0398-493B-86DF-A0BC357AA57E}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Space_Dreaming" ID="{4FF7C4B2-37B0-4DFF-8E8A-1420102AE2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_note" ID="{2906E16D-1C72-4831-8C93-E1AB6FF48B7E}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.107142857142857"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.296218487394961"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0756302521008403"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.78151260504202"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_note.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="867212875"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_note" ID="{2906E16D-1C72-4831-8C93-E1AB6FF48B7E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_sophiePlateActive" ID="{5D644186-1519-4BE1-B6BA-4FEBEB7FC6D3}" ShortID="339131871">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Static_Sibilance_Remover_Female" ID="{3E13EF40-7C1A-4EBC-9858-8CB584A642E5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+									<ObjectRef Name="New_Wwise_Harmonizer_05" ID="{8B39C70C-8BAA-4697-A3E2-FEA771BD93BD}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Plate_Small" ID="{5681977F-CD7F-4D09-AA58-118BEFA48C8C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_note" ID="{B8D310F1-55A7-478C-8B99-061270CFC419}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.107142857142858"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.132352941176471"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_note.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1047212475"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_note" ID="{B8D310F1-55A7-478C-8B99-061270CFC419}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_sophieCubeSpawn" ID="{4283221A-E05D-4F27-8ECF-89622333C21B}" ShortID="837718412">
+							<PropertyList>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect2" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<ObjectRef Name="Treble" ID="{FB516F18-AA49-4B92-BC11-FA23E8CC59B4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+									<ObjectRef Name="New_Wwise_Harmonizer_04" ID="{D61398F2-CBC0-4971-B821-C728B453CB0F}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_note" ID="{7629E86B-CFCF-4E68-AC64-58DC079686DB}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.655462184873952"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.655462184873952"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_note.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="302578298"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_note" ID="{7629E86B-CFCF-4E68-AC64-58DC079686DB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_sophiePlateDeactive" ID="{F981755D-FA05-4C04-8986-CE29D51689C7}" ShortID="720403393">
+							<PropertyList>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Static_Sibilance_Remover_Female" ID="{3E13EF40-7C1A-4EBC-9858-8CB584A642E5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+									<ObjectRef Name="New_Wwise_Harmonizer_06" ID="{19F8F6E0-3C32-4DB6-8B80-5433157AC69F}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Plate_Small" ID="{5681977F-CD7F-4D09-AA58-118BEFA48C8C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_note" ID="{157684BD-8A67-4FC8-97B8-3ECC7D740E9B}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.107142857142858"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.132352941176471"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_note.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="32595529"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_note" ID="{157684BD-8A67-4FC8-97B8-3ECC7D740E9B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
