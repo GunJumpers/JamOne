@@ -97,6 +97,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="evnt_thrishaNote1Stop" ID="{2C03CC2A-8E82-43C5-848C-43103FB80194}">
+							<ChildrenList>
+								<Action Name="" ID="{29F6FC6D-807C-47ED-95E7-814715C606A3}" ShortID="4992120">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote1" ID="{E2C0A009-E5A3-4AE5-9DF8-806B32127362}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_thrishaNote2Stop" ID="{9513A6D6-C97C-4DF4-9D63-330CE73BA5ED}">
+							<ChildrenList>
+								<Action Name="" ID="{452EE6E4-E957-4044-84EA-8D078B249B46}" ShortID="645139780">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote2" ID="{F3C5AAF6-C154-449E-9CC1-1308A1E45032}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_thrishaNote3Stop" ID="{AA89930E-8513-4CF9-93D2-DB3D93712E3C}">
+							<ChildrenList>
+								<Action Name="" ID="{0A1E404F-8F70-4AFA-8F4F-58EE5EFB6B69}" ShortID="707467413">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote3" ID="{EE5AA520-4D2E-4AD7-B8C1-05AAC177A4FC}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="evnt_noteTest_01" ID="{1B486154-4F7D-4268-BBFA-71B94C9C6164}">
@@ -110,6 +152,90 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Sophie" ID="{03A448F4-D88D-41A7-BDB8-695AAB8EF410}" ShortID="604470472">
+					<ChildrenList>
+						<Event Name="evnt_sophieButton" ID="{24785071-61F2-474C-8BBF-F82FBCFC5C5B}">
+							<ChildrenList>
+								<Action Name="" ID="{62FE40B2-C13B-4B5F-A8B2-89A101A32335}" ShortID="843881388">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_sophieButton" ID="{5E5DBFBB-A740-416D-9F37-90C848E93A10}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_sophieCubeDespawn" ID="{82CA1911-F92B-418D-A460-50E81CB9E9AF}">
+							<ChildrenList>
+								<Action Name="" ID="{06B7BA20-ACC2-415A-A1DB-6CFE6FC058E5}" ShortID="381079142">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_sophieCubeDespawn" ID="{F31171E4-E9F4-4E1D-A06D-892F8E2190C0}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_sophieCubeSpawn" ID="{595001B5-A300-478F-97A9-5F599111141F}">
+							<ChildrenList>
+								<Action Name="" ID="{8A9C5177-D99D-4B70-B397-8AE242F78E17}" ShortID="198318885">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_sophieCubeSpawn" ID="{4283221A-E05D-4F27-8ECF-89622333C21B}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_sophiePlateActive" ID="{7DC28859-50ED-4B1C-AB6D-9DECD9095BBB}">
+							<ChildrenList>
+								<Action Name="" ID="{115669EA-4F3D-4AB9-BFAA-99628A67BBDB}" ShortID="112306319">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_sophiePlateActive" ID="{5D644186-1519-4BE1-B6BA-4FEBEB7FC6D3}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_sophiePlateDeactive" ID="{91555599-2085-4C45-B108-7897D71715AD}">
+							<ChildrenList>
+								<Action Name="" ID="{E8679C07-30D2-4594-BD8C-2662E484AB83}" ShortID="614518563">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_sophiePlateDeactive" ID="{F981755D-FA05-4C04-8986-CE29D51689C7}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_sophieTeleport" ID="{39E66A74-6B19-493E-8D1E-9FBE49719ED2}">
+							<ChildrenList>
+								<Action Name="" ID="{6AD7D86B-7A9B-4FA2-930C-97FDEBFE441B}" ShortID="1064794691">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_sophieTeleport" ID="{B4057847-40F7-4ADE-A682-EEAF36D43007}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="General" ID="{8901031C-B12E-43D5-BA28-856E50884819}" ShortID="433773380">
+					<ChildrenList>
+						<Event Name="evnt_generalPauseAll" ID="{3E4D7F4C-9313-4CD3-9F66-F9D256737F2F}">
+							<ChildrenList>
+								<Action Name="" ID="{9505F748-C5EA-4971-BC21-AC0E8A0FB4E5}" ShortID="896256595">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="8"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
