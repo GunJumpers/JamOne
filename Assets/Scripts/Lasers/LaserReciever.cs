@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LaserReciever : MonoBehaviour
 {
@@ -9,13 +10,15 @@ public class LaserReciever : MonoBehaviour
     public float maxDisableTimer = 0.5f;
     public float enableTimerRate;
     public bool isEnabled;
+    public UnityEvent enableEvent;
+    public UnityEvent disableEvent;
 
     public void EnableReciever()
     {
         if (!isEnabled)
         {
             isEnabled = true;
-            LaserPuzzleManager.Instance.CheckEnabled();
+            enableEvent.Invoke();
         }
         
         if (disableTimer < maxDisableTimer)
@@ -26,7 +29,7 @@ public class LaserReciever : MonoBehaviour
 
     public void DisableReciever()
     {
-        LaserPuzzleManager.Instance.CheckEnabled();
+        disableEvent.Invoke();
         isEnabled = false;
     }
 

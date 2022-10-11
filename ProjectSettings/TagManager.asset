@@ -7,7 +7,8 @@ TagManager:
   - Reflective
   - RedirectionCube
   - LaserReciever
-  - mazeMusicNote
+  - DestroyCube
+  - DestroyableCube
   layers:
   - Default
   - TransparentFX

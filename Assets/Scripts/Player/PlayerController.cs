@@ -19,7 +19,7 @@ public class PlayerController : UnitySingleton<PlayerController>
     private float xRotation = 0f;
     public float scrollDirection;
     public float scrollModifier;
-    public bool isRotate;
+    public bool canControlMovement = true;
 
     [Header("Interaction System")]
     [SerializeField] private Transform _grabPivot;
@@ -54,13 +54,9 @@ public class PlayerController : UnitySingleton<PlayerController>
     // Update is called once per frame
     void Update()
     {
-        if (isInspecting)
+        if (!canControlMovement)
         {
-            ApplyInspect();
-        }
-        else
-        {
-            ApplyLook();
+            return;
         }
         
         LimitMovement();
@@ -71,6 +67,20 @@ public class PlayerController : UnitySingleton<PlayerController>
 
     private void FixedUpdate()
     {
+        if (!canControlMovement)
+        {
+            return;
+        }
+
+        if (isInspecting)
+        {
+            ApplyInspect();
+        }
+        else
+        {
+            ApplyLook();
+        }
+
         ApplyMovement();
     }
 
@@ -83,10 +93,7 @@ public class PlayerController : UnitySingleton<PlayerController>
         xRotation -= lookY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        if (isRotate == true)
-        {
-            _playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        }
+        _playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         transform.Rotate(Vector3.up * lookX);
     }
@@ -144,6 +151,11 @@ public class PlayerController : UnitySingleton<PlayerController>
     public Vector2 GetPlayerLook()
     {
         return lookDirection;
+    }
+
+    public void SetSensitivity(float value)
+    {
+        _lookSensitivity = value;
     }
 
     public void Look(InputAction.CallbackContext context)
@@ -261,12 +273,11 @@ public class PlayerController : UnitySingleton<PlayerController>
     {
         scrollDirection = context.ReadValue<float>();
 
-        if (isInspecting)
-        {
+        
             interactableDistance += interactableDistanceChangeRate * scrollDirection;
 
             interactableDistance = Mathf.Clamp(interactableDistance, minInteractableDistance, maxInteractableDistance);
-        }
+        
 
         
 
