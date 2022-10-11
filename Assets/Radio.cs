@@ -12,7 +12,6 @@ public class Radio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -20,7 +19,7 @@ public class Radio : MonoBehaviour
     {
         //if (isBubbled)
         //{
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && gameObject.activeInHierarchy)
             {
                 GameObject Music = Instantiate(MusicPrefab, MusicSpawner.position,MusicSpawner.rotation);
                 Music.GetComponent<Rigidbody>().velocity = MusicSpawner.forward * speed;
@@ -28,12 +27,13 @@ public class Radio : MonoBehaviour
         //}
     }
 
-    private void OnTriggerEnter (Collider other) 
+    private void OnTriggerStay (Collider other) 
     {
         if (other.gameObject.CompareTag("Water"))
         {
             GameStat.playerIsEntered = true;
-            if (!isBubbled)
+            Debug.Log("Player is Entered");
+            if (!isBubbled && GameStat.radioUsed)
             {
                 Debug.Log("Radio Broken");
                 GameStat.GameOver = true;

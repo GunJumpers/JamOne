@@ -6,17 +6,24 @@ public class GameStat : MonoBehaviour
 {
     public static bool GameOver = false;
     public GameObject Goal;
-    public GameObject Fish;
+    public GameObject Fishes;
+    public GameObject Radio;
     public Text Warning;
     public Text Announcement;
     public static bool playerIsEntered = false;
     public static bool isSoothed = false;
     public static bool isBubbled = false;
+    public static bool radioUsed = false;
+    private GameObject radioPrefab;
+    public Vector3 startPosition;
     // Start is called before the first frame update
     void Start()
     {
         Warning.gameObject.SetActive(false);
         Announcement.text = "PRESS ANY KEY TO START";
+        radioPrefab = gameObject.transform.GetChild(0).GetChild(2).gameObject;
+        radioPrefab.SetActive(false);
+        startPosition = gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -24,7 +31,14 @@ public class GameStat : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            Announcement.gameObject.SetActive(false);
+            Announcement.text = "PRESS SPACE TO USE RADIO";
+            
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Announcement.gameObject.SetActive(false);
+                radioPrefab.SetActive(!radioPrefab.activeInHierarchy);
+                radioUsed = !radioUsed;
+            }
         }
         if (GameOver)
         {
@@ -37,12 +51,18 @@ public class GameStat : MonoBehaviour
         Warning.text = "GAME OVER";
         Warning.gameObject.SetActive(true);
         Announcement.text = "PRESS SPACE TO RESTART";
-        Warning.gameObject.SetActive(true);
+        Announcement.gameObject.SetActive(true);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameOver = false;
             playerIsEntered = false;
             Warning.gameObject.SetActive(false);
+            gameObject.transform.position = startPosition;
+            for (int i = 0; i < Fishes.transform.childCount; i++)
+            {
+                GameObject Fish = Fishes.transform.GetChild(i).gameObject;
+                Fish.GetComponent<FishMovement>().FishReset();
+            }
         }
     }
 

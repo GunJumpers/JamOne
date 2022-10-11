@@ -7,17 +7,24 @@ public class FishMovement : MonoBehaviour
     public Transform playerPoint;
     public float Speed;
     public float stopDistance;
-    
+    private Vector3 startPosition;
+    private Rigidbody rb;
+    private float dirX;
+    private bool faceRight;
+    private float moveDistance;
     // Start is called before the first frame update
     void Start()
     {
-
+        startPosition = gameObject.transform.position;
+        rb = GetComponent<Rigidbody>();
+        dirX = -1f;
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+       // Fish move right and left
+
         if (GameStat.playerIsEntered)
         {
             Debug.Log("Player Entered");
@@ -36,5 +43,16 @@ public class FishMovement : MonoBehaviour
                 Debug.Log("STOP");
             }
         }
+    }
+
+    public void FishReset()
+    {
+        gameObject.transform.position = startPosition;
+        Debug.Log("FISH RESET");
+    }
+
+    IEnumerator FishChangeDirections ()
+    {
+       
     }
 }
