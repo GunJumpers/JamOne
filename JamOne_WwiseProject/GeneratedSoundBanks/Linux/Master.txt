@@ -6,15 +6,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	4258653052	Test_Event			\Default Work Unit\Test_Event	
 
 Effect plug-ins	ID	Name	Type				Notes
+	86245554	Attack_Remover	Wwise Compressor			
 	922684830	New_Wwise_Guitar_Distortion	Wwise Guitar Distortion			
 	3013737263	Bass_Remover_1	Wwise Parametric EQ			
 	3036946058	Inside_Your_Head	Wwise RoomVerb			
 	4212217734	Personnel_Advisor	Wwise Stereo Delay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	19333414	sfx_yiyangShoot	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\temp_Spoons_BE71920E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangShoot		172160
-	404550736	src_noteBase	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\sfx_note_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_noteBase		756128
-	483305637	sfx_yiyangBeat	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\sfx_note_9BCDDB13.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat		639104
-	629178186	sfx_yiyangEvilLaugh	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\src_evilRacoon_712EF38A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangEvilLaugh		356588
-	875348528	src_spoons	C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\temp_Spoons_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_spoons		131640
+	19333414	sfx_yiyangShoot	C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\temp_Spoons_30DCEE4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangShoot		172160
+	404550736	src_noteBase	C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\sfx_note_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_noteBase		756128
+	483305637	sfx_yiyangBeat	C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\sfx_note_32A5697A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat		446592
+	629178186	sfx_yiyangEvilLaugh	C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\src_evilRacoon_25EAB754.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangEvilLaugh		356588
+	875348528	src_spoons	C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\.cache\Linux\SFX\temp_Spoons_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_spoons		131640
 

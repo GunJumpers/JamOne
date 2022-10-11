@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Games\JamOne\JamOne_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\thris\OneDrive\Desktop\CMPM170\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2403002740">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2886026240">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="3648872947">
+		<SoundBank Id="4056684167" Language="SFX" Hash="1847554674">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -29,11 +29,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4193607900" Name="evnt_yiyangBeat" ObjectPath="\Events\Default Work Unit\Yiyang\evnt_yiyangBeat" DurationType="OneShot" DurationMin="0.404373" DurationMax="0.404373">
+				<Event Id="4193607900" Name="evnt_yiyangBeat" ObjectPath="\Events\Default Work Unit\Yiyang\evnt_yiyangBeat" DurationType="OneShot" DurationMin="0.320951" DurationMax="0.320951">
 					<IncludedMemoryFiles>
 						<File Id="483305637" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_9BCDDB13.wem</Path>
+							<Path>SFX\sfx_note_32A5697A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -41,7 +41,7 @@
 					<IncludedMemoryFiles>
 						<File Id="629178186" Language="SFX">
 							<ShortName>src_evilRacoon.wav</ShortName>
-							<Path>SFX\src_evilRacoon_712EF38A.wem</Path>
+							<Path>SFX\src_evilRacoon_25EAB754.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -49,7 +49,7 @@
 					<IncludedMemoryFiles>
 						<File Id="19333414" Language="SFX">
 							<ShortName>temp_Spoons.wav</ShortName>
-							<Path>SFX\temp_Spoons_BE71920E.wem</Path>
+							<Path>SFX\temp_Spoons_30DCEE4F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
