@@ -7,8 +7,9 @@ public class GameManager : UnitySingleton<GameManager>
 
     public Dictionary<BasePuzzleRoom, bool> puzzleRooms;
 
-    void Start()
+    public override void Awake()
     {
+        base.Awake();
         puzzleRooms = new Dictionary<BasePuzzleRoom, bool>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

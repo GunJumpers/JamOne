@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class LaserPuzzleManager : UnitySingleton<LaserPuzzleManager>
+public class LaserPuzzleManager : BasePuzzleRoom
 {
     [SerializeField] private List<LaserReciever> _laserRecievers;
+    public UnityEvent completionEvent;
     private bool puzzleCompleted;
 
-    public void Start()
+    public override void Start()
     {
+        base.Start();
         puzzleCompleted = false;
     }
     public void CheckEnabled()
@@ -32,6 +35,7 @@ public class LaserPuzzleManager : UnitySingleton<LaserPuzzleManager>
 
     void CompletedPuzzle()
     {
+        completionEvent.Invoke();
         puzzleCompleted = true;
         Debug.Log("Puzzle Complete!");
     }
