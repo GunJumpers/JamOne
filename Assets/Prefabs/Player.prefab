@@ -293,7 +293,6 @@ GameObject:
   - component: {fileID: 6059941662440437885}
   - component: {fileID: 6059941662440437882}
   - component: {fileID: 6059941662440437883}
-  - component: {fileID: 6059941662440437884}
   m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
@@ -366,19 +365,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6059941662440437884
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6059941662440437886}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6059941663166267418
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +432,22 @@ MonoBehaviour:
   _vcam: {fileID: 6059941661320003593}
   moveDirection: {x: 0, y: 0, z: 0}
   lookDirection: {x: 0, y: 0}
+  isInspecting: 0
+  scrollDirection: 0
+  scrollModifier: 0
+  isRotate: 0
+  _grabPivot: {fileID: 0}
+  currentGrabbable: {fileID: 0}
+  grabbableForce: 0
+  baseInteractableDistance: 0
+  maxInteractableDistance: 0
+  minInteractableDistance: 0
+  interactableDistanceChangeRate: 0
+  interactableDistance: 0
+  interactableLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  inspectMinimumSensitivity: 0
   _maximumSpeed: 6
   _movementAcceleration: 20
   _movementDrag: 3

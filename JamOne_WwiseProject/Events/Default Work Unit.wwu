@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Test_Event" ID="{DEF5C961-DF0E-4D39-9E9E-38C4CF30A16B}">
+					<ChildrenList>
+						<Action Name="" ID="{C36807F2-5E29-4175-8366-F1C22EADEFFB}" ShortID="510254553">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="src_spoons" ID="{6329DE8F-2C28-44D1-A92B-3A30AF0936DE}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="evnt_noteTest" ID="{8F1A8251-93D4-4889-9FBC-34BC6D8F8EF2}">
+					<ChildrenList>
+						<Action Name="" ID="{13F908D1-99F9-4DC6-AEEF-4E8E166F72C7}" ShortID="99898529">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="src_noteBase" ID="{0C941DCD-6428-47A0-BEBE-9FD4841BE036}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Yiyang" ID="{07F7D782-4951-4E8B-9945-E3B67708259F}" ShortID="641921728">
+					<ChildrenList>
+						<Event Name="evnt_yiyangBeat" ID="{1C2B1348-B385-433B-AAC0-302B22EFCF4F}">
+							<ChildrenList>
+								<Action Name="" ID="{1CE0031D-0397-4C24-8129-8959529B7861}" ShortID="303384907">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_yiyangBeat" ID="{034B7A8B-5752-4832-BFE7-8F86D98CF096}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_yiyangShoot" ID="{9C264A5A-5F6C-48AC-A37A-0D35C0AE7F04}">
+							<ChildrenList>
+								<Action Name="" ID="{8CB061E2-9EFC-4373-A35D-AB4A48D77455}" ShortID="442372907">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_yiyangShoot" ID="{19E2E8C7-6438-43DF-9567-1A4ABA39F3AF}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_yiyangEvilLaugh" ID="{170E9E90-4E71-401B-AA96-DA25577F890D}">
+							<ChildrenList>
+								<Action Name="" ID="{6A5A1FC3-129D-453F-B859-E1B8F9A8D539}" ShortID="704219405">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_yiyangEvilLaugh" ID="{505E0788-2EDF-4F85-A4B6-B61A12B97325}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Thrisha" ID="{30BF873A-FD88-499B-8A83-AD80D9FE8053}" ShortID="64474748">
+					<ChildrenList>
+						<Event Name="evnt_thrishaNote1" ID="{D96A40A5-FC88-4337-8B23-AACBA6DE8BE1}">
+							<ChildrenList>
+								<Action Name="" ID="{1C2A14FF-9CAC-4A5A-863B-15D252EB2FA3}" ShortID="416276057">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote1" ID="{E2C0A009-E5A3-4AE5-9DF8-806B32127362}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_thrishaNote2" ID="{E5000165-476E-48FC-97EC-1337816ED1F7}">
+							<ChildrenList>
+								<Action Name="" ID="{921B0C1F-C2E6-43C5-ABF2-82A40C6AFE52}" ShortID="129265501">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote2" ID="{F3C5AAF6-C154-449E-9CC1-1308A1E45032}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_thrishaNote3" ID="{94782678-F6DE-45A8-B379-E09AB3CEE530}">
+							<ChildrenList>
+								<Action Name="" ID="{6CAB3E82-F6C3-4C67-9CBB-2D67D3DAA39B}" ShortID="684488091">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_thrishaNote3" ID="{EE5AA520-4D2E-4AD7-B8C1-05AAC177A4FC}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="evnt_noteTest_01" ID="{1B486154-4F7D-4268-BBFA-71B94C9C6164}">
+					<ChildrenList>
+						<Action Name="" ID="{8720227C-5621-44C0-A415-AC8468C9CEDD}" ShortID="921824852">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="src_noteBase" ID="{0C941DCD-6428-47A0-BEBE-9FD4841BE036}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
