@@ -17,9 +17,9 @@ public class GameManager : UnitySingleton<GameManager>
         Cursor.visible = false;
     }
 
-    void Update()
+    public void ExitGame()
     {
-        
+        Application.Quit();
     }
 
     public void OnPaused(InputAction.CallbackContext context)
