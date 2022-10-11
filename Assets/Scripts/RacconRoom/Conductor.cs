@@ -32,8 +32,6 @@ public class Conductor : MonoBehaviour
 
         //Record the time when the music starts
         dspSongTime = (float)AudioSettings.dspTime;
-
-
     }
 
     // Update is called once per frame
