@@ -24,6 +24,7 @@ public class Conductor : MonoBehaviour
     public NoteSpawner NoteSpawner;
     void Start()
     {
+
         //Load the AudioSource attached to the Conductor GameObject
         musicSource = GetComponent<AudioSource>();
 

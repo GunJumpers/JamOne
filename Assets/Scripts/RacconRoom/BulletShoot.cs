@@ -7,15 +7,15 @@ public class BulletShoot : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawner;
     public float bulletSpeed;
-    public AudioSource shootSFX;
     public GameData GameManager;
+    public AK.Wwise.Event shootSFX = null;
     // Update is called once per frame
     void Update()
     {
 
         if (Input.GetMouseButtonDown(0) && !GameData.GameEnd)
         {
-            shootSFX.Play();
+            shootSFX.Post(gameObject);
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawner.position, bulletSpawner.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawner.forward * bulletSpeed;
 

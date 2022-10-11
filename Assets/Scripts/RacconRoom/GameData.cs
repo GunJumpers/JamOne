@@ -8,16 +8,16 @@ public class GameData : MonoBehaviour
     public Bullet HitNotes;
     public float totalNotes;
     public static float collectNotes;
-    public Conductor music;
     public bool startPlaying = false;
     public static bool GameEnd;
     public float targetTime;
     public float notesPercentage;
+    public Conductor music;
     public Text Announcement, Win, GameTime, Lose, Score;
-
     // Start is called before the first frame update
     void Start()
     {
+        
         targetTime = music.musicSource.clip.length;
 
     }
@@ -32,7 +32,6 @@ public class GameData : MonoBehaviour
             {
                 Announcement.gameObject.SetActive(false);
                 startPlaying = true;
-                music.musicSource.Play();
                 Notes.hasStarted = true;
             }
 

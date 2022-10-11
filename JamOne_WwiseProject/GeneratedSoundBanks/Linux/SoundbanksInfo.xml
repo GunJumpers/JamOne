@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Games\JamOne\JamOne_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
+		<ProjectRoot>D:\JamOne\JamOne_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\JamOne\JamOne_WwiseProject\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>D:\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
 		<File Id="32595529" Language="SFX">
 			<ShortName>sfx_note.wav</ShortName>
-			<Path>SFX\sfx_note_830AE8A6.wem</Path>
+			<Path>SFX\sfx_note_27D15AC8.wem</Path>
 		</File>
 		<File Id="1047212475" Language="SFX">
 			<ShortName>sfx_note.wav</ShortName>
-			<Path>SFX\sfx_note_9C9D2F1A.wem</Path>
+			<Path>SFX\sfx_note_82DDB8AC.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="3992146758">
+		<SoundBank Id="4056684167" Language="SFX" Hash="1760649938">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -51,7 +51,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1048766804" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_81C5362A.wem</Path>
+							<Path>SFX\sfx_note_944AC552.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -59,7 +59,7 @@
 					<IncludedMemoryFiles>
 						<File Id="25089753" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_A74677FE.wem</Path>
+							<Path>SFX\sfx_note_DD6226EB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -67,7 +67,7 @@
 					<IncludedMemoryFiles>
 						<File Id="302578298" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_CE5B824A.wem</Path>
+							<Path>SFX\sfx_note_098E250E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -75,7 +75,7 @@
 					<ReferencedStreamedFiles>
 						<File Id="1047212475" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_9C9D2F1A.wem</Path>
+							<Path>SFX\sfx_note_82DDB8AC.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
@@ -83,7 +83,7 @@
 					<ReferencedStreamedFiles>
 						<File Id="32595529" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_830AE8A6.wem</Path>
+							<Path>SFX\sfx_note_27D15AC8.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
@@ -91,7 +91,7 @@
 					<IncludedMemoryFiles>
 						<File Id="867212875" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_BAEC93BE.wem</Path>
+							<Path>SFX\sfx_note_1D82552E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -117,7 +117,7 @@
 					<IncludedMemoryFiles>
 						<File Id="521004709" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_E061076F.wem</Path>
+							<Path>SFX\sfx_note_F8053B71.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

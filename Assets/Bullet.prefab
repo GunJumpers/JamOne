@@ -129,7 +129,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
-  CollideSFX: {fileID: 0}
+  collideSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 29f4729998a3f47498fd62c0238748f7,
+      type: 2}
 --- !u!82 &-7576068619452745617
 AudioSource:
   m_ObjectHideFlags: 0

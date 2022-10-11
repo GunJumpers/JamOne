@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 {
     // Start is called before the first frame update
     public float life = 3;
+    public AK.Wwise.Event collideSFX = null;
     private void Awake()
     {
         Destroy(gameObject, life);
