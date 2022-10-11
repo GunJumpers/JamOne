@@ -22,6 +22,7 @@ public class Conductor : MonoBehaviour
     public float[] beats;
     public float notesInAdvance = 1;
     public NoteSpawner NoteSpawner;
+    public AK.Wwise.Event shootSFX = null;
     void Start()
     {
 

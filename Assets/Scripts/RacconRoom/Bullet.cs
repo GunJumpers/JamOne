@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
         {
             other.gameObject.GetComponent<NoteMovement>().shoot = true;
             GameData.collectNotes++;
-            gameObject.GetComponent<AudioSource>().Play();
+            collideSFX.Post(gameObject);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
