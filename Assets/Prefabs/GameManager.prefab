@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 201ef40e90408934a941208965fb0407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
 --- !u!114 &5155408867868487309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +229,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a7c8437b-2754-4ff8-9d96-6f3fb3bfc31e
     m_ActionName: Player/Scroll[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5155408867868487308}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: TogglePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ad24b5e4-732c-4b8b-82da-4f670036b55e
+    m_ActionName: Player/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -259,6 +276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _lookSensitivity
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059941663166267415, guid: a0fcf98dc127e5048b4b6f015f01c8e8,
+        type: 3}
+      propertyPath: canControlMovement
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6059941663166267415, guid: a0fcf98dc127e5048b4b6f015f01c8e8,
         type: 3}

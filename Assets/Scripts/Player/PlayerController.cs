@@ -19,6 +19,7 @@ public class PlayerController : UnitySingleton<PlayerController>
     private float xRotation = 0f;
     public float scrollDirection;
     public float scrollModifier;
+    public bool canControlMovement = true;
 
     [Header("Interaction System")]
     [SerializeField] private Transform _grabPivot;
@@ -53,6 +54,11 @@ public class PlayerController : UnitySingleton<PlayerController>
     // Update is called once per frame
     void Update()
     {
+        if (!canControlMovement)
+        {
+            return;
+        }
+
         if (isInspecting)
         {
             ApplyInspect();
@@ -70,6 +76,11 @@ public class PlayerController : UnitySingleton<PlayerController>
 
     private void FixedUpdate()
     {
+        if (!canControlMovement)
+        {
+            return;
+        }
+
         ApplyMovement();
     }
 
@@ -140,6 +151,11 @@ public class PlayerController : UnitySingleton<PlayerController>
     public Vector2 GetPlayerLook()
     {
         return lookDirection;
+    }
+
+    public void SetSensitivity(float value)
+    {
+        _lookSensitivity = value;
     }
 
     public void Look(InputAction.CallbackContext context)
