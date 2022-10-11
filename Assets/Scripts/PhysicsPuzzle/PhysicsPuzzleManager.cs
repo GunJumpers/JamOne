@@ -7,6 +7,9 @@ public class PhysicsPuzzleManager : BasePuzzleRoom
 {
     public List<PressurePlate> requiredPlates;
     public UnityEvent onCompleteEvent;
+
+    public AK.Wwise.Event completionEventSound;
+
     public override void Start()
     {
         base.Start();
@@ -33,6 +36,7 @@ public class PhysicsPuzzleManager : BasePuzzleRoom
         if (isComplete)
         {
             onCompleteEvent.Invoke();
+            completionEventSound.Post(gameObject);
             CompleteRoom();
         }
     }
