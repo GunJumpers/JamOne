@@ -11,6 +11,7 @@ public class GameStat : MonoBehaviour
     public Text Announcement;
     public static bool playerIsEntered = false;
     public static bool isSoothed = false;
+    public static bool isBubbled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,5 +44,28 @@ public class GameStat : MonoBehaviour
             playerIsEntered = false;
             Warning.gameObject.SetActive(false);
         }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Water"))
+        {
+            GameStat.playerIsEntered = true;
+            if (!isBubbled)
+            {
+                Debug.Log("Radio Broken");
+                GameStat.GameOver = true;
+
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Water"))
+        {
+            GameStat.playerIsEntered = false;
+        }
+
     }
 }

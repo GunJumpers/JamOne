@@ -17,16 +17,23 @@ public class FishMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Player Entered");
+       
         if (GameStat.playerIsEntered)
         {
+            Debug.Log("Player Entered");
             float dist = Vector3.Distance(playerPoint.position, transform.position);
             if (dist > stopDistance)
             {
                 if (!GameStat.isSoothed)
                 {
+                    Debug.Log("MOVE");
                     transform.position = Vector3.MoveTowards(transform.position, playerPoint.position, Speed);
                 }
+            }
+
+            else
+            {
+                Debug.Log("STOP");
             }
         }
     }
