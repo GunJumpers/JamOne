@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 201ef40e90408934a941208965fb0407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
 --- !u!114 &5454052483438938835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.85999966
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059941663166267414, guid: a0fcf98dc127e5048b4b6f015f01c8e8,
+        type: 3}
+      propertyPath: m_Drag
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6059941663166267414, guid: a0fcf98dc127e5048b4b6f015f01c8e8,
         type: 3}

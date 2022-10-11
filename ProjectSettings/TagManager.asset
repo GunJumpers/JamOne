@@ -9,6 +9,10 @@ TagManager:
   - LaserReciever
   - DestroyCube
   - DestroyableCube
+  - Fish
+  - Note
+  - Wall
+  - Water
   layers:
   - Default
   - TransparentFX

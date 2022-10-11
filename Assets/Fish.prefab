@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2568025898342508353}
   - component: {fileID: 2568025898342508358}
   - component: {fileID: 8301144161374441774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fish
   m_TagString: Fish
   m_Icon: {fileID: 0}
@@ -112,5 +112,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPoint: {fileID: 0}
-  Speed: 0.5
+  Speed: 0.25
   stopDistance: 3

@@ -46,26 +46,5 @@ public class GameStat : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Water"))
-        {
-            GameStat.playerIsEntered = true;
-            if (!isBubbled)
-            {
-                Debug.Log("Radio Broken");
-                GameStat.GameOver = true;
 
-            }
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Water"))
-        {
-            GameStat.playerIsEntered = false;
-        }
-
-    }
 }

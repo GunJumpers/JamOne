@@ -27,7 +27,7 @@ public class FishMovement : MonoBehaviour
                 if (!GameStat.isSoothed)
                 {
                     Debug.Log("MOVE");
-                    transform.position = Vector3.MoveTowards(transform.position, playerPoint.position, Speed);
+                    transform.position = Vector3.MoveTowards(transform.position, playerPoint.position, Speed*Time.deltaTime);
                 }
             }
 

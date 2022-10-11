@@ -28,5 +28,26 @@ public class Radio : MonoBehaviour
         //}
     }
 
-   
+    private void OnTriggerEnter (Collider other) 
+    {
+        if (other.gameObject.CompareTag("Water"))
+        {
+            GameStat.playerIsEntered = true;
+            if (!isBubbled)
+            {
+                Debug.Log("Radio Broken");
+                GameStat.GameOver = true;
+
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Water"))
+        {
+            GameStat.playerIsEntered = false;
+        }
+
+    }
 }
