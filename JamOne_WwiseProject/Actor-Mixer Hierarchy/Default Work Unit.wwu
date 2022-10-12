@@ -1471,7 +1471,11 @@
 				</Folder>
 				<Folder Name="Annie SFX" ID="{92D47F95-7969-49AD-885D-DEFB60D751E0}" ShortID="708373062">
 					<ChildrenList>
-						<Sound Name="sfx_SimonBlue" ID="{E5E7A83D-D697-45DD-8BA6-C46E7DE13457}" ShortID="15153691">
+						<RandomSequenceContainer Name="seq_PuzzleOne" ID="{7B127E3E-642B-43E2-9D08-6CE81DE323DF}" ShortID="112760652">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -1481,25 +1485,103 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="mus_winLayer5Piano" ID="{B865AE70-D8FD-4F83-9D33-1B0F2454FEB8}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="1.5"/>
-										<Property Name="TrimBegin" Type="Real64" Value="44.1"/>
-										<Property Name="TrimEnd" Type="Real64" Value="45.5"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>mus_winLayer5Piano.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="142399534"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="sfx_SimonBlue" ID="{E5E7A83D-D697-45DD-8BA6-C46E7DE13457}" ShortID="15153691">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{B865AE70-D8FD-4F83-9D33-1B0F2454FEB8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.5"/>
+												<Property Name="TrimBegin" Type="Real64" Value="44.1"/>
+												<Property Name="TrimEnd" Type="Real64" Value="45.5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="142399534"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{B865AE70-D8FD-4F83-9D33-1B0F2454FEB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SimonGreen" ID="{8288C2AC-A356-4AA9-AB53-A6BB339E1CD0}" ShortID="737794615">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{D21AA4F7-2043-42CD-9A1E-B02C4503B6A5}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.1"/>
+												<Property Name="TrimBegin" Type="Real64" Value="22.8"/>
+												<Property Name="TrimEnd" Type="Real64" Value="24.18"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1040249201"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{D21AA4F7-2043-42CD-9A1E-B02C4503B6A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SimonRed" ID="{EE6742F2-BC55-4C11-B6CE-36E7D069B1C7}" ShortID="920246096">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{71EC5B3C-3D30-43AF-A509-1D3E817D1BD8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.2"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.9"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.826"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="745735383"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{71EC5B3C-3D30-43AF-A509-1D3E817D1BD8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="mus_winLayer5Piano" ID="{B865AE70-D8FD-4F83-9D33-1B0F2454FEB8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_SimonRed" ID="{EE6742F2-BC55-4C11-B6CE-36E7D069B1C7}" ShortID="920246096">
+							<Playlist>
+								<ItemRef Name="sfx_SimonGreen" ID="{8288C2AC-A356-4AA9-AB53-A6BB339E1CD0}"/>
+								<ItemRef Name="sfx_SimonBlue" ID="{E5E7A83D-D697-45DD-8BA6-C46E7DE13457}"/>
+								<ItemRef Name="sfx_SimonRed" ID="{EE6742F2-BC55-4C11-B6CE-36E7D069B1C7}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="seq_PuzzleTwo" ID="{E7CFE28D-B338-45AF-BA5B-C40383A4140D}" ShortID="251968073">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -1509,25 +1591,105 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="mus_winLayer5Piano" ID="{71EC5B3C-3D30-43AF-A509-1D3E817D1BD8}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="1.2"/>
-										<Property Name="TrimBegin" Type="Real64" Value="9.9"/>
-										<Property Name="TrimEnd" Type="Real64" Value="10.826"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>mus_winLayer5Piano.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="745735383"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="sfx_SimonBlue" ID="{1D40CDC4-CBD9-4BF7-ACCB-85B0058D5BD5}" ShortID="145089951">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{38AC1A76-EBE8-43CA-8A7D-CA40467F58F1}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.5"/>
+												<Property Name="TrimBegin" Type="Real64" Value="44.1"/>
+												<Property Name="TrimEnd" Type="Real64" Value="45.5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="142399534"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{38AC1A76-EBE8-43CA-8A7D-CA40467F58F1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SimonGreen" ID="{D8667D59-8EA5-4E65-B6D1-68939A9A36D3}" ShortID="782712462">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{112E21E5-848C-45B2-A283-F5C3C250B64F}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.1"/>
+												<Property Name="TrimBegin" Type="Real64" Value="22.8"/>
+												<Property Name="TrimEnd" Type="Real64" Value="24.18"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1040249201"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{112E21E5-848C-45B2-A283-F5C3C250B64F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SimonRed" ID="{998BDBCA-703E-4E4F-9D6A-00493059A2BC}" ShortID="729110627">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{EF2FABB1-C9B9-47C5-AE42-369EA4E37F9A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.2"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.9"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.826"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="745735383"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{EF2FABB1-C9B9-47C5-AE42-369EA4E37F9A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="mus_winLayer5Piano" ID="{71EC5B3C-3D30-43AF-A509-1D3E817D1BD8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_SimonGreen" ID="{8288C2AC-A356-4AA9-AB53-A6BB339E1CD0}" ShortID="737794615">
+							<Playlist>
+								<ItemRef Name="sfx_SimonGreen" ID="{D8667D59-8EA5-4E65-B6D1-68939A9A36D3}"/>
+								<ItemRef Name="sfx_SimonGreen" ID="{D8667D59-8EA5-4E65-B6D1-68939A9A36D3}"/>
+								<ItemRef Name="sfx_SimonRed" ID="{998BDBCA-703E-4E4F-9D6A-00493059A2BC}"/>
+								<ItemRef Name="sfx_SimonBlue" ID="{1D40CDC4-CBD9-4BF7-ACCB-85B0058D5BD5}"/>
+								<ItemRef Name="sfx_SimonGreen" ID="{D8667D59-8EA5-4E65-B6D1-68939A9A36D3}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="seq_PuzzleThree" ID="{A998DB6B-EF76-4285-B62C-B601A85FA3A0}" ShortID="764540911">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -1537,24 +1699,102 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="mus_winLayer5Piano" ID="{D21AA4F7-2043-42CD-9A1E-B02C4503B6A5}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="2.1"/>
-										<Property Name="TrimBegin" Type="Real64" Value="22.8"/>
-										<Property Name="TrimEnd" Type="Real64" Value="24.18"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>mus_winLayer5Piano.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1040249201"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="sfx_SimonBlue" ID="{8D50A66C-026C-4AB3-BB5F-229BD5CB0162}" ShortID="316506697">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{CC9DC316-1DA8-48AB-94AD-9181F127F99A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.5"/>
+												<Property Name="TrimBegin" Type="Real64" Value="44.1"/>
+												<Property Name="TrimEnd" Type="Real64" Value="45.5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="142399534"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{CC9DC316-1DA8-48AB-94AD-9181F127F99A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SimonGreen" ID="{BC089B12-C4AE-4262-984D-4D76798E9A16}" ShortID="618071048">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{3982A94E-F657-4876-9F4A-CECFB0D16F5F}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.1"/>
+												<Property Name="TrimBegin" Type="Real64" Value="22.8"/>
+												<Property Name="TrimEnd" Type="Real64" Value="24.18"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1040249201"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{3982A94E-F657-4876-9F4A-CECFB0D16F5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SimonRed" ID="{94A9B9A2-0E0C-40EC-8BB7-3289A3D0AC4B}" ShortID="155591153">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_winLayer5Piano" ID="{2E240BDC-BF62-4FF4-9BBB-B4515C09B6EA}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.2"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.9"/>
+												<Property Name="TrimEnd" Type="Real64" Value="10.826"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>mus_winLayer5Piano.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="745735383"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="mus_winLayer5Piano" ID="{2E240BDC-BF62-4FF4-9BBB-B4515C09B6EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="mus_winLayer5Piano" ID="{D21AA4F7-2043-42CD-9A1E-B02C4503B6A5}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<Playlist>
+								<ItemRef Name="sfx_SimonGreen" ID="{BC089B12-C4AE-4262-984D-4D76798E9A16}"/>
+								<ItemRef Name="sfx_SimonRed" ID="{94A9B9A2-0E0C-40EC-8BB7-3289A3D0AC4B}"/>
+								<ItemRef Name="sfx_SimonBlue" ID="{8D50A66C-026C-4AB3-BB5F-229BD5CB0162}"/>
+								<ItemRef Name="sfx_SimonRed" ID="{94A9B9A2-0E0C-40EC-8BB7-3289A3D0AC4B}"/>
+								<ItemRef Name="sfx_SimonGreen" ID="{BC089B12-C4AE-4262-984D-4D76798E9A16}"/>
+								<ItemRef Name="sfx_SimonBlue" ID="{8D50A66C-026C-4AB3-BB5F-229BD5CB0162}"/>
+								<ItemRef Name="sfx_SimonRed" ID="{94A9B9A2-0E0C-40EC-8BB7-3289A3D0AC4B}"/>
+							</Playlist>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Calex SFX" ID="{BD11B77C-B59E-4A72-8FD5-5D4C0467C268}" ShortID="1033335383">
