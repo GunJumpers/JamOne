@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Yiyang SFX" ID="{571F5359-03C1-47B8-91D8-A317F6C21722}" ShortID="546192982">
 					<ChildrenList>
-						<Sound Name="sfx_yiyangBeat" ID="{034B7A8B-5752-4832-BFE7-8F86D98CF096}" ShortID="284539523">
+						<Sound Name="sfx_yiyangBeat1" ID="{034B7A8B-5752-4832-BFE7-8F86D98CF096}" ShortID="284539523">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Highpass" Type="int16">
@@ -16,11 +16,6 @@
 								<Property Name="OutputBusHighpass" Type="int16">
 									<ValueList>
 										<Value>14</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>400</Value>
 									</ValueList>
 								</Property>
 								<Property Name="RenderEffect0" Type="bool">
@@ -43,6 +38,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -131,17 +127,27 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
-								<Reference Name="Effect0" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
-									<ObjectRef Name="New_Wwise_Harmonizer" ID="{A06530B7-219B-4EF0-BF5D-9AD98356B25A}" WorkUnitID="{8EC90F3A-F3FE-4D7B-ABF6-C204A2DCEA7E}"/>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Harmonizer (Custom)" ID="{C4346666-9006-4A0D-9D81-7CCD62CCA0CF}" ShortID="829071006" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<PropertyList>
+												<Property Name="Voice1Gain" Type="Real32" Value="6"/>
+												<Property Name="Voice1Pitch" Type="Real32" Value="1200"/>
+												<Property Name="Voice2Enable" Type="bool" Value="True"/>
+												<Property Name="Voice2Gain" Type="Real32" Value="3.5"/>
+												<Property Name="Voice2Pitch" Type="Real32" Value="1600"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="Effect1" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
 									<ObjectRef Name="__" ID="{4AD637CE-D3F5-4B39-A5C9-9897FBB4140D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
-								<Reference Name="Effect2" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
-								<Reference Name="Effect3" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+								<Reference Name="Effect2" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
@@ -158,7 +164,7 @@
 									<Language>SFX</Language>
 									<AudioFile>sfx_note.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="483305637"/>
+										<MediaID ID="464287330"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -194,6 +200,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -305,6 +312,357 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="src_evilRacoon" ID="{43ADBA17-0DE4-48C2-9710-ECC069BCC3B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_yiyangBeat2" ID="{99296BC0-F545-464D-A373-38DC7817C76E}" ShortID="359188292">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusHighpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>200</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect2" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect3" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{8BCFEFD7-338A-4224-9B31-133DCD98AA2F}" ShortID="850712">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="3000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{6EEC9547-7D7B-4E0A-BCC7-FF5835A33F09}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>3000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="Spread" ID="{3DC5AB20-F6E5-483C-9B5F-9A41ECB13EDC}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.3548387096775</XPos>
+																	<YPos>99.3548387096774</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.35584</XPos>
+																	<YPos>59.58549</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>452.90322</XPos>
+																	<YPos>1.03627</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>3000</XPos>
+																	<YPos>0</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Harmonizer (Custom)" ID="{CCB5D397-7CE7-43AC-8861-8218C295AB8F}" ShortID="498341610" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<PropertyList>
+												<Property Name="Voice1Gain" Type="Real32" Value="6"/>
+												<Property Name="Voice1Pitch" Type="Real32" Value="1200"/>
+												<Property Name="Voice2Enable" Type="bool" Value="True"/>
+												<Property Name="Voice2Gain" Type="Real32" Value="6"/>
+												<Property Name="Voice2Pitch" Type="Real32" Value="1600"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+									<ObjectRef Name="__" ID="{4AD637CE-D3F5-4B39-A5C9-9897FBB4140D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_note" ID="{01C5081F-4AE5-4514-82D6-84E5A9454D90}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00628403854210305"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0377042312526183"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.442077124104776"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_note.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="516804438"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_note" ID="{01C5081F-4AE5-4514-82D6-84E5A9454D90}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_yiyangBeat3" ID="{18F6B8C0-E55E-438F-ADA7-FEA4A03AF39F}" ShortID="1028832302">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusHighpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>700</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect2" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RenderEffect3" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{3C96B915-CD55-4E58-AD37-018222C302E4}" ShortID="220796519">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="3000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{6C6FD897-0108-41DD-94C1-92E6CBE88D71}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>3000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="Spread" ID="{7BB115D5-1165-47F1-97FA-B3A6054C8F9B}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.3548387096775</XPos>
+																	<YPos>99.3548387096774</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.35584</XPos>
+																	<YPos>59.58549</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>452.90322</XPos>
+																	<YPos>1.03627</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>3000</XPos>
+																	<YPos>0</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Harmonizer (Custom)" ID="{9D3C4065-4477-40B5-BF64-8ABB09C33FAA}" ShortID="847657628" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+											<PropertyList>
+												<Property Name="Voice1Gain" Type="Real32" Value="6"/>
+												<Property Name="Voice1Pitch" Type="Real32" Value="1200"/>
+												<Property Name="Voice2Enable" Type="bool" Value="True"/>
+												<Property Name="Voice2Gain" Type="Real32" Value="6"/>
+												<Property Name="Voice2Pitch" Type="Real32" Value="1400"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+									<ObjectRef Name="__" ID="{4AD637CE-D3F5-4B39-A5C9-9897FBB4140D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_note" ID="{FCF224E4-DAF9-4890-9DBB-0805E98057EC}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00628403854210305"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0377042312526183"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.442077124104776"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_note.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="483305637"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_note" ID="{FCF224E4-DAF9-4890-9DBB-0805E98057EC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -567,6 +925,7 @@
 										<Value>-1200</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -697,6 +1056,7 @@
 										<Value>200</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -826,6 +1186,7 @@
 										<Value>700</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -903,6 +1264,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -975,6 +1337,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1048,6 +1411,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1116,6 +1480,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1174,6 +1539,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1235,6 +1601,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
