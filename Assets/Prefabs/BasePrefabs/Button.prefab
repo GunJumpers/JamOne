@@ -89,6 +89,11 @@ MonoBehaviour:
   anim: {fileID: 5824474863985123534}
   onCooldown: 0
   buttonCooldown: 2
+  buttonPressSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fe85b931415f4dd469cfaab8a93b4902,
+      type: 2}
 --- !u!65 &6034563288546041930
 BoxCollider:
   m_ObjectHideFlags: 0

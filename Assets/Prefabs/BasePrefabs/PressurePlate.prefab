@@ -85,6 +85,16 @@ MonoBehaviour:
   unpressedEvent:
     m_PersistentCalls:
       m_Calls: []
+  enableSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b290c06a1efd8c449bfa6ee860648ec2,
+      type: 2}
+  disableSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 47a4a59d492fb644fb83ca7238e97b89,
+      type: 2}
 --- !u!1 &1637844120393560953
 GameObject:
   m_ObjectHideFlags: 0
