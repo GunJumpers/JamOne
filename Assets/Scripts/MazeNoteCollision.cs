@@ -28,6 +28,9 @@ public class MazeNoteCollision : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(ButtonHit, transform.position);
             Destroy(collision.gameObject);
+            musicNote1.Stop(collision.gameObject);
+            musicNote2.Stop(collision.gameObject);
+            musicNote3.Stop(collision.gameObject);
             collectNumber++;
             Debug.Log("collided");
         }
