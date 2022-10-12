@@ -63,6 +63,7 @@
 				<Property Name="Music Transition List\{8B7938DB-D29D-4E0B-94BC-5094163294CC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{B26EFD7B-F49C-4B29-B578-804FC80617B2}\Scroll Position" Type="int32" Value="0"/>
 				<Property Name="Music Transition List\{B26EFD7B-F49C-4B29-B578-804FC80617B2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="PluginUserAcknowledge\iZotope Trash Delay" Type="bool" Value="True"/>
 				<Property Name="PluginUserAcknowledge\iZotope Trash Distortion" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
