@@ -15,8 +15,17 @@ public class PressurePlate : MonoBehaviour
     public virtual void Start()
     {
         isPressed = false;
-        anim = GetComponent<Animator>();
+        if(GetComponent<Animator>() != null)
+        {
+            anim = GetComponent<Animator>();
+        }
+        
         triggerList = new List<Collider>();
+
+        if (plateEnabled)
+        {
+            anim.Play("enable");
+        }
     }
 
     public virtual void OnPressed()
@@ -67,5 +76,17 @@ public class PressurePlate : MonoBehaviour
                 OnUnpressed();
             }
         }
+    }
+
+    public void EnablePlate()
+    {
+        plateEnabled = true;
+        anim.Play("enable");
+    }
+
+    public void DisablePlate()
+    {
+        plateEnabled = false;
+        anim.Play("disable");
     }
 }

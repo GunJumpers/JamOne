@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\JamOne\JamOne_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\JamOne\JamOne_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Games\JamOne\JamOne_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Games\JamOne\JamOne_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="1760649938">
+		<SoundBank Id="4056684167" Language="SFX" Hash="2498127256">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -95,7 +95,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2412634145" Name="evnt_thrishaNote1" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote1" DurationType="Infinite">
+				<Event Id="2412634145" Name="evnt_thrishaNote1" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote1" MaxAttenuation="3000." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="519067736" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
@@ -104,7 +104,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1526560633" Name="evnt_thrishaNote1Stop" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote1Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2412634146" Name="evnt_thrishaNote2" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote2" DurationType="Infinite">
+				<Event Id="2412634146" Name="evnt_thrishaNote2" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote2" MaxAttenuation="3000." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="183444430" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
@@ -113,7 +113,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="404810138" Name="evnt_thrishaNote2Stop" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote2Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2412634147" Name="evnt_thrishaNote3" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote3" DurationType="Infinite">
+				<Event Id="2412634147" Name="evnt_thrishaNote3" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote3" MaxAttenuation="3000." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="521004709" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
