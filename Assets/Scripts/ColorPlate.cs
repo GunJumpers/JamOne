@@ -12,6 +12,7 @@ public class ColorPlate : MonoBehaviour
 
     public void MakeGlow()
     {
+        Debug.Log("in glow");
         StartCoroutine(GlowRoutine());
     }
 

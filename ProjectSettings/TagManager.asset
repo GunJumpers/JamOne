@@ -14,6 +14,7 @@ TagManager:
   - redButton
   - greenButton
   - blueButton
+  - unshrinkDetect
   layers:
   - Default
   - TransparentFX

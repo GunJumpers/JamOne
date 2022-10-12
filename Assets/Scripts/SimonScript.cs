@@ -12,6 +12,9 @@ public class SimonScript : MonoBehaviour
     public AK.Wwise.Event evnt_puzzleOneSequence = null;
     public AK.Wwise.Event evnt_puzzleTwoSequence = null;
     public AK.Wwise.Event evnt_puzzleThreeSequence = null;
+    public ColorPlate redPlate;
+    public ColorPlate greenPlate;
+    public ColorPlate bluePlate;
     public GameObject startButton;
     public GameObject redButton;
     public GameObject greenButton;
@@ -22,7 +25,6 @@ public class SimonScript : MonoBehaviour
     public bool isLevelThreeComplete = false;
     public int puzzleIndex; // 0 = none complted | 1 = level 1 completed | 2 
 
-    public List<ColorPlate> plates;
 
     public List<float> levelOneArray = new List<float>{0.0f, 1.0f, 2.0f};
     public List<float> levelOneTestArray = new();
@@ -96,17 +98,17 @@ public class SimonScript : MonoBehaviour
 
     public void ActivateSpecificPlate(float index)
     {
+        if (index == 0.0f)
+        {
+            greenPlate.ActivatePlate();
+        }
         if (index == 1.0f)
         {
-            plates[0].ActivatePlate();
+            bluePlate.ActivatePlate();
         }
         if (index == 2.0f)
         {
-            plates[1].ActivatePlate();
-        }
-        if (index == 3.0f)
-        {
-            plates[2].ActivatePlate();
+            redPlate.ActivatePlate();
         }
     }
 
@@ -169,9 +171,10 @@ public class SimonScript : MonoBehaviour
     public void buttonPress()
     {
         Debug.Log("started game");
+        PlayLevel(1);
         if(isLevelOneComplete == false)
         {
-            levelOne();
+            //levelOne();
         }
         if(isLevelOneComplete && isLevelTwoComplete == false)
         {

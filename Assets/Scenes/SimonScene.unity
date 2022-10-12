@@ -6057,7 +6057,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: df860cf5549cc7342902a5b96791bab5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df860cf5549cc7342902a5b96791bab5,
         type: 3}
@@ -6182,6 +6182,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &752837340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752837336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905a0c63aedc39a4eabf4fe6e8cf41b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowTime: 2
+  defaultMaterial: {fileID: 2100000, guid: df2fce3ca626e4746a33b851c42c8d38, type: 2}
+  glowMaterial: {fileID: 2100000, guid: b834191ec48d75044a6e0425b977dee4, type: 2}
+  anim: {fileID: 1545567515}
+  plateRenderer: {fileID: 1545567514}
 --- !u!1 &754487530
 GameObject:
   m_ObjectHideFlags: 0
@@ -9081,7 +9098,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: df860cf5549cc7342902a5b96791bab5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df860cf5549cc7342902a5b96791bab5,
         type: 3}
@@ -9200,7 +9217,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5638332, y: 1, z: 0.9999992}
   m_Center: {x: 0.026362246, y: 0, z: -0.57}
---- !u!114 &1343702269
+--- !u!114 &1343702271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9209,49 +9226,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1343702264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ee865332946f048bbdc9a43a2588fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 905a0c63aedc39a4eabf4fe6e8cf41b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 32f5d66a4068e9546a33775da5227955,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
---- !u!114 &1343702270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343702264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c099b7a7303c394ca8faf07759608de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
+  glowTime: 2
+  defaultMaterial: {fileID: 2100000, guid: df2fce3ca626e4746a33b851c42c8d38, type: 2}
+  glowMaterial: {fileID: 2100000, guid: b834191ec48d75044a6e0425b977dee4, type: 2}
+  anim: {fileID: 1545567515}
+  plateRenderer: {fileID: 1545567514}
 --- !u!1 &1390957781
 GameObject:
   m_ObjectHideFlags: 0
@@ -10131,7 +10113,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh116990
+  m_Name: pb_Mesh168382
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10610,6 +10592,18 @@ PrefabInstance:
 --- !u!1 &1545567513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6034563288546041935, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545567512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1545567514 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3947976552869142432, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545567512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1545567515 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5824474863985123534, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
     type: 3}
   m_PrefabInstance: {fileID: 1545567512}
   m_PrefabAsset: {fileID: 0}
@@ -11174,7 +11168,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: df860cf5549cc7342902a5b96791bab5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df860cf5549cc7342902a5b96791bab5,
         type: 3}
@@ -11309,6 +11303,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1655972048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655972044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905a0c63aedc39a4eabf4fe6e8cf41b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowTime: 2
+  defaultMaterial: {fileID: 2100000, guid: df2fce3ca626e4746a33b851c42c8d38, type: 2}
+  glowMaterial: {fileID: 2100000, guid: b834191ec48d75044a6e0425b977dee4, type: 2}
+  anim: {fileID: 1545567515}
+  plateRenderer: {fileID: 1545567514}
 --- !u!1 &1668422306
 GameObject:
   m_ObjectHideFlags: 0
@@ -13643,7 +13654,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh135160
+  m_Name: pb_Mesh168592
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14326,6 +14337,9 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b780bf216e387f14883daa5776281478,
       type: 2}
+  redPlate: {fileID: 1343702271}
+  greenPlate: {fileID: 752837340}
+  bluePlate: {fileID: 1655972048}
   startButton: {fileID: 1545567513}
   redButton: {fileID: 1343702264}
   greenButton: {fileID: 752837336}
@@ -14334,6 +14348,7 @@ MonoBehaviour:
   isListCleared: 0
   isLevelTwoComplete: 0
   isLevelThreeComplete: 0
+  puzzleIndex: 0
   levelOneArray:
   - 0
   - 1
