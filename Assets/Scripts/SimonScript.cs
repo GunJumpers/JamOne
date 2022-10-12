@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 public class SimonScript : Interactable
 {
     //0 = green, 1 = blue, 2 = red
+    public AK.Wwise.Event musicNote1 = null;
+    public AK.Wwise.Event musicNote2 = null;
+    public AK.Wwise.Event musicNote3 = null;
     public GameObject startButton;
     public GameObject redButton;
     public GameObject greenButton;
@@ -24,9 +27,7 @@ public class SimonScript : Interactable
     public float levelTwoCount;
     public float levelThreeCount;
     public GameObject winObject;
-    public AK.Wwise.Event musicNote1 = null;
-    public AK.Wwise.Event musicNote2 = null;
-    public AK.Wwise.Event musicNote3 = null;
+
     // Start is called before the first frame update
     void Start()
     {
