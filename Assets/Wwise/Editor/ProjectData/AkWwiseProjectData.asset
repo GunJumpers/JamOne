@@ -287,7 +287,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a5406ad988fc37438b23aacba6de8be1
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote1
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: -1
       minDuration: -1
     - name: evnt_thrishaNote1Stop
@@ -327,7 +327,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 650100e56e47fc4897ec1337816ed1f7
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote2
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: -1
       minDuration: -1
     - name: evnt_thrishaNote2Stop
@@ -367,7 +367,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 78267894def6a845b379e09ab3cee530
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote3
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: -1
       minDuration: -1
     - name: evnt_thrishaNote3Stop
@@ -592,7 +592,7 @@ MonoBehaviour:
     m_lastTime: -8585361627134381044
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 030000000400000006000000070000000d000000110000001200000018000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
