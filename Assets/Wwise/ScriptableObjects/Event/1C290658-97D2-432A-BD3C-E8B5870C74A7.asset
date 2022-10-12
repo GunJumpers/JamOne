@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d29a13a1295e147aabf44e24ed686c, type: 3}
+  m_Name: 1C290658-97D2-432A-BD3C-E8B5870C74A7
+  m_EditorClassIdentifier: 
+  objectName: evnt_mazeWinMusic
+  id: 84513623
+  guid: 1C290658-97D2-432A-BD3C-E8B5870C74A7

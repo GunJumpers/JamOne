@@ -6,9 +6,12 @@ using UnityEngine.InputSystem;
 public class SimonScript : Interactable
 {
     //0 = green, 1 = blue, 2 = red
-    public AK.Wwise.Event musicNote1 = null;
-    public AK.Wwise.Event musicNote2 = null;
-    public AK.Wwise.Event musicNote3 = null;
+    public AK.Wwise.Event evnt_red = null;
+    public AK.Wwise.Event evnt_green = null;
+    public AK.Wwise.Event evnt_blue = null;
+    public AK.Wwise.Event evnt_puzzleOneSequence = null;
+    public AK.Wwise.Event evnt_puzzleTwoSequence = null;
+    public AK.Wwise.Event evnt_puzzleThreeSequence = null;
     public GameObject startButton;
     public GameObject redButton;
     public GameObject greenButton;
@@ -59,7 +62,7 @@ public class SimonScript : Interactable
         if (other.gameObject.CompareTag("redButton"))
         {
             Debug.Log("clicked red button");
-            musicNote1.Post(gameObject);
+            evnt_red.Post(gameObject);
             levelOneTestArray.Add(2.0f);
             levelOneCount++;
             if(isLevelOneComplete)
@@ -76,7 +79,7 @@ public class SimonScript : Interactable
         else if (other.gameObject.CompareTag("greenButton"))
         {
             Debug.Log("clicked green button");
-            musicNote2.Post(gameObject);
+            evnt_green.Post(gameObject);
             levelOneTestArray.Add(0.0f);
             levelOneCount++;
             if (isLevelOneComplete)
@@ -93,7 +96,7 @@ public class SimonScript : Interactable
         else if (other.gameObject.CompareTag("blueButton"))
         {
             Debug.Log("clicked blue button");
-            musicNote3.Post(gameObject);
+            evnt_blue.Post(gameObject);
             levelOneTestArray.Add(1.0f);         
             levelOneCount++;
             if (isLevelOneComplete)
@@ -137,22 +140,8 @@ public class SimonScript : Interactable
 
     void levelOne()
     {
-        float checkMusic = 0;
         Debug.Log("ENTERED LEVEL 1");
-        if(checkMusic==0)
-        {
-            musicNote2.Post(gameObject);
-            checkMusic = 1;
-        }
-        if(checkMusic == 1)
-        {
-            musicNote3.Post(gameObject);
-            checkMusic = 2;
-        }
-        if (checkMusic == 3)
-        {
-            musicNote1.Post(gameObject);
-        }
+        evnt_puzzleOneSequence.Post(gameObject);
         levelOneCount = 0;
         levelOneTestArray.Clear();
     }
@@ -177,12 +166,9 @@ public class SimonScript : Interactable
     void levelTwo()
     {
         Debug.Log("ENTERED LEVEL 2");
+        evnt_puzzleTwoSequence.Post(gameObject);
         levelTwoCount = 0;
         levelTwoTestArray.Clear();
-        if(isLevelTwoComplete)
-        {
-            Debug.Log("finished level 2");
-        }
     }
 
     void levelTwoUpdate()
@@ -206,6 +192,7 @@ public class SimonScript : Interactable
     void levelThree()
     {
         Debug.Log("ENTERED LEVEL 3");
+        evnt_puzzleThreeSequence.Post(gameObject);
         levelThreeCount = 0;
         levelThreeTestArray.Clear();
         if (isLevelThreeComplete)
