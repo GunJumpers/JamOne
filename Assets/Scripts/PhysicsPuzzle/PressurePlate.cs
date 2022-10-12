@@ -12,11 +12,23 @@ public class PressurePlate : MonoBehaviour
     public UnityEvent pressedEvent;
     public UnityEvent unpressedEvent;
 
+    public AK.Wwise.Event enableSound;
+    public AK.Wwise.Event disableSound;
+
     public virtual void Start()
     {
         isPressed = false;
-        anim = GetComponent<Animator>();
+        if(GetComponent<Animator>() != null)
+        {
+            anim = GetComponent<Animator>();
+        }
+        
         triggerList = new List<Collider>();
+
+        if (plateEnabled)
+        {
+            anim.Play("enable");
+        }
     }
 
     public virtual void OnPressed()
@@ -26,6 +38,7 @@ public class PressurePlate : MonoBehaviour
             return;
         }
         isPressed = true;
+        enableSound.Post(gameObject);
         pressedEvent.Invoke();
         anim.Play("press");
     }
@@ -33,6 +46,7 @@ public class PressurePlate : MonoBehaviour
     public virtual void OnUnpressed()
     {
         isPressed = false;
+        disableSound.Post(gameObject);
         unpressedEvent.Invoke();
         anim.Play("unpress");
     }
@@ -67,5 +81,19 @@ public class PressurePlate : MonoBehaviour
                 OnUnpressed();
             }
         }
+    }
+
+    public void EnablePlate()
+    {
+        plateEnabled = true;
+        
+        anim.Play("enable");
+    }
+
+    public void DisablePlate()
+    {
+        plateEnabled = false;
+        
+        anim.Play("disable");
     }
 }

@@ -11,6 +11,8 @@ public class ButtonController : Interactable
     public bool onCooldown;
     public float buttonCooldown;
 
+    public AK.Wwise.Event buttonPressSound;
+
     public override void InteractAction()
     {
         if (onCooldown)
@@ -25,7 +27,9 @@ public class ButtonController : Interactable
         {
             anim.Play("press");
         }
-        
+
+        buttonPressSound.Post(gameObject);
+
         StartCoroutine(ButtonCooldownRoutine());
 
     }

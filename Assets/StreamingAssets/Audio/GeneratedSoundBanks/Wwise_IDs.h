@@ -13,7 +13,21 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID EVNT_GENERALPAUSEALL = 4112389820U;
         static const AkUniqueID EVNT_NOTETEST = 2234716577U;
+        static const AkUniqueID EVNT_NOTETEST_01 = 893392301U;
+        static const AkUniqueID EVNT_SOPHIEBUTTON = 4207864965U;
+        static const AkUniqueID EVNT_SOPHIECUBEDESPAWN = 2843533304U;
+        static const AkUniqueID EVNT_SOPHIECUBESPAWN = 3139527251U;
+        static const AkUniqueID EVNT_SOPHIEPLATEACTIVE = 4271760505U;
+        static const AkUniqueID EVNT_SOPHIEPLATEDEACTIVE = 91348688U;
+        static const AkUniqueID EVNT_SOPHIETELEPORT = 235107416U;
+        static const AkUniqueID EVNT_THRISHANOTE1 = 2412634145U;
+        static const AkUniqueID EVNT_THRISHANOTE1STOP = 1526560633U;
+        static const AkUniqueID EVNT_THRISHANOTE2 = 2412634146U;
+        static const AkUniqueID EVNT_THRISHANOTE2STOP = 404810138U;
+        static const AkUniqueID EVNT_THRISHANOTE3 = 2412634147U;
+        static const AkUniqueID EVNT_THRISHANOTE3STOP = 777445139U;
         static const AkUniqueID EVNT_YIYANGBEAT = 4193607900U;
         static const AkUniqueID EVNT_YIYANGEVILLAUGH = 1648251437U;
         static const AkUniqueID EVNT_YIYANGSHOOT = 752288469U;
