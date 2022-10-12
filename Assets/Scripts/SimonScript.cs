@@ -24,6 +24,9 @@ public class SimonScript : Interactable
     public float levelTwoCount;
     public float levelThreeCount;
     public GameObject winObject;
+    public AK.Wwise.Event musicNote1 = null;
+    public AK.Wwise.Event musicNote2 = null;
+    public AK.Wwise.Event musicNote3 = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +58,7 @@ public class SimonScript : Interactable
         if (other.gameObject.CompareTag("redButton"))
         {
             Debug.Log("clicked red button");
+            musicNote1.Post(gameObject);
             levelOneTestArray.Add(2.0f);
             levelOneCount++;
             if(isLevelOneComplete)
@@ -71,6 +75,7 @@ public class SimonScript : Interactable
         else if (other.gameObject.CompareTag("greenButton"))
         {
             Debug.Log("clicked green button");
+            musicNote2.Post(gameObject);
             levelOneTestArray.Add(0.0f);
             levelOneCount++;
             if (isLevelOneComplete)
@@ -87,6 +92,7 @@ public class SimonScript : Interactable
         else if (other.gameObject.CompareTag("blueButton"))
         {
             Debug.Log("clicked blue button");
+            musicNote3.Post(gameObject);
             levelOneTestArray.Add(1.0f);         
             levelOneCount++;
             if (isLevelOneComplete)
@@ -103,7 +109,7 @@ public class SimonScript : Interactable
 
     }
 
-    public void testButt()
+    public void buttonPress()
     {
         Debug.Log("started game");
         if(isLevelOneComplete == false)
