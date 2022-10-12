@@ -38,6 +38,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -199,6 +200,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -350,6 +352,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -522,6 +525,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-1</Value>
@@ -921,6 +925,7 @@
 										<Value>-1200</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1051,6 +1056,7 @@
 										<Value>200</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1180,6 +1186,7 @@
 										<Value>700</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1257,6 +1264,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1329,6 +1337,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1402,6 +1411,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1470,6 +1480,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1528,6 +1539,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1589,6 +1601,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
