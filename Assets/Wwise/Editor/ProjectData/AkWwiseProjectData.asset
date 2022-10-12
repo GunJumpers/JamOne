@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: a3fdb5de6cc39441ba36875d450ae63c
     GuidInternal: 
-    m_lastTime: -8585361524499815306
+    m_lastTime: -8585362271731633887
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8d5452a27318e04eb2cfd322d431dcc8
     GuidInternal: 
-    m_lastTime: -8585361524500144741
+    m_lastTime: -8585362271731693726
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d719ab249f4cce439e3cabeb78d1192c
     GuidInternal: 
-    m_lastTime: -8585361524499855345
+    m_lastTime: -8585360748396049847
     List:
     - name: Master
       guid: a3f5d453ef0e1c469c0d272a1c809d4e
@@ -94,8 +94,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7f60739c4ca04240ac34bde0609bff6c
     GuidInternal: 
-    m_lastTime: -8585361524500841059
+    m_lastTime: -8585360748397904091
     List:
+    - name: evnt_generalPauseAll
+      guid: 4c7f4d3e1393d34c9f66f9d256737f2f
+      id: 4112389820
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      - ElementName: evnt_generalPauseAll
+        ObjectType: 3
+        guid: 4c7f4d3e1393d34c9f66f9d256737f2f
+      Path: Events\Default Work Unit\General\evnt_generalPauseAll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: evnt_noteTest
       guid: 51821a8fd49389489fbc34bc6d8f8ef2
       id: 2234716577
@@ -128,8 +148,128 @@ MonoBehaviour:
         guid: 5461481b7d4f6842bbfa71b94c9c6164
       Path: Events\Default Work Unit\evnt_noteTest_01
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.285714
+      minDuration: 4.285714
+    - name: evnt_sophieButton
+      guid: 71507824f2614c478bbff82fbcfc5c5b
+      id: 4207864965
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophieButton
+        ObjectType: 3
+        guid: 71507824f2614c478bbff82fbcfc5c5b
+      Path: Events\Default Work Unit\Sophie\evnt_sophieButton
+      maxAttenuation: 0
+      maxDuration: 0.315482
+      minDuration: 0.315482
+    - name: evnt_sophieCubeDespawn
+      guid: 1119ca822bf98d41a46050e81cb9e9af
+      id: 2843533304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophieCubeDespawn
+        ObjectType: 3
+        guid: 1119ca822bf98d41a46050e81cb9e9af
+      Path: Events\Default Work Unit\Sophie\evnt_sophieCubeDespawn
+      maxAttenuation: 0
+      maxDuration: 0.415966
+      minDuration: 0.415966
+    - name: evnt_sophieCubeSpawn
+      guid: b501505900a38f4797a95f599111141f
+      id: 3139527251
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophieCubeSpawn
+        ObjectType: 3
+        guid: b501505900a38f4797a95f599111141f
+      Path: Events\Default Work Unit\Sophie\evnt_sophieCubeSpawn
+      maxAttenuation: 0
+      maxDuration: 0.655462
+      minDuration: 0.655462
+    - name: evnt_sophiePlateActive
+      guid: 5988c27ded501c4bab6d9decd9095bbb
+      id: 4271760505
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophiePlateActive
+        ObjectType: 3
+        guid: 5988c27ded501c4bab6d9decd9095bbb
+      Path: Events\Default Work Unit\Sophie\evnt_sophiePlateActive
+      maxAttenuation: 0
+      maxDuration: 0.249849
+      minDuration: 0.249849
+    - name: evnt_sophiePlateDeactive
+      guid: 995555918520454cb1087897d71715ad
+      id: 91348688
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophiePlateDeactive
+        ObjectType: 3
+        guid: 995555918520454cb1087897d71715ad
+      Path: Events\Default Work Unit\Sophie\evnt_sophiePlateDeactive
+      maxAttenuation: 0
+      maxDuration: 0.249849
+      minDuration: 0.249849
+    - name: evnt_sophieTeleport
+      guid: 746ae639196b3e498d1e9fbe49719ed2
+      id: 235107416
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophieTeleport
+        ObjectType: 3
+        guid: 746ae639196b3e498d1e9fbe49719ed2
+      Path: Events\Default Work Unit\Sophie\evnt_sophieTeleport
+      maxAttenuation: 0
+      maxDuration: 0.47112
+      minDuration: 0.47112
     - name: evnt_thrishaNote1
       guid: a5406ad988fc37438b23aacba6de8be1
       id: 2412634145
@@ -147,9 +287,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: a5406ad988fc37438b23aacba6de8be1
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote1
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: -1
       minDuration: -1
+    - name: evnt_thrishaNote1Stop
+      guid: 2acc032c828ec543848c43103fb80194
+      id: 1526560633
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote1Stop
+        ObjectType: 3
+        guid: 2acc032c828ec543848c43103fb80194
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote1Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: evnt_thrishaNote2
       guid: 650100e56e47fc4897ec1337816ed1f7
       id: 2412634146
@@ -167,9 +327,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 650100e56e47fc4897ec1337816ed1f7
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote2
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: -1
       minDuration: -1
+    - name: evnt_thrishaNote2Stop
+      guid: d6a613957cc9f44d9d63330ce73ba5ed
+      id: 404810138
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote2Stop
+        ObjectType: 3
+        guid: d6a613957cc9f44d9d63330ce73ba5ed
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote2Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: evnt_thrishaNote3
       guid: 78267894def6a845b379e09ab3cee530
       id: 2412634147
@@ -187,9 +367,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 78267894def6a845b379e09ab3cee530
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote3
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: -1
       minDuration: -1
+    - name: evnt_thrishaNote3Stop
+      guid: 0e9389aa1385f94c93d2db3d93712e3c
+      id: 777445139
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote3Stop
+        ObjectType: 3
+        guid: 0e9389aa1385f94c93d2db3d93712e3c
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote3Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: evnt_yiyangBeat
       guid: 48132b1c85b33b43aac0302b22efcf4f
       id: 4193607900
@@ -208,8 +408,8 @@ MonoBehaviour:
         guid: 48132b1c85b33b43aac0302b22efcf4f
       Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat
       maxAttenuation: 0
-      maxDuration: 0.404373
-      minDuration: 0.404373
+      maxDuration: 0.320951
+      minDuration: 0.320951
     - name: evnt_yiyangEvilLaugh
       guid: 909e0e17714e1b40aa96da25577f890d
       id: 1648251437
@@ -250,6 +450,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.08308
       minDuration: 0.08308
+    - name: General
+      guid: 1c0301892eb1d543ba28856e50884819
+      id: 133642231
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      Path: Events\Default Work Unit\General
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sophie
+      guid: f448a4038dd8a741bdb8695aab8ef410
+      id: 346620989
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      Path: Events\Default Work Unit\Sophie
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Test_Event
       guid: 61c9f5de0edf394d9e9e38c4cf30a16b
       id: 4258653052
@@ -313,7 +547,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 76213afb33cf914583f1882c4aa6e134
     GuidInternal: 
-    m_lastTime: -8585361524500831036
+    m_lastTime: -8585362271731793455
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -327,7 +561,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cdf2351a380ffc4492ee063336bf9aa7
     GuidInternal: 
-    m_lastTime: -8585361524499845333
+    m_lastTime: -8585362271731643862
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -341,7 +575,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5cfb0b91a9bfb42a253076cda980f1f
     GuidInternal: 
-    m_lastTime: -8585361524499835334
+    m_lastTime: -8585362271731633887
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -355,10 +589,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 05a328cbdf837b40b4f29dc6d995844f
     GuidInternal: 
-    m_lastTime: -8585361524499825322
+    m_lastTime: -8585362271731633887
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0b00000010000000
+  ExpandedWaapiItemIds: 05000000060000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

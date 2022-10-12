@@ -12,12 +12,13 @@ public class NoteSpawner : MonoBehaviour
     public float NotesNumber;
     public float NotesZ;
     public bool hasStarted;
-    public Conductor Music;
+    public AK.Wwise.Event EvilLaugh = null;
     void Start()
     {
-        Interval = Music.musicSource.clip.length / 8;
+        Interval = 10f;
         StartCoroutine(SpawnNote());
         StartCoroutine(SpeedUp());
+        
     }
 
     public void changeNoteTempo(int i, float tempo)
@@ -29,36 +30,18 @@ public class NoteSpawner : MonoBehaviour
 
     IEnumerator SpawnNote()
     {
+        
         if (hasStarted)
         {
+            EvilLaugh.Post(gameObject);
+            for (int i = 0; i < NotesNumber; i++)
+            {
+                Instantiate(Notes[0], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
+                Instantiate(Notes[1], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
+                Instantiate(Notes[2], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
+                GameManager.totalNotes+= 3;
+            }
 
-            if (NotesNumber == 1 || NotesNumber == 2)
-            {
-                for (int i = 0; i < NotesNumber; i++)
-                {
-                    Instantiate(Notes[0], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
-                    NotesZ += 0.5f;
-                    GameManager.totalNotes++;
-                }
-            }
-            else if (NotesNumber == 3.5 || NotesNumber == 2.5)
-            {
-                for (int i = 0; i < NotesNumber + 0.5; i++)
-                {
-                    Instantiate(Notes[1], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
-                    NotesZ += 0.5f;
-                    GameManager.totalNotes++;
-                }
-            }
-            else if (NotesNumber == 3 || NotesNumber == 4.5)
-            {
-                for (int i = 0; i < NotesNumber; i++)
-                {
-                    Instantiate(Notes[2], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
-                    NotesZ += 0.5f;
-                    GameManager.totalNotes++;
-                }
-            }
         }
         yield return new WaitForSeconds(delayTime);
         StartCoroutine(SpawnNote());
@@ -69,7 +52,7 @@ public class NoteSpawner : MonoBehaviour
         if (hasStarted)
         {
             //Debug.Log("speed up");
-            if (NotesNumber <= 6)
+            if (NotesNumber <= 5)
             {
                 NotesNumber += 0.5f;
             }

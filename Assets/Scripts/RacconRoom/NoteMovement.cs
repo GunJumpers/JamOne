@@ -21,4 +21,5 @@ public class NoteMovement : MonoBehaviour
         transform.position += new Vector3(0f, 0f, beatTempo * Time.deltaTime);
 
     }
+
 }

@@ -14,30 +14,28 @@ public class GameData : MonoBehaviour
     public float notesPercentage;
     public Conductor music;
     public Text Announcement, Win, GameTime, Lose, Score;
-    // Start is called before the first frame update
-    void Start()
+    public float beats;
+
+    private void Start()
     {
         
-        targetTime = music.musicSource.clip.length;
-
+        Announcement.text = "Press SPACE to Start";
+        targetTime = 40;
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (!startPlaying)
+        beats = Random.Range(1f, 4f);
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Announcement.text = "Press Button to Start";
-            if (Input.anyKeyDown)
-            {
-                Announcement.gameObject.SetActive(false);
-                startPlaying = true;
-                Notes.hasStarted = true;
-            }
+            Announcement.gameObject.SetActive(false);
+            Notes.changeNoteTempo(Random.Range(1, 3), beats);
+            startPlaying = true;
+            Notes.hasStarted = true;
 
         }
 
-        else
+        if (startPlaying)
         {
             targetTime -= Time.deltaTime;
             GameTime.text = "Time: " + Mathf.Floor(((int)targetTime) / 60).ToString("00") + ":" + Mathf.FloorToInt(((int)targetTime) % 60).ToString("00");
@@ -46,6 +44,7 @@ public class GameData : MonoBehaviour
                 timerEnded();
             }
         }
+
     }
 
     void timerEnded()
@@ -71,10 +70,11 @@ public class GameData : MonoBehaviour
             }
             else
             {
-                Lose.text = "YOU LOSE";
-                Score.text = ((int)(notesPercentage * 100)).ToString() + "%";
+                Lose.text = "YOU LOSE\nPress To Restart";
+                Score.text = "Score: " + ((int)(notesPercentage * 100)).ToString() + "%";
                 Lose.gameObject.SetActive(true);
             }
         }
     }
+
 }
