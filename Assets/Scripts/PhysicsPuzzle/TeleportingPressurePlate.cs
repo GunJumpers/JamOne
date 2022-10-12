@@ -15,7 +15,7 @@ public class TeleportingPressurePlate : PressurePlate
         }
         isPressed = true;
         pressedEvent.Invoke();
-
+        enableSound.Post(gameObject);
         foreach (Collider c in triggerList)
         {
             c.transform.parent.position = teleportLocation.position;

@@ -222,6 +222,162 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{D70BB438-98C5-48FE-BBAE-4B73695FD7FB}" ShortID="397083223">
+					<ChildrenList>
+						<Event Name="evnt_aquariumWinMusic" ID="{BA19F259-3DBA-4CF4-9F9C-F0740D322935}">
+							<ChildrenList>
+								<Action Name="" ID="{9662AB55-6055-4B15-8722-DD0148DE42B9}" ShortID="114529116">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer1Bells" ID="{72F3706A-7FE7-4F3C-9807-AB2EF7C7CB6A}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_simonWinMusic" ID="{7847A7E1-F085-4AF3-BA6D-EAC82568304B}">
+							<ChildrenList>
+								<Action Name="" ID="{2D2DE25A-7E8D-4C31-B4E7-ADF893CEA9FC}" ShortID="76771479">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer5Piano" ID="{4A9B67BB-3F60-41EA-AACE-88F615B9855C}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_sophieWinMusic" ID="{559BB74B-86C0-4331-8FE6-75B603F88944}">
+							<ChildrenList>
+								<Action Name="" ID="{1ADD2839-F5BD-4F61-88C4-E0AB4B8DE948}" ShortID="946936200">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer4Lead" ID="{61452A82-D909-4E6D-A9D8-568F5880EB1C}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_raccoonWinMusic" ID="{8144C659-0611-4D84-8B6A-0F6F6E82B255}">
+							<ChildrenList>
+								<Action Name="" ID="{702486BB-0FF9-4DF8-A17A-28E9FA2DF1E6}" ShortID="893051776">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer3Drum" ID="{A41A4305-90D5-4D4F-9964-5B6135795FF1}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_laserWinMusic" ID="{2060C2D1-5C1C-4DAE-B539-306B8BB8D65A}">
+							<ChildrenList>
+								<Action Name="" ID="{D89A88AB-0C59-4885-A4E4-5C79A70E6824}" ShortID="286133924">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer6Pads" ID="{1B8E5A3A-CCA1-4E0A-8EB6-EE3F68D20371}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_mazeWinMusic" ID="{1C290658-97D2-432A-BD3C-E8B5870C74A7}">
+							<ChildrenList>
+								<Action Name="" ID="{5E626BE0-1E57-4275-B9B3-8FCEB00B7E0A}" ShortID="893423264">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer2Bass" ID="{07136627-AD6B-4C74-8FCE-90EEC830EF68}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Autumn" ID="{0DAFDBC7-28E5-40CC-A436-24CE4ED83100}" ShortID="677974467">
+					<ChildrenList>
+						<Event Name="evnt_radioStart" ID="{B31818C5-53D6-4543-A4AC-8E13B6883D9B}">
+							<ChildrenList>
+								<Action Name="" ID="{5828B71B-2716-4387-AC50-049210BAB0C9}" ShortID="1005180931">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Radio" ID="{699CB8A6-3904-41D4-ACCD-EBF6873B6387}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_radioFizzle" ID="{524FD72B-D647-4E05-85BB-BC5C7FBE471C}">
+							<ChildrenList>
+								<Action Name="" ID="{45DA5A32-3220-495A-A297-912EF6B3CDCD}" ShortID="959754272">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_RadioFizzle" ID="{AB99646A-0027-4E9A-9985-6AC639982F0C}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_bubble" ID="{9ADFD202-62BB-49EB-8F8A-BF1FAA18F39E}">
+							<ChildrenList>
+								<Action Name="" ID="{B679D8E1-22EF-4303-8CB4-E3AA5051E3B2}" ShortID="353692447"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Annie" ID="{B3436088-5EFA-4752-A4F0-908EF0C75F4B}" ShortID="654781682">
+					<ChildrenList>
+						<Event Name="evnt_red" ID="{991A1761-88E9-4402-95AC-2C9C5771E246}">
+							<ChildrenList>
+								<Action Name="" ID="{6DF66CF6-0667-4202-9B07-0AC5EAD27525}" ShortID="247448435">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_SimonRed" ID="{EE6742F2-BC55-4C11-B6CE-36E7D069B1C7}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_green" ID="{F868D708-81A8-413A-9866-A507CE1CAD78}">
+							<ChildrenList>
+								<Action Name="" ID="{E8B96B91-9C5E-45E0-BFA7-7895372E23E3}" ShortID="395961732">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_SimonGreen" ID="{8288C2AC-A356-4AA9-AB53-A6BB339E1CD0}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_blue" ID="{03BF964F-A33A-4329-A3CC-805F44FC2F84}">
+							<ChildrenList>
+								<Action Name="" ID="{871066BA-38F1-4AB4-877D-6722966A12FB}" ShortID="1053121020">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_SimonBlue" ID="{E5E7A83D-D697-45DD-8BA6-C46E7DE13457}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="General" ID="{8901031C-B12E-43D5-BA28-856E50884819}" ShortID="433773380">
 					<ChildrenList>
 						<Event Name="evnt_generalPauseAll" ID="{3E4D7F4C-9313-4CD3-9F66-F9D256737F2F}">
@@ -234,6 +390,13 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Calex" ID="{84B5A887-EA2A-4022-A7B0-852AD2839BC2}" ShortID="920539008">
+					<ChildrenList>
+						<Event Name="evnt_laserEmitterAmbient" ID="{832C1F32-A795-48B9-B403-9F1999AACFFA}"/>
+						<Event Name="evnt_laserHum" ID="{3E4D2C59-3F22-4009-BCAE-6A89E06B59A4}"/>
+						<Event Name="evnt_laserReceiverActivate" ID="{1A0BC014-1DEF-4CA5-96F5-B65F960F823A}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
