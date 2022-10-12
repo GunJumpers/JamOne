@@ -574,7 +574,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25a9fb42d361f46ad89221f6d301e96e, type: 2}
+  - {fileID: 2100000, guid: a75b4758dbe917a428d8c75ce7775e34, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4262,7 +4262,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25a9fb42d361f46ad89221f6d301e96e, type: 2}
+  - {fileID: 2100000, guid: da1086a47571fc24ab9bcfc8e573e4c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4681,6 +4681,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenPlate
       objectReference: {fileID: 0}
+    - target: {fileID: 3738804123098789415, guid: df860cf5549cc7342902a5b96791bab5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 56d90e41025d9884bb05b4f1ce4c52b1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df860cf5549cc7342902a5b96791bab5, type: 3}
 --- !u!1 &815110133
@@ -5356,7 +5361,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25a9fb42d361f46ad89221f6d301e96e, type: 2}
+  - {fileID: 2100000, guid: da1086a47571fc24ab9bcfc8e573e4c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5630,7 +5635,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh408902
+  m_Name: pb_Mesh452142
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7001,6 +7006,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedPlate
       objectReference: {fileID: 0}
+    - target: {fileID: 3738804123098789415, guid: df860cf5549cc7342902a5b96791bab5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bffb1ed8380af004d9a02cd5b9cebc62, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df860cf5549cc7342902a5b96791bab5, type: 3}
 --- !u!1 &1345401412
@@ -7961,7 +7971,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25a9fb42d361f46ad89221f6d301e96e, type: 2}
+  - {fileID: 2100000, guid: da1086a47571fc24ab9bcfc8e573e4c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8222,6 +8232,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3947976552869142432, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f722cd28d1d17f143ace1440b0bd039e, type: 2}
     - target: {fileID: 6034563288546041928, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
         type: 3}
       propertyPath: m_RootOrder
@@ -8607,6 +8622,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BluePlate
       objectReference: {fileID: 0}
+    - target: {fileID: 3738804123098789415, guid: df860cf5549cc7342902a5b96791bab5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82a6f9a90e933fb4a9d4e534b925e38f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df860cf5549cc7342902a5b96791bab5, type: 3}
 --- !u!1 &1656053460
