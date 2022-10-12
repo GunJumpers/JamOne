@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7f60739c4ca04240ac34bde0609bff6c
     GuidInternal: 
-    m_lastTime: -8585360168969655574
+    m_lastTime: -8585360034123249539
     List:
     - name: Annie
       guid: 886043b3fa5e5247a4f0908ef0c75f4b
@@ -381,6 +381,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.285714
       minDuration: 4.285714
+    - name: evnt_puzzleOneSequence
+      guid: 1fe6c038753cde44b468d3b5f8bbc545
+      id: 3752102144
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_puzzleOneSequence
+        ObjectType: 3
+        guid: 1fe6c038753cde44b468d3b5f8bbc545
+      Path: Events\Default Work Unit\Annie\evnt_puzzleOneSequence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_puzzleThreeSequence
+      guid: c0079394c6965a40867555ddded21e65
+      id: 4139737584
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_puzzleThreeSequence
+        ObjectType: 3
+        guid: c0079394c6965a40867555ddded21e65
+      Path: Events\Default Work Unit\Annie\evnt_puzzleThreeSequence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_puzzleTwoSequence
+      guid: dcb6f9c12378e94c9c226f11ce071d86
+      id: 3742284042
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_puzzleTwoSequence
+        ObjectType: 3
+        guid: dcb6f9c12378e94c9c226f11ce071d86
+      Path: Events\Default Work Unit\Annie\evnt_puzzleTwoSequence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: evnt_raccoonWinMusic
       guid: 59c644811106844d8b6a0f6f6e82b255
       id: 1374748551

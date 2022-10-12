@@ -12,6 +12,7 @@ public class FishMovement : MonoBehaviour
     private Rigidbody rb;
     private float dirX;
     private bool faceRight;
+    private Vector3 localScale;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +63,9 @@ public class FishMovement : MonoBehaviour
     IEnumerator FishChangeDirections ()
     {
         dirX *= -1f;
+        //faceRight = !faceRight;
+        //localScale.x *= -1;
+        //transform.localScale = localScale;
         yield return new WaitForSeconds(MovementInterval);
         StartCoroutine(FishChangeDirections());
 ;    }
