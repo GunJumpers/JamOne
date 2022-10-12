@@ -270,6 +270,15 @@ MonoBehaviour:
   unpressedEvent:
     m_PersistentCalls:
       m_Calls: []
+  enableSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7dd6a4d6459d9ff4882cf73fb59df41f,
+      type: 2}
+  disableSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   teleportLocation: {fileID: 454411810484648670}
 --- !u!4 &2903392095771557607 stripped
 Transform:

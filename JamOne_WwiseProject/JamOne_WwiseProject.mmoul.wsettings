@@ -3,6 +3,8 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{44795227-0251-4A00-A6C0-A2043EF93067}">
 			<PropertyList>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\Originals\SFX\"/>
+				<Property Name="Event Action List\{3E4D7F4C-9313-4CD3-9F66-F9D256737F2F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Linux"></Value>
@@ -18,12 +20,29 @@
 					</ValueList>
 				</Property>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
+				<Property Name="Interactive Music\x64_{3159F8BF-B7E6-4A4F-A741-CDB359C91486} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAEHBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>
 				<Property Name="MeterView\MeterMode1Viewpoint2" Type="int32" Value="3"/>
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
+				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
+				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
+				<Property Name="Music Transition List\{436F10E4-C531-4EC6-8A11-6C0CE81E2F05}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{436F10E4-C531-4EC6-8A11-6C0CE81E2F05}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{576D342C-E034-497B-8336-BE0EDA952EF0}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{576D342C-E034-497B-8336-BE0EDA952EF0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{57C890B5-936A-43CF-882B-7B49BE4A74F7}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{57C890B5-936A-43CF-882B-7B49BE4A74F7}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{829B0824-AA75-46CD-A48F-094C9E02BFED}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{829B0824-AA75-46CD-A48F-094C9E02BFED}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{8B7938DB-D29D-4E0B-94BC-5094163294CC}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{8B7938DB-D29D-4E0B-94BC-5094163294CC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{B26EFD7B-F49C-4B29-B578-804FC80617B2}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{B26EFD7B-F49C-4B29-B578-804FC80617B2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="PluginUserAcknowledge\iZotope Trash Distortion" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>

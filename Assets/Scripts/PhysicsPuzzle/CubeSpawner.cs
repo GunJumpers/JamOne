@@ -8,6 +8,8 @@ public class CubeSpawner : MonoBehaviour
     public GameObject spawnedCube;
     public Transform summonPosition;
 
+    public AK.Wwise.Event spawnSound;
+    public AK.Wwise.Event cubeDestroySound;
     public void SpawnCube()
     {
 
@@ -23,6 +25,8 @@ public class CubeSpawner : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             Destroy(spawnedCube);
         }
+        yield return new WaitForSeconds(0.2f);
         spawnedCube = Instantiate(spawnedCubePrefab, summonPosition.position, Quaternion.identity);
+
     }
 }
