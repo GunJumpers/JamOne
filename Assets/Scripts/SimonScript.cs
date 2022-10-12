@@ -137,14 +137,24 @@ public class SimonScript : Interactable
 
     void levelOne()
     {
+        float checkMusic = 0;
         Debug.Log("ENTERED LEVEL 1");
+        if(checkMusic==0)
+        {
+            musicNote2.Post(gameObject);
+            checkMusic = 1;
+        }
+        if(checkMusic == 1)
+        {
+            musicNote3.Post(gameObject);
+            checkMusic = 2;
+        }
+        if (checkMusic == 3)
+        {
+            musicNote1.Post(gameObject);
+        }
         levelOneCount = 0;
         levelOneTestArray.Clear();
-        if (isLevelOneComplete)
-        {
-            Debug.Log("finished level 1");
-            levelTwo();
-        }
     }
 
     void levelOneUpdate()
@@ -231,4 +241,5 @@ public class SimonScript : Interactable
         }
         return true;
     }
+
 }

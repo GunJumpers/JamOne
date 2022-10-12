@@ -4386,7 +4386,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &898539361
 GameObject:
@@ -5710,7 +5710,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7eb2c07c635aeb44997a2521d3ab6470,
+    WwiseObjectReference: {fileID: 11400000, guid: d3cada55f9bebb14ba3861c45ae771bf,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -7042,7 +7042,7 @@ PrefabInstance:
     - target: {fileID: 6034563288546041928, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6034563288546041928, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
         type: 3}
@@ -9355,6 +9355,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c023fab3472a60a418506a8cad400ece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicNote1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 50054cac8f71cdf4ba7c303b4cf03a4a,
+      type: 2}
+  musicNote2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 17f762b2d8ef38c4a8c85438da0133fd,
+      type: 2}
+  musicNote3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 959f48e4977cec042b6ec117465e9337,
+      type: 2}
   startButton: {fileID: 1545567513}
   redButton: {fileID: 1343702264}
   greenButton: {fileID: 752837336}
@@ -9388,18 +9403,3 @@ MonoBehaviour:
   levelTwoCount: 0
   levelThreeCount: 0
   winObject: {fileID: 738683820}
-  musicNote1:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 50054cac8f71cdf4ba7c303b4cf03a4a,
-      type: 2}
-  musicNote2:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 17f762b2d8ef38c4a8c85438da0133fd,
-      type: 2}
-  musicNote3:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 959f48e4977cec042b6ec117465e9337,
-      type: 2}
