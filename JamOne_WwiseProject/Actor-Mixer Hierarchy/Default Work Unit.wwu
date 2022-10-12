@@ -1259,6 +1259,7 @@
 						<Sound Name="sfx_Radio" ID="{699CB8A6-3904-41D4-ACCD-EBF6873B6387}" ShortID="995256786">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OutputBusHighpass" Type="int16">
 									<ValueList>
 										<Value>50</Value>
