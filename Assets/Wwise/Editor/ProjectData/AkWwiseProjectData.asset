@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: a3fdb5de6cc39441ba36875d450ae63c
     GuidInternal: 
-    m_lastTime: -8585360737938836998
+    m_lastTime: -8585361627134371046
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8d5452a27318e04eb2cfd322d431dcc8
     GuidInternal: 
-    m_lastTime: -8585360737948555832
+    m_lastTime: -8585361627134591091
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d719ab249f4cce439e3cabeb78d1192c
     GuidInternal: 
-    m_lastTime: -8585360736555168948
+    m_lastTime: -8585361493036599402
     List:
     - name: Master
       guid: a3f5d453ef0e1c469c0d272a1c809d4e
@@ -94,8 +94,119 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7f60739c4ca04240ac34bde0609bff6c
     GuidInternal: 
-    m_lastTime: -8585360736565732840
+    m_lastTime: -8585360058759135512
     List:
+    - name: Annie
+      guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      id: 1758840296
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      Path: Events\Default Work Unit\Annie
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Autumn
+      guid: c7dbaf0de528cc40a43624ce4ed83100
+      id: 4010875483
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Autumn
+        ObjectType: 4
+        guid: c7dbaf0de528cc40a43624ce4ed83100
+      Path: Events\Default Work Unit\Autumn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Calex
+      guid: 87a8b5842aea2240a7b0852ad2839bc2
+      id: 678717388
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Calex
+        ObjectType: 4
+        guid: 87a8b5842aea2240a7b0852ad2839bc2
+      Path: Events\Default Work Unit\Calex
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_aquariumWinMusic
+      guid: 59f219baba3df44c9f9cf0740d322935
+      id: 2785552599
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_aquariumWinMusic
+        ObjectType: 3
+        guid: 59f219baba3df44c9f9cf0740d322935
+      Path: Events\Default Work Unit\Music\evnt_aquariumWinMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_blue
+      guid: 4f96bf033aa32943a3cc805f44fc2f84
+      id: 1371752769
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_blue
+        ObjectType: 3
+        guid: 4f96bf033aa32943a3cc805f44fc2f84
+      Path: Events\Default Work Unit\Annie\evnt_blue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_bubble
+      guid: 02d2df9abb62eb498f8abf1faa18f39e
+      id: 2950457951
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Autumn
+        ObjectType: 4
+        guid: c7dbaf0de528cc40a43624ce4ed83100
+      - ElementName: evnt_bubble
+        ObjectType: 3
+        guid: 02d2df9abb62eb498f8abf1faa18f39e
+      Path: Events\Default Work Unit\Autumn\evnt_bubble
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: evnt_generalPauseAll
       guid: 4c7f4d3e1393d34c9f66f9d256737f2f
       id: 4112389820
@@ -116,6 +227,126 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: evnt_green
+      guid: 08d768f8a8813a419866a507ce1cad78
+      id: 1463993306
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_green
+        ObjectType: 3
+        guid: 08d768f8a8813a419866a507ce1cad78
+      Path: Events\Default Work Unit\Annie\evnt_green
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_laserEmitterAmbient
+      guid: 321f2c8395a7b948b4039f1999aacffa
+      id: 3581350656
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Calex
+        ObjectType: 4
+        guid: 87a8b5842aea2240a7b0852ad2839bc2
+      - ElementName: evnt_laserEmitterAmbient
+        ObjectType: 3
+        guid: 321f2c8395a7b948b4039f1999aacffa
+      Path: Events\Default Work Unit\Calex\evnt_laserEmitterAmbient
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_laserHum
+      guid: 592c4d3e223f0940bcae6a89e06b59a4
+      id: 2687610908
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Calex
+        ObjectType: 4
+        guid: 87a8b5842aea2240a7b0852ad2839bc2
+      - ElementName: evnt_laserHum
+        ObjectType: 3
+        guid: 592c4d3e223f0940bcae6a89e06b59a4
+      Path: Events\Default Work Unit\Calex\evnt_laserHum
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_laserReceiverActivate
+      guid: 14c00b1aef1da54c96f5b65f960f823a
+      id: 451709758
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Calex
+        ObjectType: 4
+        guid: 87a8b5842aea2240a7b0852ad2839bc2
+      - ElementName: evnt_laserReceiverActivate
+        ObjectType: 3
+        guid: 14c00b1aef1da54c96f5b65f960f823a
+      Path: Events\Default Work Unit\Calex\evnt_laserReceiverActivate
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_laserWinMusic
+      guid: d1c260201c5cae4db539306b8bb8d65a
+      id: 3609677365
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_laserWinMusic
+        ObjectType: 3
+        guid: d1c260201c5cae4db539306b8bb8d65a
+      Path: Events\Default Work Unit\Music\evnt_laserWinMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_mazeWinMusic
+      guid: 5806291cd2972a43bd3ce8b5870c74a7
+      id: 84513623
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_mazeWinMusic
+        ObjectType: 3
+        guid: 5806291cd2972a43bd3ce8b5870c74a7
+      Path: Events\Default Work Unit\Music\evnt_mazeWinMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: evnt_noteTest
       guid: 51821a8fd49389489fbc34bc6d8f8ef2
       id: 2234716577
@@ -150,6 +381,106 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.285714
       minDuration: 4.285714
+    - name: evnt_raccoonWinMusic
+      guid: 59c644811106844d8b6a0f6f6e82b255
+      id: 1374748551
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_raccoonWinMusic
+        ObjectType: 3
+        guid: 59c644811106844d8b6a0f6f6e82b255
+      Path: Events\Default Work Unit\Music\evnt_raccoonWinMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_radioFizzle
+      guid: 2bd74f5247d6054e85bbbc5c7fbe471c
+      id: 2060608572
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Autumn
+        ObjectType: 4
+        guid: c7dbaf0de528cc40a43624ce4ed83100
+      - ElementName: evnt_radioFizzle
+        ObjectType: 3
+        guid: 2bd74f5247d6054e85bbbc5c7fbe471c
+      Path: Events\Default Work Unit\Autumn\evnt_radioFizzle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_radioStart
+      guid: c51818b3d6534345a4ac8e13b6883d9b
+      id: 2904549614
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Autumn
+        ObjectType: 4
+        guid: c7dbaf0de528cc40a43624ce4ed83100
+      - ElementName: evnt_radioStart
+        ObjectType: 3
+        guid: c51818b3d6534345a4ac8e13b6883d9b
+      Path: Events\Default Work Unit\Autumn\evnt_radioStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_red
+      guid: 61171a99e988024495ac2c9c5771e246
+      id: 2373191370
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_red
+        ObjectType: 3
+        guid: 61171a99e988024495ac2c9c5771e246
+      Path: Events\Default Work Unit\Annie\evnt_red
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_simonWinMusic
+      guid: e1a7477885f0f34aba6deac82568304b
+      id: 1906948062
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_simonWinMusic
+        ObjectType: 3
+        guid: e1a7477885f0f34aba6deac82568304b
+      Path: Events\Default Work Unit\Music\evnt_simonWinMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: evnt_sophieButton
       guid: 71507824f2614c478bbff82fbcfc5c5b
       id: 4207864965
@@ -167,7 +498,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 71507824f2614c478bbff82fbcfc5c5b
       Path: Events\Default Work Unit\Sophie\evnt_sophieButton
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: 0.315482
       minDuration: 0.315482
     - name: evnt_sophieCubeDespawn
@@ -187,7 +518,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1119ca822bf98d41a46050e81cb9e9af
       Path: Events\Default Work Unit\Sophie\evnt_sophieCubeDespawn
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: 0.415966
       minDuration: 0.415966
     - name: evnt_sophieCubeSpawn
@@ -207,7 +538,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b501505900a38f4797a95f599111141f
       Path: Events\Default Work Unit\Sophie\evnt_sophieCubeSpawn
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: 0.655462
       minDuration: 0.655462
     - name: evnt_sophiePlateActive
@@ -227,7 +558,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5988c27ded501c4bab6d9decd9095bbb
       Path: Events\Default Work Unit\Sophie\evnt_sophiePlateActive
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: 0.249849
       minDuration: 0.249849
     - name: evnt_sophiePlateDeactive
@@ -247,7 +578,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 995555918520454cb1087897d71715ad
       Path: Events\Default Work Unit\Sophie\evnt_sophiePlateDeactive
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: 0.249849
       minDuration: 0.249849
     - name: evnt_sophieTeleport
@@ -267,9 +598,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 746ae639196b3e498d1e9fbe49719ed2
       Path: Events\Default Work Unit\Sophie\evnt_sophieTeleport
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: 0.47112
       minDuration: 0.47112
+    - name: evnt_sophieWinMusic
+      guid: 4bb79b55c08631438fe675b603f88944
+      id: 3680082558
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_sophieWinMusic
+        ObjectType: 3
+        guid: 4bb79b55c08631438fe675b603f88944
+      Path: Events\Default Work Unit\Music\evnt_sophieWinMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: evnt_thrishaNote1
       guid: a5406ad988fc37438b23aacba6de8be1
       id: 2412634145
@@ -407,7 +758,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 48132b1c85b33b43aac0302b22efcf4f
       Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat
-      maxAttenuation: 0
+      maxAttenuation: 3000
       maxDuration: 0.320951
       minDuration: 0.320951
     - name: evnt_yiyangEvilLaugh
@@ -464,6 +815,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 1c0301892eb1d543ba28856e50884819
       Path: Events\Default Work Unit\General
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      Path: Events\Default Work Unit\Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -547,7 +915,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 76213afb33cf914583f1882c4aa6e134
     GuidInternal: 
-    m_lastTime: -8585360737949516699
+    m_lastTime: -8585361627135091209
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -561,7 +929,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cdf2351a380ffc4492ee063336bf9aa7
     GuidInternal: 
-    m_lastTime: -8585360737938857021
+    m_lastTime: -8585361627134391045
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -575,7 +943,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5cfb0b91a9bfb42a253076cda980f1f
     GuidInternal: 
-    m_lastTime: -8585360737938847007
+    m_lastTime: -8585361627134381044
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -589,10 +957,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 05a328cbdf837b40b4f29dc6d995844f
     GuidInternal: 
-    m_lastTime: -8585360737938847007
+    m_lastTime: -8585361627134381044
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

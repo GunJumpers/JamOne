@@ -11800,7 +11800,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d3cada55f9bebb14ba3861c45ae771bf,
+    WwiseObjectReference: {fileID: 11400000, guid: 32f5d66a4068e9546a33775da5227955,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -20718,7 +20718,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 58959b54d41832947825ffd2fc84a782,
+    WwiseObjectReference: {fileID: 11400000, guid: 32f5d66a4068e9546a33775da5227955,
       type: 2}
   useCallbacks: 0
   Callbacks: []
@@ -25352,7 +25352,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3c4024a31b5c0fa4faf5e4fd2ac5d411,
+    WwiseObjectReference: {fileID: 11400000, guid: 32f5d66a4068e9546a33775da5227955,
       type: 2}
   useCallbacks: 0
   Callbacks: []
