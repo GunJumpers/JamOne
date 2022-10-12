@@ -10,7 +10,7 @@ public class PlateEnabler : MonoBehaviour
     {
         if (!plateToEnable.plateEnabled)
         {
-            plateToEnable.plateEnabled = true;
+            plateToEnable.EnablePlate();
         }
     }
 
@@ -18,7 +18,7 @@ public class PlateEnabler : MonoBehaviour
     {
         if (plateToEnable.plateEnabled)
         {
-            plateToEnable.plateEnabled = false;
+            plateToEnable.DisablePlate();
         }
     }
     
