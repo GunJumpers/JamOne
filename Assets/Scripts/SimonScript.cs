@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SimonScript : Interactable
+public class SimonScript : MonoBehaviour
 {
     //0 = green, 1 = blue, 2 = red
     public AK.Wwise.Event evnt_red = null;
@@ -20,6 +20,10 @@ public class SimonScript : Interactable
     public bool isListCleared = false;
     public bool isLevelTwoComplete = false;
     public bool isLevelThreeComplete = false;
+    public int puzzleIndex; // 0 = none complted | 1 = level 1 completed | 2 
+
+    public List<ColorPlate> plates;
+
     public List<float> levelOneArray = new List<float>{0.0f, 1.0f, 2.0f};
     public List<float> levelOneTestArray = new();
     public List<float> levelTwoArray = new List<float> { 0.0f, 0.0f, 2.0f, 1.0f, 0.0f };
@@ -55,6 +59,55 @@ public class SimonScript : Interactable
             levelThreeUpdate();
         }
 
+    }
+
+    public IEnumerator PlayLevel(int index)
+    {
+        switch (index) {
+
+            case 1:
+                foreach(float f in levelOneArray)
+                {
+                    ActivateSpecificPlate(f);
+                    yield return new WaitForSeconds(1f);
+                }
+                break;
+            case 2:
+                foreach (float f in levelTwoArray)
+                {
+                    ActivateSpecificPlate(f);
+                    yield return new WaitForSeconds(1f);
+                }
+                break;
+            case 3:
+                foreach (float f in levelThreeArray)
+                {
+                    ActivateSpecificPlate(f);
+                    yield return new WaitForSeconds(1f);
+                }
+
+
+                break;
+            default:
+                break;
+        
+        }
+    }
+
+    public void ActivateSpecificPlate(float index)
+    {
+        if (index == 1.0f)
+        {
+            plates[0].ActivatePlate();
+        }
+        if (index == 2.0f)
+        {
+            plates[1].ActivatePlate();
+        }
+        if (index == 3.0f)
+        {
+            plates[2].ActivatePlate();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -161,6 +214,13 @@ public class SimonScript : Interactable
         if (isLevelOneComplete == true)
         {
         }
+    }
+
+    public void CheckPuzzleState()
+    {
+        // Checks puzzle index
+        // Depending on the puzzle index, compares the current players moves to the correct array's count
+        // check if current players moves match the correct array
     }
 
     void levelTwo()
