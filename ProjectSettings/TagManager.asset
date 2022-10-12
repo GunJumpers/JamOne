@@ -11,6 +11,9 @@ TagManager:
   - DestroyableCube
   - mazeMusicNote
   - shrinkDetect
+  - redButton
+  - greenButton
+  - blueButton
   layers:
   - Default
   - TransparentFX

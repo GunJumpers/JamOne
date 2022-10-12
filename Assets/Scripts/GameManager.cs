@@ -53,9 +53,4 @@ public class GameManager : UnitySingleton<GameManager>
         isPaused = !isPaused;
     }
 
-    public void testButt()
-    {
-        Debug.Log("BUTTON PUSHED");
-    }
-
 }
