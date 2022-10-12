@@ -376,6 +376,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="evnt_puzzleOneSequence" ID="{38C0E61F-3C75-44DE-B468-D3B5F8BBC545}">
+							<ChildrenList>
+								<Action Name="" ID="{55D5C4D9-0BA1-4206-A6DB-697C04D501F9}" ShortID="754783601">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="seq_PuzzleOne" ID="{7B127E3E-642B-43E2-9D08-6CE81DE323DF}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_puzzleTwoSequence" ID="{C1F9B6DC-7823-4CE9-9C22-6F11CE071D86}">
+							<ChildrenList>
+								<Action Name="" ID="{34F362FD-F2DD-4E0C-B033-7F972FC21AAA}" ShortID="596187756">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="seq_PuzzleTwo" ID="{E7CFE28D-B338-45AF-BA5B-C40383A4140D}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_puzzleThreeSequence" ID="{949307C0-96C6-405A-8675-55DDDED21E65}">
+							<ChildrenList>
+								<Action Name="" ID="{5742E2C2-0D76-4224-A68D-F0E4B3975AC0}" ShortID="70141643">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="seq_PuzzleThree" ID="{A998DB6B-EF76-4285-B62C-B601A85FA3A0}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="General" ID="{8901031C-B12E-43D5-BA28-856E50884819}" ShortID="433773380">
