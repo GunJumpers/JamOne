@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="2498127256">
+		<SoundBank Id="4056684167" Language="SFX" Hash="470381440">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -47,7 +47,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4207864965" Name="evnt_sophieButton" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophieButton" DurationType="OneShot" DurationMin="0.315482" DurationMax="0.315482">
+				<Event Id="4207864965" Name="evnt_sophieButton" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophieButton" MaxAttenuation="3000." DurationType="OneShot" DurationMin="0.315482" DurationMax="0.315482">
 					<IncludedMemoryFiles>
 						<File Id="1048766804" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
@@ -55,7 +55,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2843533304" Name="evnt_sophieCubeDespawn" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophieCubeDespawn" DurationType="OneShot" DurationMin="0.415966" DurationMax="0.415966">
+				<Event Id="2843533304" Name="evnt_sophieCubeDespawn" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophieCubeDespawn" MaxAttenuation="3000." DurationType="OneShot" DurationMin="0.415966" DurationMax="0.415966">
 					<IncludedMemoryFiles>
 						<File Id="25089753" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
@@ -63,7 +63,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3139527251" Name="evnt_sophieCubeSpawn" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophieCubeSpawn" DurationType="OneShot" DurationMin="0.655462" DurationMax="0.655462">
+				<Event Id="3139527251" Name="evnt_sophieCubeSpawn" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophieCubeSpawn" MaxAttenuation="3000." DurationType="OneShot" DurationMin="0.655462" DurationMax="0.655462">
 					<IncludedMemoryFiles>
 						<File Id="302578298" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
@@ -71,7 +71,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4271760505" Name="evnt_sophiePlateActive" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophiePlateActive" DurationType="OneShot" DurationMin="0.249849" DurationMax="0.249849">
+				<Event Id="4271760505" Name="evnt_sophiePlateActive" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophiePlateActive" MaxAttenuation="3000." DurationType="OneShot" DurationMin="0.249849" DurationMax="0.249849">
 					<ReferencedStreamedFiles>
 						<File Id="1047212475" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
@@ -79,7 +79,7 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="91348688" Name="evnt_sophiePlateDeactive" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophiePlateDeactive" DurationType="OneShot" DurationMin="0.249849" DurationMax="0.249849">
+				<Event Id="91348688" Name="evnt_sophiePlateDeactive" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophiePlateDeactive" MaxAttenuation="3000." DurationType="OneShot" DurationMin="0.249849" DurationMax="0.249849">
 					<ReferencedStreamedFiles>
 						<File Id="32595529" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
@@ -87,7 +87,7 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="235107416" Name="evnt_sophieTeleport" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophieTeleport" DurationType="OneShot" DurationMin="0.47112" DurationMax="0.47112">
+				<Event Id="235107416" Name="evnt_sophieTeleport" ObjectPath="\Events\Default Work Unit\Sophie\evnt_sophieTeleport" MaxAttenuation="3000." DurationType="OneShot" DurationMin="0.47112" DurationMax="0.47112">
 					<IncludedMemoryFiles>
 						<File Id="867212875" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
@@ -122,7 +122,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="777445139" Name="evnt_thrishaNote3Stop" ObjectPath="\Events\Default Work Unit\Thrisha\evnt_thrishaNote3Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="4193607900" Name="evnt_yiyangBeat" ObjectPath="\Events\Default Work Unit\Yiyang\evnt_yiyangBeat" DurationType="OneShot" DurationMin="0.320951" DurationMax="0.320951">
+				<Event Id="4193607900" Name="evnt_yiyangBeat" ObjectPath="\Events\Default Work Unit\Yiyang\evnt_yiyangBeat" MaxAttenuation="3000." DurationType="OneShot" DurationMin="0.320951" DurationMax="0.320951">
 					<IncludedMemoryFiles>
 						<File Id="483305637" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>

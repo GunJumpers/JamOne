@@ -7,6 +7,7 @@
 					<ChildrenList>
 						<Sound Name="sfx_yiyangBeat" ID="{034B7A8B-5752-4832-BFE7-8F86D98CF096}" ShortID="284539523">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
 										<Value>28</Value>
@@ -44,6 +45,89 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{39532F04-12C4-4F6D-A8F8-4670A9E43342}" ShortID="169149382">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="3000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{22C7C486-24F7-41E4-B1AA-DC6D34FDD3E0}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>3000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="Spread" ID="{363AADCD-3475-464F-88A2-1C9393C35F59}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.3548387096775</XPos>
+																	<YPos>99.3548387096774</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.35584</XPos>
+																	<YPos>59.58549</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>452.90322</XPos>
+																	<YPos>1.03627</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>3000</XPos>
+																	<YPos>0</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
@@ -463,16 +547,15 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<Custom>
-										<Attenuation Name="Attenuation (Custom)" ID="{D465A24A-32A9-4CB7-81E7-5D8320E2E368}" ShortID="730246547">
+									<Custom CreatedFrom="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}">
+										<Attenuation Name="New Attenuation_01 (Custom)" ID="{E8F1B9C3-6EF2-4061-A76A-22DF980741D8}" ShortID="402797221">
 											<PropertyList>
-												<Property Name="OverrideColor" Type="bool" Value="True"/>
 												<Property Name="RadiusMax" Type="Real64" Value="3000"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{5E416995-D6D5-4FCB-BA25-8824E3E8CE34}">
+														<Curve Name="VolumeDry" ID="{E01078EE-AC68-491D-84B6-AD19B84C3958}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -498,32 +581,14 @@
 													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 												</VolumeWetUserUsage>
 												<LowPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None">
-														<Curve Name="LowPassFilter" ID="{0E33F7C0-91E3-4830-A524-45354B254F17}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="65537"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																</Point>
-																<Point>
-																	<XPos>3000</XPos>
-																	<YPos>100</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 												</LowPassFilterUsage>
 												<HighPassFilterUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 												</HighPassFilterUsage>
 												<SpreadUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="Spread" ID="{D833C862-5FF3-492B-BD7F-9446CB4A1EDC}">
+														<Curve Name="Spread" ID="{330CDDC2-0D53-4D40-AA28-EDBFEAA3F08B}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="1"/>
 															</PropertyList>
@@ -534,16 +599,15 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>115.97938</XPos>
+																	<XPos>224.51613</XPos>
 																	<YPos>100</YPos>
 																	<Flags>0</Flags>
-																	<SegmentShape>Log1</SegmentShape>
+																	<SegmentShape>Exp2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>487.1134</XPos>
-																	<YPos>7.21649</YPos>
+																	<XPos>483.87097</XPos>
+																	<YPos>0</YPos>
 																	<Flags>0</Flags>
-																	<SegmentShape>Log2</SegmentShape>
 																</Point>
 																<Point>
 																	<XPos>3000</XPos>
@@ -613,15 +677,15 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<Custom>
-										<Attenuation Name="Attenuation (Custom)" ID="{1F09E789-8BAA-4069-898E-2785CC399E2B}" ShortID="50735014">
+									<Custom CreatedFrom="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}">
+										<Attenuation Name="New Attenuation_01 (Custom)" ID="{6F2E6162-4D3E-499A-A4BC-FDCD7B420FC5}" ShortID="421461699">
 											<PropertyList>
 												<Property Name="RadiusMax" Type="Real64" Value="3000"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{C19AD0D3-007F-48EF-84B8-E99DA3CF60C5}">
+														<Curve Name="VolumeDry" ID="{210DD42D-C6DA-43A9-9559-01537BD381EC}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -650,29 +714,11 @@
 													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 												</LowPassFilterUsage>
 												<HighPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None">
-														<Curve Name="HighPassFilter" ID="{3E64F1AB-3F4E-409B-AEE0-E539204AEBF0}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="65537"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																</Point>
-																<Point>
-																	<XPos>3000</XPos>
-																	<YPos>100</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 												</HighPassFilterUsage>
 												<SpreadUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="Spread" ID="{7125AF1E-5507-44A9-A26F-13CA9ECBD558}">
+														<Curve Name="Spread" ID="{30EC55C2-B446-4D45-A62C-3301BD0992D0}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="1"/>
 															</PropertyList>
@@ -683,14 +729,14 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>166.23711</XPos>
+																	<XPos>224.51613</XPos>
 																	<YPos>100</YPos>
 																	<Flags>0</Flags>
-																	<SegmentShape>Log1</SegmentShape>
+																	<SegmentShape>Exp2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>475.51547</XPos>
-																	<YPos>12.37113</YPos>
+																	<XPos>483.87097</XPos>
+																	<YPos>0</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
@@ -760,7 +806,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="New Attenuation" ID="{DBFFDDCF-77CC-479C-A7E6-8659B0AA7E9A}" WorkUnitID="{6F643C1F-DF54-45DD-820E-2C94CA7A55D7}"/>
+									<ObjectRef Name="New Attenuation_01" ID="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}" WorkUnitID="{6F643C1F-DF54-45DD-820E-2C94CA7A55D7}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -808,6 +854,7 @@
 					<ChildrenList>
 						<Sound Name="sfx_sophieButton" ID="{5E5DBFBB-A740-416D-9F37-90C848E93A10}" ShortID="1064467198">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>700</Value>
@@ -835,6 +882,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation_01" ID="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}" WorkUnitID="{6F643C1F-DF54-45DD-820E-2C94CA7A55D7}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
@@ -876,6 +926,7 @@
 						</Sound>
 						<Sound Name="sfx_sophieCubeDespawn" ID="{F31171E4-E9F4-4E1D-A06D-892F8E2190C0}" ShortID="235451754">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-1200</Value>
@@ -903,6 +954,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation_01" ID="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}" WorkUnitID="{6F643C1F-DF54-45DD-820E-2C94CA7A55D7}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
@@ -945,6 +999,7 @@
 						</Sound>
 						<Sound Name="sfx_sophieTeleport" ID="{B4057847-40F7-4ADE-A682-EEAF36D43007}" ShortID="911341313">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>700</Value>
@@ -972,6 +1027,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation_01" ID="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}" WorkUnitID="{6F643C1F-DF54-45DD-820E-2C94CA7A55D7}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
@@ -1014,6 +1072,7 @@
 						</Sound>
 						<Sound Name="sfx_sophiePlateActive" ID="{5D644186-1519-4BE1-B6BA-4FEBEB7FC6D3}" ShortID="339131871">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsStreamingEnabled" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -1036,6 +1095,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation_01" ID="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}" WorkUnitID="{6F643C1F-DF54-45DD-820E-2C94CA7A55D7}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
@@ -1073,6 +1135,7 @@
 						</Sound>
 						<Sound Name="sfx_sophieCubeSpawn" ID="{4283221A-E05D-4F27-8ECF-89622333C21B}" ShortID="837718412">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="RenderEffect0" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -1090,6 +1153,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation_01" ID="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}" WorkUnitID="{6F643C1F-DF54-45DD-820E-2C94CA7A55D7}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
@@ -1130,6 +1196,7 @@
 						</Sound>
 						<Sound Name="sfx_sophiePlateDeactive" ID="{F981755D-FA05-4C04-8986-CE29D51689C7}" ShortID="720403393">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsStreamingEnabled" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -1147,6 +1214,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation_01" ID="{7207B8BD-63B4-4371-93C5-F2AA2729A9DF}" WorkUnitID="{6F643C1F-DF54-45DD-820E-2C94CA7A55D7}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
 								</Reference>
