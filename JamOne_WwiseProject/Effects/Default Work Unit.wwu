@@ -199,6 +199,7 @@
 						<Property Name="Distortion2Type" Type="int32" Value="11"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_Wwise_Harmonizer_07" ID="{F9CE1763-B516-43FB-B406-FD0EF948C3CD}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

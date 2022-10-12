@@ -27,12 +27,12 @@
 				</Event>
 				<Folder Name="Yiyang" ID="{07F7D782-4951-4E8B-9945-E3B67708259F}" ShortID="641921728">
 					<ChildrenList>
-						<Event Name="evnt_yiyangBeat" ID="{1C2B1348-B385-433B-AAC0-302B22EFCF4F}">
+						<Event Name="evnt_yiyangBeat1" ID="{1C2B1348-B385-433B-AAC0-302B22EFCF4F}">
 							<ChildrenList>
 								<Action Name="" ID="{1CE0031D-0397-4C24-8129-8959529B7861}" ShortID="303384907">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_yiyangBeat" ID="{034B7A8B-5752-4832-BFE7-8F86D98CF096}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+											<ObjectRef Name="sfx_yiyangBeat1" ID="{034B7A8B-5752-4832-BFE7-8F86D98CF096}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -55,6 +55,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_yiyangEvilLaugh" ID="{505E0788-2EDF-4F85-A4B6-B61A12B97325}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_yiyangBeat2" ID="{DA46D158-AFFA-4140-AFF5-1F961421DB06}">
+							<ChildrenList>
+								<Action Name="" ID="{9D79B560-F035-4835-AC08-37F4D0231F3E}" ShortID="372728485">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_yiyangBeat2" ID="{99296BC0-F545-464D-A373-38DC7817C76E}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_yiyangBeat3" ID="{09A5DD4B-3687-4B72-ACC4-94FB0832E488}">
+							<ChildrenList>
+								<Action Name="" ID="{9A6466EB-92BB-42B7-B737-8ED7396369A5}" ShortID="673326356">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_yiyangBeat3" ID="{18F6B8C0-E55E-438F-ADA7-FEA4A03AF39F}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
