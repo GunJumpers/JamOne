@@ -577,6 +577,16 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="evnt_generalUnpauseAll" ID="{7A50534D-994C-40D9-80D4-82621D66DCB4}">
+							<ChildrenList>
+								<Action Name="" ID="{D1EDD55E-1BAE-4CAD-BF54-421F2167D837}" ShortID="1043929364">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="10"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Calex" ID="{84B5A887-EA2A-4022-A7B0-852AD2839BC2}" ShortID="920539008">
