@@ -445,13 +445,76 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="evnt_ambience" ID="{75BD8386-01E5-40A5-B80E-203F7365375D}">
+							<ChildrenList>
+								<Action Name="" ID="{E68642F8-4C28-4063-8014-8DFBD8498AFD}" ShortID="212903270">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_hum" ID="{22E5766D-10EF-448E-9959-87D4844BC6AF}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_pickUp" ID="{7B033E03-AA88-4CFD-8C8A-CB63225860E7}">
+							<ChildrenList>
+								<Action Name="" ID="{66B489EF-583C-413D-9084-B343074DF609}" ShortID="162025175">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_pickup" ID="{EC876654-024D-4E3E-81D6-CEE97D3F5FA8}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_putDown" ID="{1CE7B05F-FA77-4D9F-BB8C-BA3886D9ACA1}">
+							<ChildrenList>
+								<Action Name="" ID="{09CC2DE3-B710-4675-8460-C20C588CD37C}" ShortID="1045249222">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_putdown" ID="{ABF1BD2A-3005-4B10-A266-9D2FB3057098}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_completePuzzle" ID="{AC8C98CB-D538-47A7-8445-E8DF7E6EDAC9}">
+							<ChildrenList>
+								<Action Name="" ID="{C61338C1-1CF8-4C8A-97A0-E68B37E6EEA8}" ShortID="350198533">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_puzzleComplete" ID="{5DB43351-84A7-43AE-BFD6-7B85BCF14177}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Calex" ID="{84B5A887-EA2A-4022-A7B0-852AD2839BC2}" ShortID="920539008">
 					<ChildrenList>
-						<Event Name="evnt_laserEmitterAmbient" ID="{832C1F32-A795-48B9-B403-9F1999AACFFA}"/>
-						<Event Name="evnt_laserHum" ID="{3E4D2C59-3F22-4009-BCAE-6A89E06B59A4}"/>
-						<Event Name="evnt_laserReceiverActivate" ID="{1A0BC014-1DEF-4CA5-96F5-B65F960F823A}"/>
+						<Event Name="evnt_laserEmitterAmbient" ID="{832C1F32-A795-48B9-B403-9F1999AACFFA}">
+							<ChildrenList>
+								<Action Name="" ID="{2625A0B2-C418-403A-BF7E-EFCD5F36AA1A}" ShortID="134823265">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_laserHum" ID="{13BBE2C7-83A7-4017-AE46-7F448A9EA236}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_laserReceiverActivate" ID="{1A0BC014-1DEF-4CA5-96F5-B65F960F823A}">
+							<ChildrenList>
+								<Action Name="" ID="{CE75E487-7717-479A-88DE-A475CBDA0590}" ShortID="231189908">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_laserReceiverActivate" ID="{72E46937-91B1-4C9A-9E25-A4E848434F87}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
