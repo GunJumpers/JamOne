@@ -358,7 +358,13 @@
 						</Event>
 						<Event Name="evnt_bubble" ID="{9ADFD202-62BB-49EB-8F8A-BF1FAA18F39E}">
 							<ChildrenList>
-								<Action Name="" ID="{B679D8E1-22EF-4303-8CB4-E3AA5051E3B2}" ShortID="353692447"/>
+								<Action Name="" ID="{B679D8E1-22EF-4303-8CB4-E3AA5051E3B2}" ShortID="353692447">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_bubble" ID="{B654273C-9B08-43EA-A7F8-5B7E479E9350}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
@@ -484,6 +490,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_puzzleComplete" ID="{5DB43351-84A7-43AE-BFD6-7B85BCF14177}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_footstep" ID="{9BD3AA39-C6E1-44E7-8B1D-13C430442B73}">
+							<ChildrenList>
+								<Action Name="" ID="{A04859F2-F7E2-46A1-8CB9-56BE5360316D}" ShortID="1062692691">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{6A1D7733-29CC-44D5-AFFA-B955C896CB38}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
