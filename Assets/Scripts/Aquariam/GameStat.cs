@@ -13,13 +13,16 @@ public class GameStat : UnitySingleton<GameStat>
     public static bool radioUsed = false;
     public static bool isCompleted;
     public static bool isActive;
-    [SerializeField] private GameObject winningGoal;
     [SerializeField] private GameObject radioPrefab;
     [SerializeField] private Transform spawnPosition;
     public AK.Wwise.Event radioStartSFX = null;
     public AK.Wwise.Event aquariumWinSound = null;
     private Vector3 startPosition;
-    
+
+    [Header("Win Goal Objects")]
+    public GameObject winGoalPrefab;
+    public Transform winGoalSpawnPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +40,6 @@ public class GameStat : UnitySingleton<GameStat>
         Announcement.gameObject.SetActive(true);
         Announcement.text = "RIGHT CLICK TO USE RADIO";
         radioPrefab.SetActive(false);
-        winningGoal.SetActive(false);
     }
 
     public void EnablePuzzle()
@@ -57,7 +59,6 @@ public class GameStat : UnitySingleton<GameStat>
         radioPrefab.SetActive(false);
         radioUsed = false;
         Announcement.gameObject.SetActive(false);
-        winningGoal.SetActive(false);
     }
 
     // Update is called once per frame
@@ -99,7 +100,6 @@ public class GameStat : UnitySingleton<GameStat>
                 GameObject Fish = Fishes.transform.GetChild(i).gameObject;
                 Fish.GetComponent<FishMovement>().FishReset();
             }
-            winningGoal.SetActive(false);
         }
     }
 
@@ -112,17 +112,15 @@ public class GameStat : UnitySingleton<GameStat>
     private void WinnerScreen()
     {
 
-            /*
-            changeText(Announcement, "Fish ♡ Radio", true);
-            if (Input.anyKeyDown)
-            {
-                Announcement.gameObject.SetActive(false);
-            }
-            */
-
-            winningGoal.SetActive(true);
-            changeText(Announcement, "Fish ♡ Radio", true);
-        
+        /*
+        changeText(Announcement, "Fish ♡ Radio", true);
+        if (Input.anyKeyDown)
+        {
+            Announcement.gameObject.SetActive(false);
+        }
+        */
+        var goal = Instantiate(winGoalPrefab, winGoalSpawnPosition.position, Quaternion.identity);
+        goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Aquarium;
     }
 
     public void CheckPuzzleComplete()

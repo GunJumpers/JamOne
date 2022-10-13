@@ -9,6 +9,10 @@ public class LaserPuzzleManager : BasePuzzleRoom
     public UnityEvent completionEvent;
     private bool puzzleCompleted;
 
+    [Header("Win Goal Objects")]
+    public GameObject winGoalPrefab;
+    public Transform winGoalSpawnPosition;
+
     public override void Start()
     {
         base.Start();
@@ -38,6 +42,9 @@ public class LaserPuzzleManager : BasePuzzleRoom
         completionEvent.Invoke();
         puzzleCompleted = true;
         Debug.Log("Puzzle Complete!");
+
+        var goal = Instantiate(winGoalPrefab, winGoalSpawnPosition.position, Quaternion.identity);
+        goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Lasers;
     }
 
 }

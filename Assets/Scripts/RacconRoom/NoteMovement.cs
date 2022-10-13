@@ -24,7 +24,7 @@ public class NoteMovement : MonoBehaviour
     void Update()
     {
 
-        transform.position += beatTempo * Time.deltaTime * GameData.NoteSpawnerPoint.forward;
+        transform.position += beatTempo * Time.deltaTime * RaccoonGameData.NoteSpawnerPoint.forward;
     }
 
 }

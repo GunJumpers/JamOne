@@ -33,28 +33,25 @@ public class MazeNoteCollision : MonoBehaviour
             Destroy(collision.gameObject);
             collectNumber++;
             Debug.Log("collided");
+            if (collectNumber == 3)
+            {
+                WinGame();
+            }
         }
-        if (collision.gameObject.CompareTag("shrinkDetect"))
-        {
-            //shrink player or unshrink
-            gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-            Debug.Log("shrunk");
-            //soundObjects.SetActive(true);
-            //shrinkpanel.SetActive(false);
-            //unShrinkPanel.SetActive(true);
-        }
-        if (collision.gameObject.CompareTag("unshrinkDetect"))
-        {
-            //shrink player or unshrink
-            gameObject.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-            Debug.Log("unshrunk");
-            //unShrinkPanel.SetActive(false);
-            //shrinkpanel.SetActive(true);
-        }
-        if (collectNumber == 3)
-        {
-            WinGame();
-        }
+        
+        
+    }
+
+    public void ShrinkPlayer()
+    {
+        gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        Debug.Log("shrunk");
+    }
+
+    public void GrowPlayer()
+    {
+        gameObject.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        Debug.Log("unshrunk");
     }
 
     public void WinGame()

@@ -166,6 +166,24 @@ public class SimonScript : MonoBehaviour
 
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("redButton"))
+        {
+            redButton.GetComponent<ColorPlate>().DeactivatePlate();
+        }
+        else if (other.gameObject.CompareTag("greenButton"))
+        {
+
+            greenButton.GetComponent<ColorPlate>().DeactivatePlate();
+        }
+        else if (other.gameObject.CompareTag("blueButton"))
+        {
+            blueButton.GetComponent<ColorPlate>().DeactivatePlate();
+            
+        }
+    }
+
     public void buttonPress()
     {
         CheckPuzzleState();

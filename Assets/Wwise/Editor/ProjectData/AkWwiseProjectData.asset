@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d719ab249f4cce439e3cabeb78d1192c
     GuidInternal: 
-    m_lastTime: -8585359789089429193
+    m_lastTime: -8585359581804837132
     List:
     - name: Master
       guid: a3f5d453ef0e1c469c0d272a1c809d4e
@@ -224,9 +224,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 02d2df9abb62eb498f8abf1faa18f39e
       Path: Events\Default Work Unit\Autumn\evnt_bubble
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 15
+      maxDuration: 1.026331
+      minDuration: 0.801068
     - name: evnt_completePuzzle
       guid: cb988cac38d5a7478445e8df7e6edac9
       id: 3317185440
@@ -245,8 +245,8 @@ MonoBehaviour:
         guid: cb988cac38d5a7478445e8df7e6edac9
       Path: Events\Default Work Unit\General\evnt_completePuzzle
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.405276
+      minDuration: 2.405276
     - name: evnt_footstep
       guid: 39aad39be1c6e7448b1d13c430442b73
       id: 2583652671
@@ -265,8 +265,8 @@ MonoBehaviour:
         guid: 39aad39be1c6e7448b1d13c430442b73
       Path: Events\Default Work Unit\General\evnt_footstep
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.100147
+      minDuration: 0.608804
     - name: evnt_generalPauseAll
       guid: 4c7f4d3e1393d34c9f66f9d256737f2f
       id: 4112389820
@@ -324,7 +324,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 321f2c8395a7b948b4039f1999aacffa
       Path: Events\Default Work Unit\Calex\evnt_laserEmitterAmbient
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: 0
       minDuration: 0
     - name: evnt_laserReceiverActivate
@@ -345,8 +345,8 @@ MonoBehaviour:
         guid: 14c00b1aef1da54c96f5b65f960f823a
       Path: Events\Default Work Unit\Calex\evnt_laserReceiverActivate
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.349915
+      minDuration: 1.349915
     - name: evnt_laserWinMusic
       guid: d1c260201c5cae4db539306b8bb8d65a
       id: 3609677365
@@ -439,8 +439,8 @@ MonoBehaviour:
         guid: 033e037b88aafd4c8c8acb63225860e7
       Path: Events\Default Work Unit\General\evnt_pickUp
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.28981
+      minDuration: 0.254196
     - name: evnt_putDown
       guid: 5fb0e71c77fa9f4dbb8cba3886d9aca1
       id: 2372356168
@@ -459,8 +459,8 @@ MonoBehaviour:
         guid: 5fb0e71c77fa9f4dbb8cba3886d9aca1
       Path: Events\Default Work Unit\General\evnt_putDown
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.137229
+      minDuration: 0.099533
     - name: evnt_puzzleOneSequence
       guid: 1fe6c038753cde44b468d3b5f8bbc545
       id: 3752102144
@@ -558,7 +558,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2bd74f5247d6054e85bbbc5c7fbe471c
       Path: Events\Default Work Unit\Autumn\evnt_radioFizzle
-      maxAttenuation: 100
+      maxAttenuation: 15
       maxDuration: 0.25
       minDuration: 0.25
     - name: evnt_radioStart
@@ -578,7 +578,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c51818b3d6534345a4ac8e13b6883d9b
       Path: Events\Default Work Unit\Autumn\evnt_radioStart
-      maxAttenuation: 100
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: evnt_red
@@ -638,9 +638,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 71507824f2614c478bbff82fbcfc5c5b
       Path: Events\Default Work Unit\Sophie\evnt_sophieButton
-      maxAttenuation: 3000
-      maxDuration: 0.315482
-      minDuration: 0.315482
+      maxAttenuation: 15
+      maxDuration: 0.317676
+      minDuration: 0.313303
     - name: evnt_sophieCubeDespawn
       guid: 1119ca822bf98d41a46050e81cb9e9af
       id: 2843533304
@@ -658,9 +658,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1119ca822bf98d41a46050e81cb9e9af
       Path: Events\Default Work Unit\Sophie\evnt_sophieCubeDespawn
-      maxAttenuation: 3000
-      maxDuration: 0.415966
-      minDuration: 0.415966
+      maxAttenuation: 15
+      maxDuration: 0.434634
+      minDuration: 0.398101
     - name: evnt_sophieCubeSpawn
       guid: b501505900a38f4797a95f599111141f
       id: 3139527251
@@ -678,9 +678,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: b501505900a38f4797a95f599111141f
       Path: Events\Default Work Unit\Sophie\evnt_sophieCubeSpawn
-      maxAttenuation: 3000
-      maxDuration: 0.655462
-      minDuration: 0.655462
+      maxAttenuation: 15
+      maxDuration: 0.660021
+      minDuration: 0.650935
     - name: evnt_sophiePlateActive
       guid: 5988c27ded501c4bab6d9decd9095bbb
       id: 4271760505
@@ -698,9 +698,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5988c27ded501c4bab6d9decd9095bbb
       Path: Events\Default Work Unit\Sophie\evnt_sophiePlateActive
-      maxAttenuation: 3000
-      maxDuration: 0.249849
-      minDuration: 0.249849
+      maxAttenuation: 15
+      maxDuration: 0.251587
+      minDuration: 0.248123
     - name: evnt_sophiePlateDeactive
       guid: 995555918520454cb1087897d71715ad
       id: 91348688
@@ -718,9 +718,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 995555918520454cb1087897d71715ad
       Path: Events\Default Work Unit\Sophie\evnt_sophiePlateDeactive
-      maxAttenuation: 3000
-      maxDuration: 0.249849
-      minDuration: 0.249849
+      maxAttenuation: 15
+      maxDuration: 0.251587
+      minDuration: 0.248123
     - name: evnt_sophieTeleport
       guid: 746ae639196b3e498d1e9fbe49719ed2
       id: 235107416
@@ -738,9 +738,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 746ae639196b3e498d1e9fbe49719ed2
       Path: Events\Default Work Unit\Sophie\evnt_sophieTeleport
-      maxAttenuation: 3000
-      maxDuration: 0.47112
-      minDuration: 0.47112
+      maxAttenuation: 15
+      maxDuration: 0.477973
+      minDuration: 0.464366
     - name: evnt_sophieWinMusic
       guid: 4bb79b55c08631438fe675b603f88944
       id: 3680082558
@@ -778,7 +778,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a5406ad988fc37438b23aacba6de8be1
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote1
-      maxAttenuation: 3000
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: evnt_thrishaNote1Stop
@@ -818,7 +818,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 650100e56e47fc4897ec1337816ed1f7
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote2
-      maxAttenuation: 3000
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: evnt_thrishaNote2Stop
@@ -858,7 +858,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 78267894def6a845b379e09ab3cee530
       Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote3
-      maxAttenuation: 3000
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: evnt_thrishaNote3Stop
@@ -898,9 +898,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 48132b1c85b33b43aac0302b22efcf4f
       Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat1
-      maxAttenuation: 3000
-      maxDuration: 0.404373
-      minDuration: 0.404373
+      maxAttenuation: 15
+      maxDuration: 0.407186
+      minDuration: 0.40158
     - name: evnt_yiyangBeat2
       guid: 58d146dafaaf4041aff51f961421db06
       id: 1497856614
@@ -918,7 +918,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 58d146dafaaf4041aff51f961421db06
       Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat2
-      maxAttenuation: 3000
+      maxAttenuation: 15
       maxDuration: 0.360255
       minDuration: 0.360255
     - name: evnt_yiyangBeat3
@@ -938,9 +938,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4bdda5098736724bacc494fb0832e488
       Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat3
-      maxAttenuation: 3000
-      maxDuration: 0.269887
-      minDuration: 0.269887
+      maxAttenuation: 15
+      maxDuration: 0.271764
+      minDuration: 0.268022
     - name: evnt_yiyangEvilLaugh
       guid: 909e0e17714e1b40aa96da25577f890d
       id: 1648251437
@@ -958,9 +958,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 909e0e17714e1b40aa96da25577f890d
       Path: Events\Default Work Unit\Yiyang\evnt_yiyangEvilLaugh
-      maxAttenuation: 0
-      maxDuration: 1.856903
-      minDuration: 1.856903
+      maxAttenuation: 15
+      maxDuration: 2.024967
+      minDuration: 1.702788
     - name: evnt_yiyangShoot
       guid: 5a4a269c6c5fac48a37a0d35c0ae7f04
       id: 752288469
@@ -979,8 +979,8 @@ MonoBehaviour:
         guid: 5a4a269c6c5fac48a37a0d35c0ae7f04
       Path: Events\Default Work Unit\Yiyang\evnt_yiyangShoot
       maxAttenuation: 0
-      maxDuration: 0.08308
-      minDuration: 0.08308
+      maxDuration: 0.095987
+      minDuration: 0.071909
     - name: General
       guid: 1c0301892eb1d543ba28856e50884819
       id: 133642231

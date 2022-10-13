@@ -18,11 +18,16 @@ public class RaccoonGameData : MonoBehaviour
     public Text Announcement, Win, GameTime, Lose, Score;
     public RoomDetector roomDetector;
     public bool isEnabled;
+    public bool isWon;
+
+    [Header("Win Goal Objects")]
+    public GameObject winGoalPrefab;
+    public Transform winGoalSpawnPosition;
 
 
     private void Start()
     {
-
+        DisablePuzzle();
     }
     // Update is called once per frame
     void Update()
@@ -32,7 +37,7 @@ public class RaccoonGameData : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !isWon)
         {
             Announcement.gameObject.SetActive(false);
             startPlaying = true;
@@ -58,10 +63,7 @@ public class RaccoonGameData : MonoBehaviour
             notesPercentage = collectNotes / totalNotes;
             if (notesPercentage > 0.8)
             {
-                Win.text = "YOU WIN";
-                Score.text = "Score: " + ((int)(notesPercentage * 100)).ToString() + "%";
-                Win.gameObject.SetActive(true);
-                isCompleted = true;
+                WinGame();
             }
             else
             {
@@ -72,6 +74,17 @@ public class RaccoonGameData : MonoBehaviour
             }
         }
         
+    }
+
+    public void WinGame()
+    {
+        Win.text = "YOU WIN";
+        Score.text = "Score: " + ((int)(notesPercentage * 100)).ToString() + "%";
+        Win.gameObject.SetActive(true);
+        isCompleted = true;
+        isWon = true;
+        var goal = Instantiate(winGoalPrefab, winGoalSpawnPosition.position, Quaternion.identity);
+        goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Racoon;
     }
 
     public void Init()
@@ -87,6 +100,7 @@ public class RaccoonGameData : MonoBehaviour
         Lose.gameObject.SetActive(true);
         Win.gameObject.SetActive(true);
         Score.gameObject.SetActive(true);
+        GameTime.gameObject.SetActive(true);
         NoteSpawnerPoint = Notes.NoteSpawnerPoint;
         if (isCompleted)
         {
@@ -109,8 +123,7 @@ public class RaccoonGameData : MonoBehaviour
         Lose.gameObject.SetActive(false);
         Win.gameObject.SetActive(false);
         Score.gameObject.SetActive(false);
-        Notes.enabled = false;
-        HitNotes.enabled = false;
+        GameTime.gameObject.SetActive(false);
     }
 
     public void EnablePuzzle()
