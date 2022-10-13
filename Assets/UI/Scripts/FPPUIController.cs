@@ -11,6 +11,11 @@ public class FPPUIController : UnitySingleton<FPPUIController>
         PlayerController.Instance.SetSensitivity(value);
     }
 
+    public void UpdateFOV(float value)
+    {
+        PlayerController.Instance.ModifyFOV(value);
+    }
+
     public void TogglePauseMenu(bool shouldEnable)
     {
         _pauseUI.SetActive(shouldEnable);

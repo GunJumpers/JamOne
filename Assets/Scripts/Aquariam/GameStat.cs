@@ -38,7 +38,7 @@ public class GameStat : UnitySingleton<GameStat>
     {
         Warning.gameObject.SetActive(false);
         Announcement.gameObject.SetActive(true);
-        Announcement.text = "RIGHT CLICK TO USE RADIO";
+        Announcement.text = "RIGHT CLICK TO TOGGLE RADIO";
         radioPrefab.SetActive(false);
     }
 

@@ -7,6 +7,7 @@ public class RaccoonGameData : MonoBehaviour
 {
     public NoteSpawner Notes;
     public Bullet HitNotes;
+    public GameObject playerGun;
     public static Transform NoteSpawnerPoint;
     public static float totalNotes;
     public static float collectNotes;
@@ -41,6 +42,7 @@ public class RaccoonGameData : MonoBehaviour
         {
             Announcement.gameObject.SetActive(false);
             startPlaying = true;
+            playerGun.SetActive(true);
 
         }
         if (startPlaying)
@@ -61,6 +63,7 @@ public class RaccoonGameData : MonoBehaviour
         if (GameEnd)
         {
             notesPercentage = collectNotes / totalNotes;
+            playerGun.SetActive(false);
             if (notesPercentage > 0.8)
             {
                 WinGame();
@@ -89,6 +92,11 @@ public class RaccoonGameData : MonoBehaviour
 
     public void Init()
     {
+        if (isWon)
+        {
+            return;
+        }
+
         targetTime = 40f;
         Announcement.text = "Press SPACE to Start";
         Announcement.gameObject.SetActive(true);
@@ -111,6 +119,7 @@ public class RaccoonGameData : MonoBehaviour
 
     public void DisablePuzzle()
     {
+
         isEnabled = false;
         targetTime = 40f;
         Announcement.text = "";
@@ -124,10 +133,16 @@ public class RaccoonGameData : MonoBehaviour
         Win.gameObject.SetActive(false);
         Score.gameObject.SetActive(false);
         GameTime.gameObject.SetActive(false);
+        playerGun.SetActive(false);
     }
 
     public void EnablePuzzle()
     {
+        if (isWon)
+        {
+            return;
+        }
+
         isEnabled = true;
         Init();
     }
