@@ -9,12 +9,10 @@ TagManager:
   - LaserReciever
   - DestroyCube
   - DestroyableCube
-  - mazeMusicNote
-  - shrinkDetect
-  - redButton
-  - greenButton
-  - blueButton
-  - unshrinkDetect
+  - Fish
+  - Note
+  - Wall
+  - Water
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d29a13a1295e147aabf44e24ed686c, type: 3}
   m_Name: 1C2B1348-B385-433B-AAC0-302B22EFCF4F
   m_EditorClassIdentifier: 
-  objectName: evnt_yiyangBeat1
-  id: 1497856613
+  objectName: evnt_yiyangBeat
+  id: 4193607900
   guid: 1C2B1348-B385-433B-AAC0-302B22EFCF4F

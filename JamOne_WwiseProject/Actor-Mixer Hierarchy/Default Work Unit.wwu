@@ -2172,12 +2172,12 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OutputBusHighpass" Type="int16">
 									<ValueList>
-										<Value>55</Value>
+										<Value>48</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OutputBusLowpass" Type="int16">
 									<ValueList>
-										<Value>30</Value>
+										<Value>31</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
@@ -2395,6 +2395,143 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_note" ID="{488763FB-9000-4C36-AC27-7CFD83BE6BE3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_pickup" ID="{EC876654-024D-4E3E-81D6-CEE97D3F5FA8}" ShortID="748871030">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="temp_Spoons" ID="{23A25B7F-B8E0-41BC-A3A9-5442E561068B}">
+									<PropertyList>
+										<Property Name="FadeInShape" Type="int16" Value="8"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.27688143079968"/>
+										<Property Name="FadeOutShape" Type="int16" Value="7"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.290887106287602"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.580696852922286"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>temp_Spoons.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="446482066"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="temp_Spoons" ID="{23A25B7F-B8E0-41BC-A3A9-5442E561068B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_putdown" ID="{ABF1BD2A-3005-4B10-A266-9D2FB3057098}" ShortID="675840298">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-660</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="temp_Spoons" ID="{C32E076A-AC6C-4A4A-9E02-D064039FF3F4}">
+									<PropertyList>
+										<Property Name="FadeInShape" Type="int16" Value="8"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.093730289803783"/>
+										<Property Name="FadeOutShape" Type="int16" Value="7"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.290887106287602"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.290887106287602"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.384617396091385"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>temp_Spoons.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="20002904"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="temp_Spoons" ID="{C32E076A-AC6C-4A4A-9E02-D064039FF3F4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_hum" ID="{22E5766D-10EF-448E-9959-87D4844BC6AF}" ShortID="422744115">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OutputBusHighpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1190</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise RoomVerb (Custom)" ID="{57440038-337C-4873-A997-CABEEC1245EA}" ShortID="256852544" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="DecayTime" Type="Real32" Value="2.8"/>
+												<Property Name="DryLevel" Type="Real32" Value="-20.3"/>
+												<Property Name="ERFrontBackDelay" Type="Real32" Value="9"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-12"/>
+												<Property Name="RoomSize" Type="Real32" Value="72"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise Flanger (Custom)" ID="{34571C6C-4569-4DBF-A8B9-9D8C8E6A4329}" ShortID="155491501" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+											<PropertyList>
+												<Property Name="DelayTime" Type="Real32" Value="2.3"/>
+												<Property Name="ModDepth" Type="Real32" Value="3.2"/>
+												<Property Name="WetDryMix" Type="Real32" Value="23"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A252548D-1873-4EE0-B2CF-D322D431DCC8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Microwave" ID="{07EF8F5D-5F01-4FD3-A9EB-A315B6BAF11C}">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="7.35755573905865"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Microwave.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="108642983"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Microwave" ID="{07EF8F5D-5F01-4FD3-A9EB-A315B6BAF11C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
