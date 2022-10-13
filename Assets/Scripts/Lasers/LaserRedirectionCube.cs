@@ -5,9 +5,21 @@ using UnityEngine;
 public class LaserRedirectionCube : MonoBehaviour
 {
     public LaserEmitter emitter;
+    public Renderer glowRenderer;
+    [ColorUsageAttribute(true, true)]
+    public Color minGlow;
+    [ColorUsageAttribute(true, true)]
+    public Color maxGlow;
+    private Material mat;
     public float disableTimer;
     public float maxDisableTimer = 0.5f;
     public float enableTimerRate;
+
+    private void Start()
+    {
+        mat = glowRenderer.material;
+        mat.SetColor("_EmissionColor", minGlow);
+    }
 
     public void EnableLaser()
     {
@@ -37,6 +49,7 @@ public class LaserRedirectionCube : MonoBehaviour
         {
             disableTimer -= Time.deltaTime;
             emitter.targetAlpha = disableTimer / maxDisableTimer;
+            mat.SetColor("_EmissionColor", Color.Lerp(minGlow, maxGlow, disableTimer / maxDisableTimer));
         }
         if(disableTimer <= 0 && emitter.isEmitting)
         {

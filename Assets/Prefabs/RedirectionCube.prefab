@@ -566,6 +566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emitter: {fileID: 8250432806610249643}
+  glowRenderer: {fileID: 3361273587249357960}
+  minGlow: {r: 0.0009765625, g: 0, b: 0, a: 1}
+  maxGlow: {r: 45.254833, g: 0, b: 0, a: 0}
   disableTimer: 0
   maxDisableTimer: 0.5
   enableTimerRate: 2
@@ -762,6 +765,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b05dd9cae7de8584894c90254a8027e0, type: 3}
+--- !u!23 &3361273587249357960 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6362254843179198070, guid: b05dd9cae7de8584894c90254a8027e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8570035179233657598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8170753392787825941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b05dd9cae7de8584894c90254a8027e0,
