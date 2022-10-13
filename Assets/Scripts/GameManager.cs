@@ -53,5 +53,4 @@ public class GameManager : UnitySingleton<GameManager>
         isPaused = !isPaused;
     }
 
-
 }
