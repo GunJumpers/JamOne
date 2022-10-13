@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -6,7 +7,18 @@ using UnityEngine.InputSystem;
 public class GameManager : UnitySingleton<GameManager>
 {
 
+    [Serializable]
+    public struct RoomCompletionEvent{
+
+        public RoomType roomType;
+        public AK.Wwise.Event soundEvent;
+        public GameObject source;
+
+    }
+
     public Dictionary<BasePuzzleRoom, bool> puzzleRooms;
+    public enum RoomType {Cubes, Lasers, Aquarium, Racoon, Maze, Simon }
+    [SerializeField] public List<RoomCompletionEvent> puzzleCompletionEvents;
     public bool isPaused;
 
     public override void Awake()
@@ -20,6 +32,18 @@ public class GameManager : UnitySingleton<GameManager>
     void Update()
     {
         
+    }
+
+    public void CompletePuzzleRoom(RoomType type)
+    {
+       foreach(RoomCompletionEvent roomEvent in puzzleCompletionEvents)
+        {
+            if(roomEvent.roomType == type)
+            {
+                Debug.Log(type.ToString() + " was COMPLETED!!!");
+                roomEvent.soundEvent.Post(roomEvent.source);
+            }
+        }
     }
 
     public void OnPaused(InputAction.CallbackContext context)

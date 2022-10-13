@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7f60739c4ca04240ac34bde0609bff6c
     GuidInternal: 
-    m_lastTime: -8585359733410738092
+    m_lastTime: -8585359631507139168
     List:
     - name: Annie
       guid: 886043b3fa5e5247a4f0908ef0c75f4b
@@ -244,6 +244,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: cb988cac38d5a7478445e8df7e6edac9
       Path: Events\Default Work Unit\General\evnt_completePuzzle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_footstep
+      guid: 39aad39be1c6e7448b1d13c430442b73
+      id: 2583652671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      - ElementName: evnt_footstep
+        ObjectType: 3
+        guid: 39aad39be1c6e7448b1d13c430442b73
+      Path: Events\Default Work Unit\General\evnt_footstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

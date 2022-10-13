@@ -12,6 +12,10 @@ public class MazeNoteCollision : MonoBehaviour
     public GameObject shrinkpanel;
     public GameObject soundObjects;
 
+    [Header("Win Objects")]
+    public GameObject winGoalPrefab;
+    public Transform winGoalSpawnLocation;
+
     private void Start()
     {
         winObject.SetActive(false);
@@ -49,12 +53,20 @@ public class MazeNoteCollision : MonoBehaviour
         }
         if (collectNumber == 3)
         {
-            Debug.Log("YOU WIN");
-            winObject.SetActive(true);
-            mazeBlocks.SetActive(false);
-            exWall.SetActive(false);
-            unShrinkPanel.SetActive(true);
-            shrinkpanel.SetActive(false);
+            WinGame();
         }
+    }
+
+    public void WinGame()
+    {
+        Debug.Log("YOU WIN");
+        //winObject.SetActive(true);
+        mazeBlocks.SetActive(false);
+        exWall.SetActive(false);
+        unShrinkPanel.SetActive(true);
+        shrinkpanel.SetActive(false);
+
+        var goal = Instantiate(winGoalPrefab, winGoalSpawnLocation.position, Quaternion.identity);
+        goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Maze;
     }
 }

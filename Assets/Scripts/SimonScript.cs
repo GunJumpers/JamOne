@@ -37,6 +37,10 @@ public class SimonScript : MonoBehaviour
     public GameObject levelOnePrint;
     public GameObject levelTwoPrint;
     public GameObject levelThreePrint;
+    public GameObject levelPrintParent;
+    public bool canPressPlates = true;
+    public GameObject winGoalPrefab;
+    public Transform winGoalSpawnPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -100,7 +104,7 @@ public class SimonScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("redButton"))
         {
-            CheckPuzzleState();
+
             Debug.Log("clicked red button");
             //evnt_red.Post(gameObject);
             // button glow
@@ -117,10 +121,11 @@ public class SimonScript : MonoBehaviour
                 levelThreeTestArray.Add(2.0f);
                 levelThreeCount++;
             }
+            CheckPuzzleState();
         }
         else if (other.gameObject.CompareTag("greenButton"))
         {
-            CheckPuzzleState();
+            
             Debug.Log("clicked green button");
             //evnt_green.Post(gameObject);
             greenButton.GetComponent<ColorPlate>().ActivatePlate();
@@ -136,10 +141,11 @@ public class SimonScript : MonoBehaviour
                 levelThreeTestArray.Add(0.0f);
                 levelThreeCount++;
             }
+            CheckPuzzleState();
         }
         else if (other.gameObject.CompareTag("blueButton"))
         {
-            CheckPuzzleState();
+            
             Debug.Log("clicked blue button");
             blueButton.GetComponent<ColorPlate>().ActivatePlate();
             //evnt_blue.Post(gameObject);
@@ -155,6 +161,7 @@ public class SimonScript : MonoBehaviour
                 levelThreeTestArray.Add(1.0f);
                 levelThreeCount++;
             }
+            CheckPuzzleState();
         }
 
     }
@@ -170,27 +177,27 @@ public class SimonScript : MonoBehaviour
         }
         if(puzzleIndex == 1)
         {
-            levelOnePrint.SetActive(false);
-            levelTwoPrint.SetActive(true);
             StartCoroutine(PlayLevel(2));
             levelTwo();
         }
         if(puzzleIndex == 2)
         {
-            levelTwoPrint.SetActive(false);
-            levelThreePrint.SetActive(true);
+
             StartCoroutine(PlayLevel(3));
             levelThree();
         }
-        if(puzzleIndex == 3)
-        {
-            levelThreePrint.SetActive(false);
-            winObject.SetActive(true);
-            startButton.SetActive(false);
-            redButton.SetActive(false);
-            blueButton.SetActive(false);
-            greenButton.SetActive(false);
-        }
+    }
+
+    public void WinGame()
+    {
+        winObject.SetActive(true);
+        startButton.SetActive(false);
+        redButton.SetActive(false);
+        blueButton.SetActive(false);
+        greenButton.SetActive(false);
+
+        var goal = Instantiate(winGoalPrefab, winGoalSpawnPosition.position, Quaternion.identity);
+        goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Simon;
     }
 
     void levelOne()
@@ -204,11 +211,16 @@ public class SimonScript : MonoBehaviour
     public void CheckPuzzleState()
     {
         Debug.Log(puzzleIndex);
-        if(puzzleIndex == 0)
+
+
+        if (puzzleIndex == 0)
         {
             if (levelOneCount == 3 && isListSame(levelOneArray, levelOneTestArray))
             {
+                
                 puzzleIndex = 1;
+                levelOnePrint.SetActive(false);
+                levelTwoPrint.SetActive(true);
             }
             if (levelOneTestArray.Count > 3)
             {
@@ -221,6 +233,9 @@ public class SimonScript : MonoBehaviour
             if (levelTwoCount == 5 && isListSame(levelTwoArray, levelTwoTestArray))
             {
                 puzzleIndex = 2;
+                levelTwoPrint.SetActive(false);
+                levelThreePrint.SetActive(true);
+
             }
             if (levelTwoTestArray.Count > 5)
             {
@@ -233,6 +248,8 @@ public class SimonScript : MonoBehaviour
             if (levelThreeCount == 7 && isListSame(levelThreeArray, levelThreeTestArray))
             {
                 puzzleIndex = 3;
+                levelThreePrint.SetActive(false);
+                WinGame();
             }
             if (levelThreeTestArray.Count > 7)
             {
@@ -273,6 +290,11 @@ public class SimonScript : MonoBehaviour
             }
         }
         return true;
+    }
+
+    public void ToggleText(bool state)
+    {
+        levelPrintParent.SetActive(state);
     }
 
 }

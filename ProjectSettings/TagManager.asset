@@ -14,6 +14,12 @@ TagManager:
   - Wall
   - Water
   - AquariumGoal
+  - shrinkDetect
+  - unshrinkDetect
+  - mazeMusicNote
+  - redButton
+  - greenButton
+  - blueButton
   layers:
   - Default
   - TransparentFX
