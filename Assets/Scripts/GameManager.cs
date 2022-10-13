@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : UnitySingleton<GameManager>
 {
@@ -32,6 +33,16 @@ public class GameManager : UnitySingleton<GameManager>
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void RestartScene()
+    {
+        Time.timeScale = 1;
+        PlayerController.Instance.canControlMovement = true;
+        FPPUIController.Instance.TogglePauseMenu(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        SceneManager.LoadScene(0);
     }
 
     public void CompletePuzzleRoom(RoomType type)
