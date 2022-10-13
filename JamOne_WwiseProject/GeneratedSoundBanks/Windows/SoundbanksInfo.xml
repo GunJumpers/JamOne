@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Games\JamOne\JamOne_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="2633465322">
+		<SoundBank Id="4056684167" Language="SFX" Hash="2853484638">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -84,11 +84,40 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4112389820" Name="evnt_generalPauseAll" ObjectPath="\Events\Default Work Unit\General\evnt_generalPauseAll" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2548410661" Name="evnt_generalUnpauseAll" ObjectPath="\Events\Default Work Unit\General\evnt_generalUnpauseAll" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1463993306" Name="evnt_green" ObjectPath="\Events\Default Work Unit\Annie\evnt_green" DurationType="OneShot" DurationMin="1.38" DurationMax="1.38">
 					<IncludedMemoryFiles>
 						<File Id="1040249201" Language="SFX">
 							<ShortName>mus_winLayer5Piano.wav</ShortName>
 							<Path>SFX\mus_winLayer5Piano_C80FACA1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4276656312" Name="evnt_initMusic" ObjectPath="\Events\Default Work Unit\Music\evnt_initMusic" DurationType="OneShot" DurationMin="68.571426" DurationMax="68.571426">
+					<IncludedMemoryFiles>
+						<File Id="281463204" Language="SFX">
+							<ShortName>mus_winLayer1Bells.wav</ShortName>
+							<Path>SFX\mus_winLayer1Bells_D79FB2B7.wem</Path>
+						</File>
+						<File Id="281770944" Language="SFX">
+							<ShortName>mus_winLayer2Bass.wav</ShortName>
+							<Path>SFX\mus_winLayer2Bass_D79FB2B7.wem</Path>
+						</File>
+						<File Id="315006039" Language="SFX">
+							<ShortName>mus_winLayer6Pads.wav</ShortName>
+							<Path>SFX\mus_winLayer6Pads_D79FB2B7.wem</Path>
+						</File>
+						<File Id="580144154" Language="SFX">
+							<ShortName>mus_winLayer5Piano.wav</ShortName>
+							<Path>SFX\mus_winLayer5Piano_D79FB2B7.wem</Path>
+						</File>
+						<File Id="739429723" Language="SFX">
+							<ShortName>mus_winLayer4Lead.wav</ShortName>
+							<Path>SFX\mus_winLayer4Lead_D79FB2B7.wem</Path>
+						</File>
+						<File Id="924673636" Language="SFX">
+							<ShortName>mus_winLayer3Drum.wav</ShortName>
+							<Path>SFX\mus_winLayer3Drum_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

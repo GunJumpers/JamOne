@@ -251,6 +251,7 @@
 								<Action Name="" ID="{9662AB55-6055-4B15-8722-DD0148DE42B9}" ShortID="114529116">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -265,6 +266,7 @@
 								<Action Name="" ID="{2D2DE25A-7E8D-4C31-B4E7-ADF893CEA9FC}" ShortID="76771479">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -279,6 +281,7 @@
 								<Action Name="" ID="{1ADD2839-F5BD-4F61-88C4-E0AB4B8DE948}" ShortID="946936200">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -293,6 +296,7 @@
 								<Action Name="" ID="{702486BB-0FF9-4DF8-A17A-28E9FA2DF1E6}" ShortID="893051776">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -307,6 +311,7 @@
 								<Action Name="" ID="{D89A88AB-0C59-4885-A4E4-5C79A70E6824}" ShortID="286133924">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -321,6 +326,7 @@
 								<Action Name="" ID="{5E626BE0-1E57-4275-B9B3-8FCEB00B7E0A}" ShortID="893423264">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -342,6 +348,7 @@
 								<Action Name="" ID="{60E1C8D0-E5E0-4E71-BF6C-F9010787B10C}" ShortID="93832417">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -352,6 +359,7 @@
 								<Action Name="" ID="{AD56639D-9DAD-4903-BFC4-D26284C70D92}" ShortID="590753784">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -362,6 +370,7 @@
 								<Action Name="" ID="{2AAB7B73-0E79-4F94-B7DB-13A951E3B92B}" ShortID="1019698421">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -372,6 +381,7 @@
 								<Action Name="" ID="{CDB08712-AEF3-482B-99ED-5DB189334158}" ShortID="221137688">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -382,6 +392,7 @@
 								<Action Name="" ID="{FE6F89DE-4B09-4FED-B76A-A06B6E325D6E}" ShortID="883398771">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -392,6 +403,7 @@
 								<Action Name="" ID="{88EAB349-CAD8-49F5-80AA-9599DE22ACC9}" ShortID="903671720">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

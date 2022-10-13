@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d29a13a1295e147aabf44e24ed686c, type: 3}
+  m_Name: 55546EA6-A56C-4B98-8561-63852A0B6DCF
+  m_EditorClassIdentifier: 
+  objectName: evnt_initMusic
+  id: 4276656312
+  guid: 55546EA6-A56C-4B98-8561-63852A0B6DCF
