@@ -7,7 +7,6 @@ public class BulletShoot : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawner;
     public float bulletSpeed;
-    public GameData GameManager;
     public AK.Wwise.Event shootSFX = null;
     // Update is called once per frame
     void Update()

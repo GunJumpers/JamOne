@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d719ab249f4cce439e3cabeb78d1192c
     GuidInternal: 
-    m_lastTime: -8585360635983584162
+    m_lastTime: -8585359867004282157
     List:
     - name: Master
       guid: a3f5d453ef0e1c469c0d272a1c809d4e
@@ -94,11 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7f60739c4ca04240ac34bde0609bff6c
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585360046902426224
-=======
-    m_lastTime: -8585360007168829604
->>>>>>> Stashed changes
+    m_lastTime: -8585359867005696708
     List:
     - name: Annie
       guid: 886043b3fa5e5247a4f0908ef0c75f4b
@@ -385,7 +381,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.285714
       minDuration: 4.285714
-<<<<<<< Updated upstream
     - name: evnt_puzzleOneSequence
       guid: 1fe6c038753cde44b468d3b5f8bbc545
       id: 3752102144
@@ -446,8 +441,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-=======
->>>>>>> Stashed changes
     - name: evnt_raccoonWinMusic
       guid: 59c644811106844d8b6a0f6f6e82b255
       id: 1374748551

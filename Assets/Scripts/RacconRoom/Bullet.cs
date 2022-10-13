@@ -17,9 +17,22 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Note"))
         {
+
             other.gameObject.GetComponent<NoteMovement>().shoot = true;
             GameData.collectNotes++;
-            collideSFX.Post(gameObject);
+            if (other.gameObject.GetComponent<NoteMovement>().notesTag == 1)
+            {
+                collideSFX.Post(gameObject);
+            }
+            // change later
+            else if (other.gameObject.GetComponent<NoteMovement>().notesTag == 2)
+            {
+                collideSFX.Post(gameObject);
+            }
+            else if (other.gameObject.GetComponent<NoteMovement>().notesTag == 3)
+            {
+                collideSFX.Post(gameObject);
+            }
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

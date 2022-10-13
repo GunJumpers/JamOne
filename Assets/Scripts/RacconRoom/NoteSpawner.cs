@@ -8,10 +8,8 @@ public class NoteSpawner : MonoBehaviour
     public float delayTime;
     public float Interval;
     public Transform NoteSpawnerPoint;
-    public GameData GameManager;
     public float NotesNumber;
     public float NotesZ;
-    public bool hasStarted;
     public AK.Wwise.Event EvilLaugh = null;
     void Start()
     {
@@ -21,26 +19,16 @@ public class NoteSpawner : MonoBehaviour
         
     }
 
-    public void changeNoteTempo(int i, float tempo)
-    {
-        Notes[i].GetComponent<NoteMovement>().beatTempo = tempo;
-        NotesNumber = tempo;
-        NotesZ = NoteSpawnerPoint.position.z;
-    }
 
     IEnumerator SpawnNote()
     {
         
-        if (hasStarted)
+        if (GameData.startPlaying)
         {
-            EvilLaugh.Post(gameObject);
-            for (int i = 0; i < NotesNumber; i++)
-            {
-                Instantiate(Notes[0], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
-                Instantiate(Notes[1], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
-                Instantiate(Notes[2], new Vector3(Random.Range(-2f, 2f), 1f, NotesZ), Quaternion.identity);
-                GameManager.totalNotes+= 3;
-            }
+            Instantiate(Notes[0], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
+            Instantiate(Notes[1], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
+            Instantiate(Notes[2], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
+            GameData.totalNotes += 3;
 
         }
         yield return new WaitForSeconds(delayTime);
@@ -49,17 +37,12 @@ public class NoteSpawner : MonoBehaviour
 
     IEnumerator SpeedUp()
     {
-        if (hasStarted)
+        if (GameData.startPlaying)
         {
-            //Debug.Log("speed up");
-            if (NotesNumber <= 5)
-            {
-                NotesNumber += 0.5f;
-            }
-            if (delayTime >= 1)
-            {
-                delayTime -= 0.25f;
-            }
+            EvilLaugh.Post(gameObject);
+            Notes[0].GetComponent<NoteMovement>().beatTempo += 0.25f;
+            Notes[1].GetComponent<NoteMovement>().beatTempo += 0.3f;
+            Notes[2].GetComponent<NoteMovement>().beatTempo += 0.5f;
         }
         yield return new WaitForSeconds(Interval);
         StartCoroutine(SpeedUp());
