@@ -26,6 +26,11 @@ public class FPPUIController : UnitySingleton<FPPUIController>
         GameManager.Instance.TogglePause();
     }
 
+    public void RestartGame()
+    {
+        GameManager.Instance.RestartScene();
+    }
+
 
 
     public void ExitGame()
