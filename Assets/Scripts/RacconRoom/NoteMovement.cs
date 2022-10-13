@@ -24,8 +24,7 @@ public class NoteMovement : MonoBehaviour
     void Update()
     {
 
-        transform.position += new Vector3(0f, 0f, beatTempo * Time.deltaTime);
-
+        transform.position += beatTempo * Time.deltaTime * GameData.NoteSpawnerPoint.forward;
     }
 
 }

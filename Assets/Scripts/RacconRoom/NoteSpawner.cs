@@ -11,24 +11,25 @@ public class NoteSpawner : MonoBehaviour
     public float NotesNumber;
     public float NotesZ;
     public AK.Wwise.Event EvilLaugh = null;
+    private float spawnerZ;
     void Start()
     {
         Interval = 10f;
+        spawnerZ = NoteSpawnerPoint.position.z;
         StartCoroutine(SpawnNote());
         StartCoroutine(SpeedUp());
-        
     }
 
 
     IEnumerator SpawnNote()
     {
         
-        if (RaccoonGameData.startPlaying)
+        if (GameData.startPlaying)
         {
-            Instantiate(Notes[0], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
-            Instantiate(Notes[1], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
-            Instantiate(Notes[2], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
-            RaccoonGameData.totalNotes += 3;
+            Instantiate(Notes[0], new Vector3(NoteSpawnerPoint.position.x + Random.Range(-1.5f, 1.5f), 1f, spawnerZ), Quaternion.identity);
+            Instantiate(Notes[1], new Vector3(NoteSpawnerPoint.position.x + Random.Range(-1.5f, 1.5f), 1f, spawnerZ), Quaternion.identity);
+            Instantiate(Notes[2], new Vector3(NoteSpawnerPoint.position.x + Random.Range(-1.5f, 1.5f), 1f, spawnerZ), Quaternion.identity);
+            GameData.totalNotes += 3;
 
         }
         yield return new WaitForSeconds(delayTime);
@@ -37,7 +38,7 @@ public class NoteSpawner : MonoBehaviour
 
     IEnumerator SpeedUp()
     {
-        if (RaccoonGameData.startPlaying)
+        if (GameData.startPlaying)
         {
             EvilLaugh.Post(gameObject);
             Notes[0].GetComponent<NoteMovement>().beatTempo += 0.25f;
