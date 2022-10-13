@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,11 +8,13 @@ public class Radio : MonoBehaviour
 {
     public bool isBubbled = false;
     public Transform MusicSpawner;
-    public GameObject MusicPrefab;
     public GameObject bubbleFX;
+    public GameObject MusicPrefab;
     public List<GameObject> Bubbles = new List<GameObject>();
-    public float speed = 3;
+    private float speed = 3;
     private float interval = 10;
+    public AK.Wwise.Event bubbleSFX = null;
+    private AK.Wwise.Event radioFizzleSFX = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,7 @@ public class Radio : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && isBubbled)
             {
                 GameObject Music = Instantiate(MusicPrefab, MusicSpawner.position,MusicSpawner.rotation);
+                radioFizzleSFX.Post(gameObject);
                 Music.GetComponent<Rigidbody>().velocity = MusicSpawner.forward * speed;
             }
         }
@@ -72,9 +76,10 @@ public class Radio : MonoBehaviour
             other.gameObject.SetActive(false);
             isBubbled = true;
             interval += 10f;
-            Debug.Log("Interval: " + interval);
-            Debug.Log("Bubble: " + isBubbled);
+            //Debug.Log("Interval: " + interval);
+            //Debug.Log("Bubble: " + isBubbled);
             bubbleFX.SetActive (true);
+            bubbleSFX.Post(gameObject);
         }
         if (other.gameObject.CompareTag("Fish"))
         {
@@ -96,7 +101,6 @@ public class Radio : MonoBehaviour
         
         if (!isBubbled && GameStat.radioUsed && GameStat.playerIsEntered)
         {
-            Debug.Log("Radio Broken");
             interval = 0;
             bubbleFX.SetActive(false);
             for (int i = 0; i< 3; i++)

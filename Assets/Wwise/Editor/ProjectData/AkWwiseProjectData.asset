@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7f60739c4ca04240ac34bde0609bff6c
     GuidInternal: 
-    m_lastTime: -8585360034123249539
+    m_lastTime: -8585360001368118018
     List:
     - name: Annie
       guid: 886043b3fa5e5247a4f0908ef0c75f4b
@@ -1020,7 +1020,7 @@ MonoBehaviour:
     m_lastTime: -8585362271731633887
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 01000000060000000700000009000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

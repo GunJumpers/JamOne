@@ -4,17 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 public class GameStat : MonoBehaviour
 {
-    public static bool GameOver = false;
-    public GameObject Goal;
     public GameObject Fishes;
-    public GameObject Radio;
     public Text Warning;
     public Text Announcement;
+    public static bool GameOver = false;
     public static bool playerIsEntered = false;
-    public static bool isSoothed = false;
     public static bool radioUsed = false;
     public static bool isCompleted;
     private GameObject radioPrefab;
+    public AK.Wwise.Event radioStartSFX = null;
     private Vector3 startPosition;
     
     // Start is called before the first frame update
@@ -37,6 +35,7 @@ public class GameStat : MonoBehaviour
             if (Input.GetMouseButtonDown(1))
             {
                 Announcement.gameObject.SetActive(false);
+                radioStartSFX.Post(gameObject);
                 radioPrefab.SetActive(!radioPrefab.activeInHierarchy);
                 radioUsed = !radioUsed;
             }
@@ -53,10 +52,8 @@ public class GameStat : MonoBehaviour
 
     private void GameOverScreen()
     {
-        Warning.text = "GAME OVER";
-        Warning.gameObject.SetActive(true);
-        Announcement.text = "PRESS SPACE TO RESTART";
-        Announcement.gameObject.SetActive(true);
+        changeText(Warning, "GAME OVER", true);
+        changeText(Announcement, "PRESS SPACE TO RESTART", true);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameOver = false;
@@ -75,8 +72,17 @@ public class GameStat : MonoBehaviour
     {
         if (isCompleted)
         {
-            Announcement.text = "Fish ♡ Radio";
-            Announcement.gameObject.SetActive(true);
+            changeText(Announcement, "Fish ♡ Radio", true);
+            if (Input.anyKeyDown)
+            {
+                Announcement.gameObject.SetActive(false);
+            }
         }
+    }
+
+    void changeText(Text text,string textValue, bool state)
+    {
+        text.text = textValue;
+        text.gameObject.SetActive(state);
     }
 }

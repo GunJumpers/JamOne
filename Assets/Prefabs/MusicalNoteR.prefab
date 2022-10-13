@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &270218755188130157
+--- !u!1 &4740073491442653524
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 270218755188130153}
-  - component: {fileID: 270218755188130154}
-  - component: {fileID: 270218755188130155}
-  - component: {fileID: 270218755188130156}
-  - component: {fileID: 6755256855150226729}
-  m_Layer: 9
-  m_Name: Goal
-  m_TagString: DestroyableCube
+  - component: {fileID: 5369362871469671406}
+  - component: {fileID: 9019606694343216203}
+  - component: {fileID: 6541728914606192769}
+  - component: {fileID: 1085514585126557102}
+  - component: {fileID: 8880399689962986017}
+  m_Layer: 11
+  m_Name: MusicalNoteR
+  m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &270218755188130153
+--- !u!4 &5369362871469671406
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270218755188130157}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.07, y: 0, z: 4.97}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 4740073491442653524}
+  m_LocalRotation: {x: 0.49100614, y: 0.5939636, z: 0.49118015, w: 0.40603232}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: -1.6687284, y: -0.4856867, z: -2.6103194}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &270218755188130154
+  m_LocalEulerAnglesHint: {x: -10.647, y: 101.014, z: 87.941}
+--- !u!33 &9019606694343216203
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270218755188130157}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &270218755188130155
+  m_GameObject: {fileID: 4740073491442653524}
+  m_Mesh: {fileID: 2534964839176971238, guid: 94cb8ee5c7dd6b5419df2ca2c2e120e8, type: 3}
+--- !u!23 &6541728914606192769
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270218755188130157}
+  m_GameObject: {fileID: 4740073491442653524}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 302477ffe5025c8418b312bcaf88563f, type: 2}
+  - {fileID: 2100000, guid: 6aa2cdd5e117c284e85ed13e8dcfebbd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,26 +85,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &270218755188130156
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270218755188130157}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6755256855150226729
+--- !u!54 &1085514585126557102
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270218755188130157}
+  m_GameObject: {fileID: 4740073491442653524}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -114,3 +101,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8880399689962986017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4740073491442653524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2576d1ed85c277469b15dfc7d32db2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 10
+  shoot: 0
+  beatTempo: 1

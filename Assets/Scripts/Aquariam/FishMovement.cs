@@ -11,8 +11,7 @@ public class FishMovement : MonoBehaviour
     private Vector3 startPosition;
     private Rigidbody rb;
     private float dirX;
-    private bool faceRight;
-    private Vector3 localScale;
+    public bool isSoothed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,11 +31,11 @@ public class FishMovement : MonoBehaviour
             rb.velocity = new Vector3(dirX * Speed, rb.velocity.y, rb.velocity.z);
         }
        
-
+       // Fish follow player
         if (GameStat.playerIsEntered)
         {
             float dist = Vector3.Distance(playerPoint.position, transform.position);
-            if (GameStat.isSoothed)
+            if (isSoothed)
             {
                 Destroy(rb);
             }
@@ -53,19 +52,19 @@ public class FishMovement : MonoBehaviour
     public void FishReset()
     {
         gameObject.transform.position = startPosition;
-        GameStat.isSoothed = false;
-        gameObject.AddComponent<Rigidbody>();
-        rb = GetComponent<Rigidbody>();
-        rb.useGravity = false;
+        isSoothed = false;
+        if (rb == null)
+        {
+            gameObject.AddComponent<Rigidbody>();
+            rb = GetComponent<Rigidbody>();
+            rb.useGravity = false;
+        }
         Debug.Log("FISH RESET");
     }
 
     IEnumerator FishChangeDirections ()
     {
         dirX *= -1f;
-        //faceRight = !faceRight;
-        //localScale.x *= -1;
-        //transform.localScale = localScale;
         yield return new WaitForSeconds(MovementInterval);
         StartCoroutine(FishChangeDirections());
 ;    }
