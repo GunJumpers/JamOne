@@ -2,6 +2,7 @@
 <PluginInfo Project="JamOne_WwiseProject" Platform="Linux" BasePlatform="Linux">
 	<Plugins>
 		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ" StaticLib="AkParametricEQFX"/>
+		<Plugin Name="Wwise Delay" ID="6946819" DLL="AkDelay" StaticLib="AkDelayFX"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
 		<Plugin Name="Wwise Flanger" ID="8192003" DLL="AkFlanger" StaticLib="AkFlangerFX"/>
 		<Plugin Name="Wwise Stereo Delay" ID="8847363" DLL="AkStereoDelay" StaticLib="AkStereoDelayFX"/>

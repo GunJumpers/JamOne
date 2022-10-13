@@ -13,18 +13,22 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID EVNT_AMBIENCE = 2973537489U;
         static const AkUniqueID EVNT_AQUARIUMWINMUSIC = 2785552599U;
         static const AkUniqueID EVNT_BLUE = 1371752769U;
         static const AkUniqueID EVNT_BUBBLE = 2950457951U;
+        static const AkUniqueID EVNT_COMPLETEPUZZLE = 3317185440U;
+        static const AkUniqueID EVNT_FOOTSTEP = 2583652671U;
         static const AkUniqueID EVNT_GENERALPAUSEALL = 4112389820U;
         static const AkUniqueID EVNT_GREEN = 1463993306U;
         static const AkUniqueID EVNT_LASEREMITTERAMBIENT = 3581350656U;
-        static const AkUniqueID EVNT_LASERHUM = 2687610908U;
         static const AkUniqueID EVNT_LASERRECEIVERACTIVATE = 451709758U;
         static const AkUniqueID EVNT_LASERWINMUSIC = 3609677365U;
         static const AkUniqueID EVNT_MAZEWINMUSIC = 84513623U;
         static const AkUniqueID EVNT_NOTETEST = 2234716577U;
         static const AkUniqueID EVNT_NOTETEST_01 = 893392301U;
+        static const AkUniqueID EVNT_PICKUP = 3782541693U;
+        static const AkUniqueID EVNT_PUTDOWN = 2372356168U;
         static const AkUniqueID EVNT_PUZZLEONESEQUENCE = 3752102144U;
         static const AkUniqueID EVNT_PUZZLETHREESEQUENCE = 4139737584U;
         static const AkUniqueID EVNT_PUZZLETWOSEQUENCE = 3742284042U;

@@ -18,21 +18,25 @@ Event	ID	Name			Wwise Object Path	Notes
 	1906948062	evnt_simonWinMusic			\Default Work Unit\Music\evnt_simonWinMusic	
 	2060608572	evnt_radioFizzle			\Default Work Unit\Autumn\evnt_radioFizzle	
 	2234716577	evnt_noteTest			\Default Work Unit\evnt_noteTest	
+	2372356168	evnt_putDown			\Default Work Unit\General\evnt_putDown	
 	2373191370	evnt_red			\Default Work Unit\Annie\evnt_red	
 	2412634145	evnt_thrishaNote1			\Default Work Unit\Thrisha\evnt_thrishaNote1	
 	2412634146	evnt_thrishaNote2			\Default Work Unit\Thrisha\evnt_thrishaNote2	
 	2412634147	evnt_thrishaNote3			\Default Work Unit\Thrisha\evnt_thrishaNote3	
-	2687610908	evnt_laserHum			\Default Work Unit\Calex\evnt_laserHum	
+	2583652671	evnt_footstep			\Default Work Unit\General\evnt_footstep	
 	2785552599	evnt_aquariumWinMusic			\Default Work Unit\Music\evnt_aquariumWinMusic	
 	2843533304	evnt_sophieCubeDespawn			\Default Work Unit\Sophie\evnt_sophieCubeDespawn	
 	2904549614	evnt_radioStart			\Default Work Unit\Autumn\evnt_radioStart	
 	2950457951	evnt_bubble			\Default Work Unit\Autumn\evnt_bubble	
+	2973537489	evnt_ambience			\Default Work Unit\General\evnt_ambience	
 	3139527251	evnt_sophieCubeSpawn			\Default Work Unit\Sophie\evnt_sophieCubeSpawn	
+	3317185440	evnt_completePuzzle			\Default Work Unit\General\evnt_completePuzzle	
 	3581350656	evnt_laserEmitterAmbient			\Default Work Unit\Calex\evnt_laserEmitterAmbient	
 	3609677365	evnt_laserWinMusic			\Default Work Unit\Music\evnt_laserWinMusic	
 	3680082558	evnt_sophieWinMusic			\Default Work Unit\Music\evnt_sophieWinMusic	
 	3742284042	evnt_puzzleTwoSequence			\Default Work Unit\Annie\evnt_puzzleTwoSequence	
 	3752102144	evnt_puzzleOneSequence			\Default Work Unit\Annie\evnt_puzzleOneSequence	
+	3782541693	evnt_pickUp			\Default Work Unit\General\evnt_pickUp	
 	4112389820	evnt_generalPauseAll			\Default Work Unit\General\evnt_generalPauseAll	
 	4139737584	evnt_puzzleThreeSequence			\Default Work Unit\Annie\evnt_puzzleThreeSequence	
 	4207864965	evnt_sophieButton			\Default Work Unit\Sophie\evnt_sophieButton	
@@ -40,7 +44,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	4271760505	evnt_sophiePlateActive			\Default Work Unit\Sophie\evnt_sophiePlateActive	
 
 Effect plug-ins	ID	Name	Type				Notes
+	134792921	Wwise Flanger (Custom)	Wwise Flanger			
+	155491501	Wwise Flanger (Custom)	Wwise Flanger			
+	220409084	Wwise Flanger (Custom)	Wwise Flanger			
+	256852544	Wwise RoomVerb (Custom)	Wwise RoomVerb			
+	308902671	Wwise Delay (Custom)	Wwise Delay			
 	506891147	Plate_Small	Wwise RoomVerb			
+	785737821	Wwise Harmonizer (Custom)	Wwise Harmonizer			
+	900959889	Wwise Harmonizer (Custom)	Wwise Harmonizer			
 	1232017842	LR_Slap_with_CrossFeed	Wwise Stereo Delay			
 	1844231364	New_Wwise_Harmonizer_06	Wwise Harmonizer			
 	2952825346	Dual_Filters_Radio_Comm	Wwise Parametric EQ			
@@ -50,22 +61,32 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19333414	sfx_yiyangShoot	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\temp_Spoons_FA49D30E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangShoot		82048
-	25089753	sfx_sophieCubeDespawn	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_DD6226EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieCubeDespawn		180352
+	20002904	sfx_putdown	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\temp_Spoons_BA88DBF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\sfx_putdown		16664
+	25089753	sfx_sophieCubeDespawn	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_98BFD82E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieCubeDespawn		180352
+	108642983	amb_hum	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\Microwave_E103B2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\amb_hum		5355056
+	133371678	amb_laserHum	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\Microwave_9343AEB8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Calex SFX\amb_laserHum		4342036
 	142399534	sfx_SimonBlue	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\mus_winLayer5Piano_A21AA531.wem		\Actor-Mixer Hierarchy\Default Work Unit\Annie SFX\seq_PuzzleOne\sfx_SimonBlue		247088
 	183444430	sfx_thrishaNote2	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_3865F1A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Thrisha SFX\sfx_thrishaNote2		493028
+	242711347	sfx_laserReceiverActivate	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_3DB537E9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Calex SFX\sfx_laserReceiverActivate		756128
+	294371781	sfx_footsteps	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\Footsteps_Clean_CB00C41B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\Footsteps\sfx_footsteps		126228
 	302578298	sfx_sophieCubeSpawn	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_098E250E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieCubeSpawn		491648
+	317238490	sfx_footsteps_02	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\Footsteps_Clean_9CA8D6F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\Footsteps\sfx_footsteps_02		158308
 	404550736	src_noteBase	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_noteBase		756128
-	464287330	sfx_yiyangBeat1	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_F27A3EA3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat1		446592
-	483305637	sfx_yiyangBeat3	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_57A86290.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat3		446592
-	516804438	sfx_yiyangBeat2	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_C634594F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat2		446592
+	446482066	sfx_pickup	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\temp_Spoons_DF1B1E4A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\sfx_pickup		51252
+	464287330	sfx_yiyangBeat1	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_31121D92.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat1		446592
+	483305637	sfx_yiyangBeat3	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_3E9D4051.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat3		446592
+	516804438	sfx_yiyangBeat2	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_3CBDB53E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat2		446592
 	519067736	sfx_thrishaNote1	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_24550FFD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Thrisha SFX\sfx_thrishaNote1		292092
 	521004709	sfx_thrishaNote3	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_F8053B71.wem		\Actor-Mixer Hierarchy\Default Work Unit\Thrisha SFX\sfx_thrishaNote3		617680
-	629178186	sfx_yiyangEvilLaugh	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\src_evilRacoon_A0811FBC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangEvilLaugh		1794112
+	543792245	sfx_footsteps_03	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\Footsteps_Clean_FA30E30C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\Footsteps\sfx_footsteps_03		158308
+	629178186	sfx_yiyangEvilLaugh	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\src_evilRacoon_A68CA9A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangEvilLaugh		1794112
+	667437317	sfx_bubble	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\Bubble_A94CFD22.wem		\Actor-Mixer Hierarchy\Default Work Unit\Autumn SFX\sfx_bubble		158924
 	745735383	sfx_SimonRed	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\mus_winLayer5Piano_15C1957C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Annie SFX\seq_PuzzleOne\sfx_SimonRed		163472
 	803059930	sfx_RadioFizzle	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\mus_winLayer1Bells_21B2D99E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Autumn SFX\sfx_RadioFizzle		44228
-	867212875	sfx_sophieTeleport	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_74BBB3A7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieTeleport		1323136
+	867212875	sfx_sophieTeleport	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_0A784336.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieTeleport		1323136
 	875348528	src_spoons	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\temp_Spoons_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_spoons		131640
 	1008727059	sfx_Radio	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\mus_winLayer1Bells_2FA9BDFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Autumn SFX\sfx_Radio		12096128
+	1021860612	sfx_footsteps_01	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\Footsteps_Clean_6286F386.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\Footsteps\sfx_footsteps_01		154988
 	1040249201	sfx_SimonGreen	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\mus_winLayer5Piano_C80FACA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Annie SFX\seq_PuzzleOne\sfx_SimonGreen		243560
 	1048766804	sfx_sophieButton	C:\Games\JamOne\JamOne_WwiseProject\.cache\Windows\SFX\sfx_note_944AC552.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieButton		209024
 
