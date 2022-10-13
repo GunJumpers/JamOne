@@ -20,9 +20,8 @@ public class SimonScript : MonoBehaviour
     public GameObject greenButton;
     public GameObject blueButton;
     public bool isLevelOneComplete = false;
-    public bool isListCleared = false;
-    public bool isLevelTwoComplete = false;
-    public bool isLevelThreeComplete = false;
+    //public bool isLevelTwoComplete = false;
+    //public bool isLevelThreeComplete = false;
     public int puzzleIndex; // 0 = none complted | 1 = level 1 completed | 2 
 
     public List<float> levelOneArray = new List<float>{0.0f, 1.0f, 2.0f};
@@ -35,11 +34,17 @@ public class SimonScript : MonoBehaviour
     public float levelTwoCount;
     public float levelThreeCount;
     public GameObject winObject;
+    public GameObject levelOnePrint;
+    public GameObject levelTwoPrint;
+    public GameObject levelThreePrint;
 
     // Start is called before the first frame update
     void Start()
     {
         winObject.SetActive(false);
+        levelOnePrint.SetActive(false);
+        levelTwoPrint.SetActive(false);
+        levelThreePrint.SetActive(false);
     }
 
 
@@ -48,7 +53,6 @@ public class SimonScript : MonoBehaviour
         switch (index) {
 
             case 1:
-                Debug.Log("playing level 1");
                 foreach(float f in levelOneArray)
                 {
                     ActivateSpecificPlate(f);
@@ -100,12 +104,12 @@ public class SimonScript : MonoBehaviour
             evnt_red.Post(gameObject);
             levelOneTestArray.Add(2.0f);
             levelOneCount++;
-            if(puzzleIndex == 2)
+            if(puzzleIndex == 1)
             {
                 levelTwoTestArray.Add(2.0f);
                 levelTwoCount++;
             }
-            if (puzzleIndex == 3)
+            if (puzzleIndex == 2)
             {
                 levelThreeTestArray.Add(2.0f);
                 levelThreeCount++;
@@ -118,12 +122,12 @@ public class SimonScript : MonoBehaviour
             evnt_green.Post(gameObject);
             levelOneTestArray.Add(0.0f);
             levelOneCount++;
-            if (puzzleIndex == 2)
+            if (puzzleIndex == 1)
             {
                 levelTwoTestArray.Add(0.0f);
                 levelTwoCount++;
             }
-            if (puzzleIndex == 3)
+            if (puzzleIndex == 2)
             {
                 levelThreeTestArray.Add(0.0f);
                 levelThreeCount++;
@@ -136,12 +140,12 @@ public class SimonScript : MonoBehaviour
             evnt_blue.Post(gameObject);
             levelOneTestArray.Add(1.0f);         
             levelOneCount++;
-            if (puzzleIndex == 2)
+            if (puzzleIndex == 1)
             {
                 levelTwoTestArray.Add(1.0f);
                 levelTwoCount++;
             }
-            if (puzzleIndex == 3)
+            if (puzzleIndex == 2)
             {
                 levelThreeTestArray.Add(1.0f);
                 levelThreeCount++;
@@ -152,24 +156,30 @@ public class SimonScript : MonoBehaviour
 
     public void buttonPress()
     {
-        Debug.Log("started game");
-        puzzleIndex++;
-        if (puzzleIndex == 1)
+        CheckPuzzleState();
+        if (puzzleIndex == 0)
         {
-            Debug.Log("HELLOOO");
+            levelOnePrint.SetActive(true);
             StartCoroutine(PlayLevel(1));
             levelOne();
         }
+        if(puzzleIndex == 1)
+        {
+            levelOnePrint.SetActive(false);
+            levelTwoPrint.SetActive(true);
+            StartCoroutine(PlayLevel(2));
+            levelTwo();
+        }
         if(puzzleIndex == 2)
         {
-            levelTwo();
+            levelTwoPrint.SetActive(false);
+            levelThreePrint.SetActive(true);
+            StartCoroutine(PlayLevel(3));
+            levelThree();
         }
         if(puzzleIndex == 3)
         {
-            levelThree();
-        }
-        if(isLevelThreeComplete)
-        {
+            levelThreePrint.SetActive(false);
             winObject.SetActive(true);
             startButton.SetActive(false);
             redButton.SetActive(false);
@@ -180,63 +190,44 @@ public class SimonScript : MonoBehaviour
 
     void levelOne()
     {
-        Debug.Log("ENTERED LEVEL 1");
         evnt_puzzleOneSequence.Post(gameObject);
         levelOneCount = 0;
         levelOneTestArray.Clear();
     }
 
-    void levelOneUpdate()
-    {
-        if (levelOneCount == 3 && isListSame(levelOneArray, levelOneTestArray))
-        {
-            isLevelOneComplete = true;
-        }
-        if (levelOneTestArray.Count > 3)
-        {
-            levelOneTestArray.Clear();
-            isListCleared = true;
-            levelOneCount = 0;
-        }
-    }
 
     public void CheckPuzzleState()
     {
-        // Checks puzzle index
-        // Depending on the puzzle index, compares the current players moves to the correct array's count
-        // check if current players moves match the correct array
-        if(puzzleIndex == 1)
+        Debug.Log(puzzleIndex);
+        if(puzzleIndex == 0)
         {
             if (levelOneCount == 3 && isListSame(levelOneArray, levelOneTestArray))
             {
-                Debug.Log("finished level 1");
-                puzzleIndex = 2;
+                puzzleIndex = 1;
             }
             if (levelOneTestArray.Count > 3)
             {
                 levelOneTestArray.Clear();
-                isListCleared = true;
                 levelOneCount = 0;
             }
         }
-        if(puzzleIndex == 2)
+        if(puzzleIndex == 1)
         {
-            if (levelTwoCount == 5 && isListSame(levelTwoArray, levelTwoTestArray) && isLevelOneComplete)
+            if (levelTwoCount == 5 && isListSame(levelTwoArray, levelTwoTestArray))
             {
-                puzzleIndex = 3;
+                puzzleIndex = 2;
             }
             if (levelTwoTestArray.Count > 5)
             {
                 levelTwoTestArray.Clear();
-                isListCleared = true;
                 levelTwoCount = 0;
             }
         }
-        if(puzzleIndex == 3)
+        if(puzzleIndex == 2)
         {
-            if (levelThreeCount == 7 && isListSame(levelThreeArray, levelThreeTestArray) && isLevelTwoComplete)
+            if (levelThreeCount == 7 && isListSame(levelThreeArray, levelThreeTestArray))
             {
-                isLevelThreeComplete = true;
+                puzzleIndex = 3;
             }
             if (levelThreeTestArray.Count > 7)
             {
@@ -254,21 +245,6 @@ public class SimonScript : MonoBehaviour
         levelTwoTestArray.Clear();
     }
 
-    void levelTwoUpdate()
-    {
-        if (levelTwoCount == 5 && isListSame(levelTwoArray, levelTwoTestArray) && isLevelOneComplete)
-        {
-            isLevelTwoComplete = true;
-        }
-        if (levelTwoTestArray.Count > 5)
-        {
-            levelTwoTestArray.Clear();
-            isListCleared = true;
-            levelTwoCount = 0;
-        }
-        
-    }
-
 
     void levelThree()
     {
@@ -276,24 +252,8 @@ public class SimonScript : MonoBehaviour
         evnt_puzzleThreeSequence.Post(gameObject);
         levelThreeCount = 0;
         levelThreeTestArray.Clear();
-        if (isLevelThreeComplete)
-        {
-            Debug.Log("finished level 3");
-        }
     }
 
-    void levelThreeUpdate()
-    {
-        if (levelThreeCount == 7 && isListSame(levelThreeArray, levelThreeTestArray) && isLevelTwoComplete)
-        {
-            isLevelThreeComplete = true;
-        }
-        if (levelThreeTestArray.Count > 7)
-        {
-            levelThreeTestArray.Clear();
-            levelThreeCount = 0;
-        }
-    }
     bool isListSame(List<float> a, List<float> b)
     {
         if(a.Count != b.Count)

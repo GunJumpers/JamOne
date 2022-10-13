@@ -12,7 +12,6 @@ public class ColorPlate : MonoBehaviour
 
     public void MakeGlow()
     {
-        Debug.Log("in glow");
         StartCoroutine(GlowRoutine());
     }
 
@@ -30,7 +29,6 @@ public class ColorPlate : MonoBehaviour
     {
         anim.Play("enable");
         MakeGlow();
-        Debug.Log("inside activate plate");
     }
 
     public void DeactivatePlate()
