@@ -7,7 +7,10 @@ public class Bullet : MonoBehaviour
 {
     // Start is called before the first frame update
     public float life = 3;
-    public AK.Wwise.Event collideSFX = null;
+    public AK.Wwise.Event collideSFX1 = null;
+    public AK.Wwise.Event collideSFX2 = null;
+    public AK.Wwise.Event collideSFX3 = null;
+
     private void Awake()
     {
         Destroy(gameObject, life);
@@ -22,16 +25,16 @@ public class Bullet : MonoBehaviour
             RaccoonGameData.collectNotes++;
             if (other.gameObject.GetComponent<NoteMovement>().notesTag == 1)
             {
-                collideSFX.Post(gameObject);
+                collideSFX1.Post(gameObject);
             }
             // change later
             else if (other.gameObject.GetComponent<NoteMovement>().notesTag == 2)
             {
-                collideSFX.Post(gameObject);
+                collideSFX2.Post(gameObject);
             }
             else if (other.gameObject.GetComponent<NoteMovement>().notesTag == 3)
             {
-                collideSFX.Post(gameObject);
+                collideSFX3.Post(gameObject);
             }
             Destroy(other.gameObject);
             Destroy(gameObject);

@@ -117,6 +117,7 @@ MonoBehaviour:
   life: 10
   shoot: 0
   beatTempo: 1
+  notesTag: 0
 --- !u!64 &7644858260469958779
 MeshCollider:
   m_ObjectHideFlags: 0

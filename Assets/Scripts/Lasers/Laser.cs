@@ -10,6 +10,7 @@ public class Laser
     public LineRenderer lineRenderer;
     public List<Vector3> laserIndices = new List<Vector3>();
     public LayerMask layers;
+    //public AK.Wwise.Event laserRecieverSFX;
 
     public Laser(Vector3 pos, Vector3 direction, Material mat, float alpha, LayerMask layers)
     {
@@ -83,6 +84,7 @@ public class Laser
 
             CastRay(newHit.point, direction, laser, layers);
 
+            //laserRecieverSFX.Post(info.collider.gameObject);
         }
         else
         {
