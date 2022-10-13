@@ -7,6 +7,7 @@ public class GameData : MonoBehaviour
 {
     public NoteSpawner Notes;
     public Bullet HitNotes;
+    public static Transform NoteSpawnerPoint;
     public static float totalNotes;
     public static float collectNotes;
     public static bool GameEnd;
@@ -84,6 +85,7 @@ public class GameData : MonoBehaviour
         Lose.gameObject.SetActive(true);
         Win.gameObject.SetActive(true);
         Score.gameObject.SetActive(true);
+        NoteSpawnerPoint = Notes.NoteSpawnerPoint;
         if (isCompleted)
         {
             Notes.enabled = false;

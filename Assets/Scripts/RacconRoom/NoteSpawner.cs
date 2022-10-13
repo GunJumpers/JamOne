@@ -11,12 +11,13 @@ public class NoteSpawner : MonoBehaviour
     public float NotesNumber;
     public float NotesZ;
     public AK.Wwise.Event EvilLaugh = null;
+    private float spawnerZ;
     void Start()
     {
         Interval = 10f;
+        spawnerZ = NoteSpawnerPoint.position.z;
         StartCoroutine(SpawnNote());
         StartCoroutine(SpeedUp());
-        
     }
 
 
@@ -25,9 +26,9 @@ public class NoteSpawner : MonoBehaviour
         
         if (GameData.startPlaying)
         {
-            Instantiate(Notes[0], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
-            Instantiate(Notes[1], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
-            Instantiate(Notes[2], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
+            Instantiate(Notes[0], new Vector3(NoteSpawnerPoint.position.x + Random.Range(-1.5f, 1.5f), 1f, spawnerZ), Quaternion.identity);
+            Instantiate(Notes[1], new Vector3(NoteSpawnerPoint.position.x + Random.Range(-1.5f, 1.5f), 1f, spawnerZ), Quaternion.identity);
+            Instantiate(Notes[2], new Vector3(NoteSpawnerPoint.position.x + Random.Range(-1.5f, 1.5f), 1f, spawnerZ), Quaternion.identity);
             GameData.totalNotes += 3;
 
         }
