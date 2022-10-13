@@ -12,14 +12,1133 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed51d5a6f1f28248b052ec20ae038ae, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a3fdb5de6cc39441ba36875d450ae63c
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: a3fdb5de6cc39441ba36875d450ae63c
+    GuidInternal: 
+    m_lastTime: -8585362271731633887
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 8d5452a27318e04eb2cfd322d431dcc8
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: 8d5452a27318e04eb2cfd322d431dcc8
+    GuidInternal: 
+    m_lastTime: -8585362271731693726
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8d5452a27318e04eb2cfd322d431dcc8
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: d719ab249f4cce439e3cabeb78d1192c
+    ParentPath: SoundBanks\Default Work Unit
+    guid: d719ab249f4cce439e3cabeb78d1192c
+    GuidInternal: 
+    m_lastTime: -8585359718657580055
+    List:
+    - name: Master
+      guid: a3f5d453ef0e1c469c0d272a1c809d4e
+      id: 4056684167
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d719ab249f4cce439e3cabeb78d1192c
+      - ElementName: Master
+        ObjectType: 7
+        guid: a3f5d453ef0e1c469c0d272a1c809d4e
+      Path: SoundBanks\Default Work Unit\Master
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 7f60739c4ca04240ac34bde0609bff6c
+    ParentPath: Events\Default Work Unit
+    guid: 7f60739c4ca04240ac34bde0609bff6c
+    GuidInternal: 
+    m_lastTime: -8585359718668353605
+    List:
+    - name: Annie
+      guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      id: 1758840296
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      Path: Events\Default Work Unit\Annie
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Autumn
+      guid: c7dbaf0de528cc40a43624ce4ed83100
+      id: 4010875483
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Autumn
+        ObjectType: 4
+        guid: c7dbaf0de528cc40a43624ce4ed83100
+      Path: Events\Default Work Unit\Autumn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Calex
+      guid: 87a8b5842aea2240a7b0852ad2839bc2
+      id: 678717388
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Calex
+        ObjectType: 4
+        guid: 87a8b5842aea2240a7b0852ad2839bc2
+      Path: Events\Default Work Unit\Calex
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_ambience
+      guid: 8683bd75e501a540b80e203f7365375d
+      id: 2973537489
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      - ElementName: evnt_ambience
+        ObjectType: 3
+        guid: 8683bd75e501a540b80e203f7365375d
+      Path: Events\Default Work Unit\General\evnt_ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_aquariumWinMusic
+      guid: 59f219baba3df44c9f9cf0740d322935
+      id: 2785552599
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_aquariumWinMusic
+        ObjectType: 3
+        guid: 59f219baba3df44c9f9cf0740d322935
+      Path: Events\Default Work Unit\Music\evnt_aquariumWinMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_blue
+      guid: 4f96bf033aa32943a3cc805f44fc2f84
+      id: 1371752769
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_blue
+        ObjectType: 3
+        guid: 4f96bf033aa32943a3cc805f44fc2f84
+      Path: Events\Default Work Unit\Annie\evnt_blue
+      maxAttenuation: 0
+      maxDuration: 1.4
+      minDuration: 1.4
+    - name: evnt_bubble
+      guid: 02d2df9abb62eb498f8abf1faa18f39e
+      id: 2950457951
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Autumn
+        ObjectType: 4
+        guid: c7dbaf0de528cc40a43624ce4ed83100
+      - ElementName: evnt_bubble
+        ObjectType: 3
+        guid: 02d2df9abb62eb498f8abf1faa18f39e
+      Path: Events\Default Work Unit\Autumn\evnt_bubble
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_completePuzzle
+      guid: cb988cac38d5a7478445e8df7e6edac9
+      id: 3317185440
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      - ElementName: evnt_completePuzzle
+        ObjectType: 3
+        guid: cb988cac38d5a7478445e8df7e6edac9
+      Path: Events\Default Work Unit\General\evnt_completePuzzle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_footstep
+      guid: 39aad39be1c6e7448b1d13c430442b73
+      id: 2583652671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      - ElementName: evnt_footstep
+        ObjectType: 3
+        guid: 39aad39be1c6e7448b1d13c430442b73
+      Path: Events\Default Work Unit\General\evnt_footstep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_generalPauseAll
+      guid: 4c7f4d3e1393d34c9f66f9d256737f2f
+      id: 4112389820
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      - ElementName: evnt_generalPauseAll
+        ObjectType: 3
+        guid: 4c7f4d3e1393d34c9f66f9d256737f2f
+      Path: Events\Default Work Unit\General\evnt_generalPauseAll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_green
+      guid: 08d768f8a8813a419866a507ce1cad78
+      id: 1463993306
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_green
+        ObjectType: 3
+        guid: 08d768f8a8813a419866a507ce1cad78
+      Path: Events\Default Work Unit\Annie\evnt_green
+      maxAttenuation: 0
+      maxDuration: 1.38
+      minDuration: 1.38
+    - name: evnt_laserEmitterAmbient
+      guid: 321f2c8395a7b948b4039f1999aacffa
+      id: 3581350656
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Calex
+        ObjectType: 4
+        guid: 87a8b5842aea2240a7b0852ad2839bc2
+      - ElementName: evnt_laserEmitterAmbient
+        ObjectType: 3
+        guid: 321f2c8395a7b948b4039f1999aacffa
+      Path: Events\Default Work Unit\Calex\evnt_laserEmitterAmbient
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_laserReceiverActivate
+      guid: 14c00b1aef1da54c96f5b65f960f823a
+      id: 451709758
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Calex
+        ObjectType: 4
+        guid: 87a8b5842aea2240a7b0852ad2839bc2
+      - ElementName: evnt_laserReceiverActivate
+        ObjectType: 3
+        guid: 14c00b1aef1da54c96f5b65f960f823a
+      Path: Events\Default Work Unit\Calex\evnt_laserReceiverActivate
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_laserWinMusic
+      guid: d1c260201c5cae4db539306b8bb8d65a
+      id: 3609677365
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_laserWinMusic
+        ObjectType: 3
+        guid: d1c260201c5cae4db539306b8bb8d65a
+      Path: Events\Default Work Unit\Music\evnt_laserWinMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_mazeWinMusic
+      guid: 5806291cd2972a43bd3ce8b5870c74a7
+      id: 84513623
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_mazeWinMusic
+        ObjectType: 3
+        guid: 5806291cd2972a43bd3ce8b5870c74a7
+      Path: Events\Default Work Unit\Music\evnt_mazeWinMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_noteTest
+      guid: 51821a8fd49389489fbc34bc6d8f8ef2
+      id: 2234716577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: evnt_noteTest
+        ObjectType: 3
+        guid: 51821a8fd49389489fbc34bc6d8f8ef2
+      Path: Events\Default Work Unit\evnt_noteTest
+      maxAttenuation: 0
+      maxDuration: 4.285714
+      minDuration: 4.285714
+    - name: evnt_noteTest_01
+      guid: 5461481b7d4f6842bbfa71b94c9c6164
+      id: 893392301
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: evnt_noteTest_01
+        ObjectType: 3
+        guid: 5461481b7d4f6842bbfa71b94c9c6164
+      Path: Events\Default Work Unit\evnt_noteTest_01
+      maxAttenuation: 0
+      maxDuration: 4.285714
+      minDuration: 4.285714
+    - name: evnt_pickUp
+      guid: 033e037b88aafd4c8c8acb63225860e7
+      id: 3782541693
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      - ElementName: evnt_pickUp
+        ObjectType: 3
+        guid: 033e037b88aafd4c8c8acb63225860e7
+      Path: Events\Default Work Unit\General\evnt_pickUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_putDown
+      guid: 5fb0e71c77fa9f4dbb8cba3886d9aca1
+      id: 2372356168
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      - ElementName: evnt_putDown
+        ObjectType: 3
+        guid: 5fb0e71c77fa9f4dbb8cba3886d9aca1
+      Path: Events\Default Work Unit\General\evnt_putDown
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_puzzleOneSequence
+      guid: 1fe6c038753cde44b468d3b5f8bbc545
+      id: 3752102144
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_puzzleOneSequence
+        ObjectType: 3
+        guid: 1fe6c038753cde44b468d3b5f8bbc545
+      Path: Events\Default Work Unit\Annie\evnt_puzzleOneSequence
+      maxAttenuation: 0
+      maxDuration: 3.706
+      minDuration: 3.706
+    - name: evnt_puzzleThreeSequence
+      guid: c0079394c6965a40867555ddded21e65
+      id: 4139737584
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_puzzleThreeSequence
+        ObjectType: 3
+        guid: c0079394c6965a40867555ddded21e65
+      Path: Events\Default Work Unit\Annie\evnt_puzzleThreeSequence
+      maxAttenuation: 0
+      maxDuration: 8.338
+      minDuration: 8.338
+    - name: evnt_puzzleTwoSequence
+      guid: dcb6f9c12378e94c9c226f11ce071d86
+      id: 3742284042
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_puzzleTwoSequence
+        ObjectType: 3
+        guid: dcb6f9c12378e94c9c226f11ce071d86
+      Path: Events\Default Work Unit\Annie\evnt_puzzleTwoSequence
+      maxAttenuation: 0
+      maxDuration: 6.466
+      minDuration: 6.466
+    - name: evnt_raccoonWinMusic
+      guid: 59c644811106844d8b6a0f6f6e82b255
+      id: 1374748551
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_raccoonWinMusic
+        ObjectType: 3
+        guid: 59c644811106844d8b6a0f6f6e82b255
+      Path: Events\Default Work Unit\Music\evnt_raccoonWinMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_radioFizzle
+      guid: 2bd74f5247d6054e85bbbc5c7fbe471c
+      id: 2060608572
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Autumn
+        ObjectType: 4
+        guid: c7dbaf0de528cc40a43624ce4ed83100
+      - ElementName: evnt_radioFizzle
+        ObjectType: 3
+        guid: 2bd74f5247d6054e85bbbc5c7fbe471c
+      Path: Events\Default Work Unit\Autumn\evnt_radioFizzle
+      maxAttenuation: 100
+      maxDuration: 0.25
+      minDuration: 0.25
+    - name: evnt_radioStart
+      guid: c51818b3d6534345a4ac8e13b6883d9b
+      id: 2904549614
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Autumn
+        ObjectType: 4
+        guid: c7dbaf0de528cc40a43624ce4ed83100
+      - ElementName: evnt_radioStart
+        ObjectType: 3
+        guid: c51818b3d6534345a4ac8e13b6883d9b
+      Path: Events\Default Work Unit\Autumn\evnt_radioStart
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_red
+      guid: 61171a99e988024495ac2c9c5771e246
+      id: 2373191370
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Annie
+        ObjectType: 4
+        guid: 886043b3fa5e5247a4f0908ef0c75f4b
+      - ElementName: evnt_red
+        ObjectType: 3
+        guid: 61171a99e988024495ac2c9c5771e246
+      Path: Events\Default Work Unit\Annie\evnt_red
+      maxAttenuation: 0
+      maxDuration: 0.926
+      minDuration: 0.926
+    - name: evnt_simonWinMusic
+      guid: e1a7477885f0f34aba6deac82568304b
+      id: 1906948062
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_simonWinMusic
+        ObjectType: 3
+        guid: e1a7477885f0f34aba6deac82568304b
+      Path: Events\Default Work Unit\Music\evnt_simonWinMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_sophieButton
+      guid: 71507824f2614c478bbff82fbcfc5c5b
+      id: 4207864965
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophieButton
+        ObjectType: 3
+        guid: 71507824f2614c478bbff82fbcfc5c5b
+      Path: Events\Default Work Unit\Sophie\evnt_sophieButton
+      maxAttenuation: 3000
+      maxDuration: 0.315482
+      minDuration: 0.315482
+    - name: evnt_sophieCubeDespawn
+      guid: 1119ca822bf98d41a46050e81cb9e9af
+      id: 2843533304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophieCubeDespawn
+        ObjectType: 3
+        guid: 1119ca822bf98d41a46050e81cb9e9af
+      Path: Events\Default Work Unit\Sophie\evnt_sophieCubeDespawn
+      maxAttenuation: 3000
+      maxDuration: 0.415966
+      minDuration: 0.415966
+    - name: evnt_sophieCubeSpawn
+      guid: b501505900a38f4797a95f599111141f
+      id: 3139527251
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophieCubeSpawn
+        ObjectType: 3
+        guid: b501505900a38f4797a95f599111141f
+      Path: Events\Default Work Unit\Sophie\evnt_sophieCubeSpawn
+      maxAttenuation: 3000
+      maxDuration: 0.655462
+      minDuration: 0.655462
+    - name: evnt_sophiePlateActive
+      guid: 5988c27ded501c4bab6d9decd9095bbb
+      id: 4271760505
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophiePlateActive
+        ObjectType: 3
+        guid: 5988c27ded501c4bab6d9decd9095bbb
+      Path: Events\Default Work Unit\Sophie\evnt_sophiePlateActive
+      maxAttenuation: 3000
+      maxDuration: 0.249849
+      minDuration: 0.249849
+    - name: evnt_sophiePlateDeactive
+      guid: 995555918520454cb1087897d71715ad
+      id: 91348688
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophiePlateDeactive
+        ObjectType: 3
+        guid: 995555918520454cb1087897d71715ad
+      Path: Events\Default Work Unit\Sophie\evnt_sophiePlateDeactive
+      maxAttenuation: 3000
+      maxDuration: 0.249849
+      minDuration: 0.249849
+    - name: evnt_sophieTeleport
+      guid: 746ae639196b3e498d1e9fbe49719ed2
+      id: 235107416
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      - ElementName: evnt_sophieTeleport
+        ObjectType: 3
+        guid: 746ae639196b3e498d1e9fbe49719ed2
+      Path: Events\Default Work Unit\Sophie\evnt_sophieTeleport
+      maxAttenuation: 3000
+      maxDuration: 0.47112
+      minDuration: 0.47112
+    - name: evnt_sophieWinMusic
+      guid: 4bb79b55c08631438fe675b603f88944
+      id: 3680082558
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      - ElementName: evnt_sophieWinMusic
+        ObjectType: 3
+        guid: 4bb79b55c08631438fe675b603f88944
+      Path: Events\Default Work Unit\Music\evnt_sophieWinMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_thrishaNote1
+      guid: a5406ad988fc37438b23aacba6de8be1
+      id: 2412634145
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote1
+        ObjectType: 3
+        guid: a5406ad988fc37438b23aacba6de8be1
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote1
+      maxAttenuation: 3000
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_thrishaNote1Stop
+      guid: 2acc032c828ec543848c43103fb80194
+      id: 1526560633
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote1Stop
+        ObjectType: 3
+        guid: 2acc032c828ec543848c43103fb80194
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote1Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_thrishaNote2
+      guid: 650100e56e47fc4897ec1337816ed1f7
+      id: 2412634146
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote2
+        ObjectType: 3
+        guid: 650100e56e47fc4897ec1337816ed1f7
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote2
+      maxAttenuation: 3000
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_thrishaNote2Stop
+      guid: d6a613957cc9f44d9d63330ce73ba5ed
+      id: 404810138
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote2Stop
+        ObjectType: 3
+        guid: d6a613957cc9f44d9d63330ce73ba5ed
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote2Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_thrishaNote3
+      guid: 78267894def6a845b379e09ab3cee530
+      id: 2412634147
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote3
+        ObjectType: 3
+        guid: 78267894def6a845b379e09ab3cee530
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote3
+      maxAttenuation: 3000
+      maxDuration: -1
+      minDuration: -1
+    - name: evnt_thrishaNote3Stop
+      guid: 0e9389aa1385f94c93d2db3d93712e3c
+      id: 777445139
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      - ElementName: evnt_thrishaNote3Stop
+        ObjectType: 3
+        guid: 0e9389aa1385f94c93d2db3d93712e3c
+      Path: Events\Default Work Unit\Thrisha\evnt_thrishaNote3Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: evnt_yiyangBeat1
+      guid: 48132b1c85b33b43aac0302b22efcf4f
+      id: 1497856613
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      - ElementName: evnt_yiyangBeat1
+        ObjectType: 3
+        guid: 48132b1c85b33b43aac0302b22efcf4f
+      Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat1
+      maxAttenuation: 3000
+      maxDuration: 0.404373
+      minDuration: 0.404373
+    - name: evnt_yiyangBeat2
+      guid: 58d146dafaaf4041aff51f961421db06
+      id: 1497856614
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      - ElementName: evnt_yiyangBeat2
+        ObjectType: 3
+        guid: 58d146dafaaf4041aff51f961421db06
+      Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat2
+      maxAttenuation: 3000
+      maxDuration: 0.360255
+      minDuration: 0.360255
+    - name: evnt_yiyangBeat3
+      guid: 4bdda5098736724bacc494fb0832e488
+      id: 1497856615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      - ElementName: evnt_yiyangBeat3
+        ObjectType: 3
+        guid: 4bdda5098736724bacc494fb0832e488
+      Path: Events\Default Work Unit\Yiyang\evnt_yiyangBeat3
+      maxAttenuation: 3000
+      maxDuration: 0.269887
+      minDuration: 0.269887
+    - name: evnt_yiyangEvilLaugh
+      guid: 909e0e17714e1b40aa96da25577f890d
+      id: 1648251437
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      - ElementName: evnt_yiyangEvilLaugh
+        ObjectType: 3
+        guid: 909e0e17714e1b40aa96da25577f890d
+      Path: Events\Default Work Unit\Yiyang\evnt_yiyangEvilLaugh
+      maxAttenuation: 0
+      maxDuration: 1.856903
+      minDuration: 1.856903
+    - name: evnt_yiyangShoot
+      guid: 5a4a269c6c5fac48a37a0d35c0ae7f04
+      id: 752288469
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      - ElementName: evnt_yiyangShoot
+        ObjectType: 3
+        guid: 5a4a269c6c5fac48a37a0d35c0ae7f04
+      Path: Events\Default Work Unit\Yiyang\evnt_yiyangShoot
+      maxAttenuation: 0
+      maxDuration: 0.08308
+      minDuration: 0.08308
+    - name: General
+      guid: 1c0301892eb1d543ba28856e50884819
+      id: 133642231
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: General
+        ObjectType: 4
+        guid: 1c0301892eb1d543ba28856e50884819
+      Path: Events\Default Work Unit\General
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Music
+        ObjectType: 4
+        guid: 38b40bd7c598fe48bbae4b73695fd7fb
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sophie
+      guid: f448a4038dd8a741bdb8695aab8ef410
+      id: 346620989
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Sophie
+        ObjectType: 4
+        guid: f448a4038dd8a741bdb8695aab8ef410
+      Path: Events\Default Work Unit\Sophie
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Test_Event
+      guid: 61c9f5de0edf394d9e9e38c4cf30a16b
+      id: 4258653052
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Test_Event
+        ObjectType: 3
+        guid: 61c9f5de0edf394d9e9e38c4cf30a16b
+      Path: Events\Default Work Unit\Test_Event
+      maxAttenuation: 0
+      maxDuration: 0.745533
+      minDuration: 0.745533
+    - name: Thrisha
+      guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      id: 2949072868
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Thrisha
+        ObjectType: 4
+        guid: 3a87bf3088fd9b498a83ad80d9fe8053
+      Path: Events\Default Work Unit\Thrisha
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Yiyang
+      guid: 82d7f70751498b4e9945e3b67708259f
+      id: 3196254168
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7f60739c4ca04240ac34bde0609bff6c
+      - ElementName: Yiyang
+        ObjectType: 4
+        guid: 82d7f70751498b4e9945e3b67708259f
+      Path: Events\Default Work Unit\Yiyang
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 76213afb33cf914583f1882c4aa6e134
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 76213afb33cf914583f1882c4aa6e134
+    GuidInternal: 
+    m_lastTime: -8585362271731793455
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: cdf2351a380ffc4492ee063336bf9aa7
+    ParentPath: States\Default Work Unit
+    guid: cdf2351a380ffc4492ee063336bf9aa7
+    GuidInternal: 
+    m_lastTime: -8585362271731643862
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e5cfb0b91a9bfb42a253076cda980f1f
+    ParentPath: Switches\Default Work Unit
+    guid: e5cfb0b91a9bfb42a253076cda980f1f
+    GuidInternal: 
+    m_lastTime: -8585362271731633887
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 05a328cbdf837b40b4f29dc6d995844f
+    ParentPath: Triggers\Default Work Unit
+    guid: 05a328cbdf837b40b4f29dc6d995844f
+    GuidInternal: 
+    m_lastTime: -8585362271731633887
+    List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
