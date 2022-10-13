@@ -56,7 +56,7 @@ public class SimonScript : MonoBehaviour
                 foreach(float f in levelOneArray)
                 {
                     ActivateSpecificPlate(f);
-                    yield return new WaitForSeconds(0.3f);
+                    yield return new WaitForSeconds(1f);
                 }
                 break;
             case 2:
@@ -91,7 +91,8 @@ public class SimonScript : MonoBehaviour
         }
         if (index == 2.0f)
         {
-            redPlate.ActivatePlate();
+            //redPlate.ActivatePlate();
+            redButton.GetComponent<ColorPlate>().ActivatePlate();
         }
     }
 
@@ -101,7 +102,7 @@ public class SimonScript : MonoBehaviour
         {
             CheckPuzzleState();
             Debug.Log("clicked red button");
-            evnt_red.Post(gameObject);
+            //evnt_red.Post(gameObject);
             // button glow
             redButton.GetComponent<ColorPlate>().ActivatePlate();
             levelOneTestArray.Add(2.0f);
@@ -121,7 +122,7 @@ public class SimonScript : MonoBehaviour
         {
             CheckPuzzleState();
             Debug.Log("clicked green button");
-            evnt_green.Post(gameObject);
+            //evnt_green.Post(gameObject);
             greenButton.GetComponent<ColorPlate>().ActivatePlate();
             levelOneTestArray.Add(0.0f);
             levelOneCount++;
@@ -141,7 +142,7 @@ public class SimonScript : MonoBehaviour
             CheckPuzzleState();
             Debug.Log("clicked blue button");
             blueButton.GetComponent<ColorPlate>().ActivatePlate();
-            evnt_blue.Post(gameObject);
+            //evnt_blue.Post(gameObject);
             levelOneTestArray.Add(1.0f);         
             levelOneCount++;
             if (puzzleIndex == 1)
@@ -194,7 +195,7 @@ public class SimonScript : MonoBehaviour
 
     void levelOne()
     {
-        evnt_puzzleOneSequence.Post(gameObject);
+        //evnt_puzzleOneSequence.Post(gameObject);
         levelOneCount = 0;
         levelOneTestArray.Clear();
     }
@@ -244,7 +245,7 @@ public class SimonScript : MonoBehaviour
     void levelTwo()
     {
         Debug.Log("ENTERED LEVEL 2");
-        evnt_puzzleTwoSequence.Post(gameObject);
+        //evnt_puzzleTwoSequence.Post(gameObject);
         levelTwoCount = 0;
         levelTwoTestArray.Clear();
     }
@@ -253,7 +254,7 @@ public class SimonScript : MonoBehaviour
     void levelThree()
     {
         Debug.Log("ENTERED LEVEL 3");
-        evnt_puzzleThreeSequence.Post(gameObject);
+        //evnt_puzzleThreeSequence.Post(gameObject);
         levelThreeCount = 0;
         levelThreeTestArray.Clear();
     }

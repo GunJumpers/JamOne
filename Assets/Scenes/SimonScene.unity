@@ -5426,6 +5426,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632869715}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!137 &639778039 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3738804123098789415, guid: df860cf5549cc7342902a5b96791bab5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1343702263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &640063420
 GameObject:
   m_ObjectHideFlags: 0
@@ -6330,11 +6336,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 905a0c63aedc39a4eabf4fe6e8cf41b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowTime: 2
+  glowTime: 0.5
   defaultMaterial: {fileID: 2100000, guid: aa38e065e3e96c149b6970624187dfca, type: 2}
   glowMaterial: {fileID: 2100000, guid: 7682247775dd86c449080f7395e85ac7, type: 2}
   anim: {fileID: 1343702272}
-  plateRenderer: {fileID: 1545567514}
+  plateRenderer: {fileID: 1164085631}
+  noteSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 263bbcba19c58aa4f8d143014338b3e9,
+      type: 2}
 --- !u!1 &754487530
 GameObject:
   m_ObjectHideFlags: 0
@@ -8420,6 +8431,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135515554}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!137 &1164085631 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3738804123098789415, guid: df860cf5549cc7342902a5b96791bab5,
+    type: 3}
+  m_PrefabInstance: {fileID: 752837335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1195734603
 GameObject:
   m_ObjectHideFlags: 0
@@ -9628,11 +9645,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 905a0c63aedc39a4eabf4fe6e8cf41b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowTime: 2
+  glowTime: 0.5
   defaultMaterial: {fileID: 2100000, guid: df2fce3ca626e4746a33b851c42c8d38, type: 2}
   glowMaterial: {fileID: 2100000, guid: b834191ec48d75044a6e0425b977dee4, type: 2}
   anim: {fileID: 1343702272}
-  plateRenderer: {fileID: 1545567514}
+  plateRenderer: {fileID: 639778039}
+  noteSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 32f5d66a4068e9546a33775da5227955,
+      type: 2}
 --- !u!95 &1343702272
 Animator:
   serializedVersion: 4
@@ -10532,7 +10554,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh521308
+  m_Name: pb_Mesh593868
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10968,6 +10990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6034563288546041929, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
         type: 3}
+      propertyPath: buttonCooldown
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034563288546041929, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
+        type: 3}
       propertyPath: buttonPressSound.WwiseObjectReference
       value: 
       objectReference: {fileID: 0}
@@ -11016,12 +11043,6 @@ PrefabInstance:
 --- !u!1 &1545567513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6034563288546041935, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1545567512}
-  m_PrefabAsset: {fileID: 0}
---- !u!137 &1545567514 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3947976552869142432, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
     type: 3}
   m_PrefabInstance: {fileID: 1545567512}
   m_PrefabAsset: {fileID: 0}
@@ -11736,11 +11757,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 905a0c63aedc39a4eabf4fe6e8cf41b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowTime: 2
+  glowTime: 0.5
   defaultMaterial: {fileID: 2100000, guid: 67bd7c4d8a27f984590e6c49eac3961e, type: 2}
   glowMaterial: {fileID: 2100000, guid: 2dec7d4da8ca53b4da8fa415d8bfe8b6, type: 2}
   anim: {fileID: 1343702272}
-  plateRenderer: {fileID: 1545567514}
+  plateRenderer: {fileID: 1807532780}
+  noteSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b21159ae4239bca468e9b6000f02708e,
+      type: 2}
 --- !u!1 &1659033039
 GameObject:
   m_ObjectHideFlags: 0
@@ -12653,6 +12679,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799626657}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!137 &1807532780 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3738804123098789415, guid: df860cf5549cc7342902a5b96791bab5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1655972043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1828384201
 GameObject:
   m_ObjectHideFlags: 0

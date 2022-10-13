@@ -9,6 +9,8 @@ public class ColorPlate : MonoBehaviour
     public Material glowMaterial;
     public Animator anim;
     public Renderer plateRenderer;
+    public AK.Wwise.Event noteSound = null;
+
 
     public void MakeGlow()
     {
@@ -29,6 +31,7 @@ public class ColorPlate : MonoBehaviour
     {
         anim.Play("enable");
         MakeGlow();
+        noteSound.Post(this.gameObject);
     }
 
     public void DeactivatePlate()
