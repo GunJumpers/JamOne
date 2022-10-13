@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="2853484638">
+		<SoundBank Id="4056684167" Language="SFX" Hash="2544139581">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -93,7 +93,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4276656312" Name="evnt_initMusic" ObjectPath="\Events\Default Work Unit\Music\evnt_initMusic" DurationType="OneShot" DurationMin="68.571426" DurationMax="68.571426">
+				<Event Id="4276656312" Name="evnt_initMusic" ObjectPath="\Events\Default Work Unit\Music\evnt_initMusic" DurationType="OneShot" DurationMin="68.575317" DurationMax="68.575317">
 					<IncludedMemoryFiles>
 						<File Id="281463204" Language="SFX">
 							<ShortName>mus_winLayer1Bells.wav</ShortName>

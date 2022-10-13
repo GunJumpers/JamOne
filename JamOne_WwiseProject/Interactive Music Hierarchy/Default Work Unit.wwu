@@ -15,7 +15,7 @@
 					<ChildrenList>
 						<MusicSegment Name="Music" ID="{7FBE5F78-0AFF-4ABD-BA69-158FC9DEB5A8}" ShortID="1034383665">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="69490.2723735409"/>
+								<Property Name="EndPosition" Type="Real64" Value="68575.3196220122"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -46,6 +46,11 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{25ACF5D4-6523-4AC0-8BBF-12E1C5A77209}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>

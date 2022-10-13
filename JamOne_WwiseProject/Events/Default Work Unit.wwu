@@ -255,7 +255,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer1Bells" ID="{72F3706A-7FE7-4F3C-9807-AB2EF7C7CB6A}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer1Bells" ID="{370AE77F-DC8B-4E9A-A32F-594AF7D88F55}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -270,7 +270,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer5Piano" ID="{4A9B67BB-3F60-41EA-AACE-88F615B9855C}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer5Piano" ID="{859656A3-BA32-486A-88EC-DE471B99D4DC}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -285,7 +285,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer4Lead" ID="{61452A82-D909-4E6D-A9D8-568F5880EB1C}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer4Lead" ID="{5B597D99-D322-438E-83FE-C12A156A2631}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -300,7 +300,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer3Drum" ID="{A41A4305-90D5-4D4F-9964-5B6135795FF1}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer3Drum" ID="{8FD485A0-045E-4135-9E64-47A6D0B35AA0}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -315,7 +315,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer6Pads" ID="{1B8E5A3A-CCA1-4E0A-8EB6-EE3F68D20371}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer6Pads" ID="{4F62760F-4BB2-4745-A9DE-358333DD4660}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -330,7 +330,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer2Bass" ID="{07136627-AD6B-4C74-8FCE-90EEC830EF68}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer2Bass" ID="{B6F9272A-9D1C-4C33-B675-5301835359F1}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -338,76 +338,111 @@
 						</Event>
 						<Event Name="evnt_initMusic" ID="{55546EA6-A56C-4B98-8561-63852A0B6DCF}">
 							<ChildrenList>
-								<Action Name="" ID="{13201163-9E25-455D-A78A-546025F9C289}" ShortID="977684022">
+								<Action Name="" ID="{722110A3-DCE2-444A-9CE5-D343C8760755}" ShortID="46442680">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Music" ID="{7FBE5F78-0AFF-4ABD-BA69-158FC9DEB5A8}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer1Bells" ID="{370AE77F-DC8B-4E9A-A32F-594AF7D88F55}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{60E1C8D0-E5E0-4E71-BF6C-F9010787B10C}" ShortID="93832417">
+								<Action Name="" ID="{9F04AD48-62BE-40FC-B5A6-6F2D3C556BE8}" ShortID="1034368747">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer1Bells" ID="{72F3706A-7FE7-4F3C-9807-AB2EF7C7CB6A}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer1Bells" ID="{370AE77F-DC8B-4E9A-A32F-594AF7D88F55}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{AD56639D-9DAD-4903-BFC4-D26284C70D92}" ShortID="590753784">
+								<Action Name="" ID="{D0BBC971-CC84-4822-988C-048E5D536D26}" ShortID="953246962">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer2Bass" ID="{B6F9272A-9D1C-4C33-B675-5301835359F1}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2C726238-092A-49B4-94BC-4C013ABC4F96}" ShortID="848325985">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer2Bass" ID="{07136627-AD6B-4C74-8FCE-90EEC830EF68}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer2Bass" ID="{B6F9272A-9D1C-4C33-B675-5301835359F1}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{2AAB7B73-0E79-4F94-B7DB-13A951E3B92B}" ShortID="1019698421">
+								<Action Name="" ID="{BF7C27A9-9C46-4519-A38E-AFE7EB4FBD4A}" ShortID="566305391">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer3Drum" ID="{8FD485A0-045E-4135-9E64-47A6D0B35AA0}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D4D7865A-6F37-405C-847A-8DECBB2E828F}" ShortID="12525520">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer3Drum" ID="{A41A4305-90D5-4D4F-9964-5B6135795FF1}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer3Drum" ID="{8FD485A0-045E-4135-9E64-47A6D0B35AA0}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{CDB08712-AEF3-482B-99ED-5DB189334158}" ShortID="221137688">
+								<Action Name="" ID="{5D8D1901-2691-413C-9576-34C3A545658A}" ShortID="468492183">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer4Lead" ID="{5B597D99-D322-438E-83FE-C12A156A2631}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5918EF5E-723B-4852-83D4-E86F779F8D6D}" ShortID="613069678">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer4Lead" ID="{61452A82-D909-4E6D-A9D8-568F5880EB1C}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer4Lead" ID="{5B597D99-D322-438E-83FE-C12A156A2631}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{FE6F89DE-4B09-4FED-B76A-A06B6E325D6E}" ShortID="883398771">
+								<Action Name="" ID="{58DD8C06-B921-4F97-817F-431171069F3F}" ShortID="432065325">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer5Piano" ID="{859656A3-BA32-486A-88EC-DE471B99D4DC}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{ABDEBEF0-CA7D-43F5-86C6-FF99B6758B1F}" ShortID="930590159">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer5Piano" ID="{4A9B67BB-3F60-41EA-AACE-88F615B9855C}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer5Piano" ID="{859656A3-BA32-486A-88EC-DE471B99D4DC}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{88EAB349-CAD8-49F5-80AA-9599DE22ACC9}" ShortID="903671720">
+								<Action Name="" ID="{6378CFB4-95F9-42F8-87E4-6662E632F139}" ShortID="917040471">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer6Pads" ID="{4F62760F-4BB2-4745-A9DE-358333DD4660}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BADCF685-FC1D-4395-BF6B-91C09EDC3364}" ShortID="210590177">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="4"/>
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_winLayer6Pads" ID="{1B8E5A3A-CCA1-4E0A-8EB6-EE3F68D20371}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+											<ObjectRef Name="mus_winLayer6Pads" ID="{4F62760F-4BB2-4745-A9DE-358333DD4660}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -529,6 +564,7 @@
 								<Action Name="" ID="{9505F748-C5EA-4971-BC21-AC0E8A0FB4E5}" ShortID="896256595">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="8"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList/>
 								</Action>
@@ -594,6 +630,7 @@
 								<Action Name="" ID="{D1EDD55E-1BAE-4CAD-BF54-421F2167D837}" ShortID="1043929364">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="10"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList/>
 								</Action>
