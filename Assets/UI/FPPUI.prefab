@@ -514,8 +514,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8366225576705017658}
         m_TargetAssemblyTypeName: FPPUIController, Assembly-CSharp
-        m_MethodName: TogglePauseMenu
-        m_Mode: 6
+        m_MethodName: ResumeGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
