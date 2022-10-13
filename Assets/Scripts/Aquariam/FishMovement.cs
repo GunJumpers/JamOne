@@ -65,6 +65,7 @@ public class FishMovement : MonoBehaviour
     IEnumerator FishChangeDirections ()
     {
         dirX *= -1f;
+        //transform.localScale = localScale;
         yield return new WaitForSeconds(MovementInterval);
         StartCoroutine(FishChangeDirections());
 ;    }

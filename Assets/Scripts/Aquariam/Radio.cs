@@ -33,7 +33,7 @@ public class Radio : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && isBubbled)
             {
                 GameObject Music = Instantiate(MusicPrefab, MusicSpawner.position,MusicSpawner.rotation);
-                radioFizzleSFX.Post(gameObject);
+                //radioFizzleSFX.Post(gameObject);
                 Music.GetComponent<Rigidbody>().velocity = MusicSpawner.forward * speed;
             }
         }
@@ -79,7 +79,7 @@ public class Radio : MonoBehaviour
             //Debug.Log("Interval: " + interval);
             //Debug.Log("Bubble: " + isBubbled);
             bubbleFX.SetActive (true);
-            bubbleSFX.Post(gameObject);
+            //bubbleSFX.Post(gameObject);
         }
         if (other.gameObject.CompareTag("Fish"))
         {
