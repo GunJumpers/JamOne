@@ -517,6 +517,7 @@
 								<Action Name="" ID="{9505F748-C5EA-4971-BC21-AC0E8A0FB4E5}" ShortID="896256595">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="8"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList/>
 								</Action>
@@ -582,6 +583,7 @@
 								<Action Name="" ID="{D1EDD55E-1BAE-4CAD-BF54-421F2167D837}" ShortID="1043929364">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="10"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList/>
 								</Action>

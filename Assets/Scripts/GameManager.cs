@@ -20,7 +20,13 @@ public class GameManager : UnitySingleton<GameManager>
     public Dictionary<BasePuzzleRoom, bool> puzzleRooms;
     public enum RoomType {Cubes, Lasers, Aquarium, Racoon, Maze, Simon }
     [SerializeField] public List<RoomCompletionEvent> puzzleCompletionEvents;
+    public AK.Wwise.Event defaultSoundEvent;
+
+    [Header("Pause Menu")]
     public bool isPaused;
+    public AK.Wwise.Event pauseEvent;
+    public AK.Wwise.Event unpauseEvent;
+
 
     public override void Awake()
     {
@@ -28,6 +34,11 @@ public class GameManager : UnitySingleton<GameManager>
         puzzleRooms = new Dictionary<BasePuzzleRoom, bool>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    private void Start()
+    {
+        defaultSoundEvent.Post(PlayerController.Instance.gameObject);
     }
 
     public void ExitGame()
@@ -52,7 +63,7 @@ public class GameManager : UnitySingleton<GameManager>
             if(roomEvent.roomType == type)
             {
                 Debug.Log(type.ToString() + " was COMPLETED!!!");
-                roomEvent.soundEvent.Post(roomEvent.source);
+                roomEvent.soundEvent.Post(PlayerController.Instance.gameObject);
             }
         }
     }
@@ -74,6 +85,7 @@ public class GameManager : UnitySingleton<GameManager>
             FPPUIController.Instance.TogglePauseMenu(false);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            unpauseEvent.Post(this.gameObject);
         }
         else
         {
@@ -82,6 +94,7 @@ public class GameManager : UnitySingleton<GameManager>
             FPPUIController.Instance.TogglePauseMenu(true);
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
+            pauseEvent.Post(this.gameObject);
 
         }
 

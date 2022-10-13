@@ -20,7 +20,9 @@ namespace AK
         static const AkUniqueID EVNT_COMPLETEPUZZLE = 3317185440U;
         static const AkUniqueID EVNT_FOOTSTEP = 2583652671U;
         static const AkUniqueID EVNT_GENERALPAUSEALL = 4112389820U;
+        static const AkUniqueID EVNT_GENERALUNPAUSEALL = 2548410661U;
         static const AkUniqueID EVNT_GREEN = 1463993306U;
+        static const AkUniqueID EVNT_INITMUSIC = 4276656312U;
         static const AkUniqueID EVNT_LASEREMITTERAMBIENT = 3581350656U;
         static const AkUniqueID EVNT_LASERRECEIVERACTIVATE = 451709758U;
         static const AkUniqueID EVNT_LASERWINMUSIC = 3609677365U;

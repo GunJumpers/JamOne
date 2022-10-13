@@ -33,6 +33,9 @@ public class PlayerController : UnitySingleton<PlayerController>
     public LayerMask interactableLayers;
     public float inspectMinimumSensitivity;
 
+    public AK.Wwise.Event pickupSoundEvent;
+    public AK.Wwise.Event dropSoundEvent;
+
     [Header("Base Movement Stats [Reset on Play]")]
     [SerializeField] private float _maximumSpeed;
     [SerializeField] private float _movementAcceleration;
@@ -241,6 +244,7 @@ public class PlayerController : UnitySingleton<PlayerController>
     public void SetCurrentGrabbable(Grabbable grabbable)
     {
         currentGrabbable = grabbable;
+        pickupSoundEvent.Post(this.gameObject);
     }
 
     public void OnInteract(InputAction.CallbackContext context)
@@ -258,6 +262,7 @@ public class PlayerController : UnitySingleton<PlayerController>
         else
         {
             currentGrabbable.IsNoLongerBeingGrabbed();
+            dropSoundEvent.Post(this.gameObject);
         }
         
     }

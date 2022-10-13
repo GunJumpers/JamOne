@@ -8,7 +8,7 @@ public class PhysicsPuzzleManager : BasePuzzleRoom
     public List<PressurePlate> requiredPlates;
     public UnityEvent onCompleteEvent;
 
-    public AK.Wwise.Event completionEventSound;
+    //public AK.Wwise.Event completionEventSound;
 
     [Header("Win Goal Objects")]
     public GameObject winGoalPrefab;
@@ -39,8 +39,8 @@ public class PhysicsPuzzleManager : BasePuzzleRoom
 
         if (isComplete)
         {
-            onCompleteEvent.Invoke();
-            completionEventSound.Post(gameObject);
+            //onCompleteEvent.Invoke();
+            //completionEventSound.Post(gameObject);
 
             var goal = Instantiate(winGoalPrefab, winGoalSpawnPosition.position, Quaternion.identity);
             goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Cubes;
