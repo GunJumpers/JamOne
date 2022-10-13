@@ -23,12 +23,12 @@ public class NoteSpawner : MonoBehaviour
     IEnumerator SpawnNote()
     {
         
-        if (GameData.startPlaying)
+        if (RaccoonGameData.startPlaying)
         {
             Instantiate(Notes[0], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
             Instantiate(Notes[1], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
             Instantiate(Notes[2], new Vector3(Random.Range(-1.5f, 1.5f), 1f, NotesZ), Quaternion.identity);
-            GameData.totalNotes += 3;
+            RaccoonGameData.totalNotes += 3;
 
         }
         yield return new WaitForSeconds(delayTime);
@@ -37,7 +37,7 @@ public class NoteSpawner : MonoBehaviour
 
     IEnumerator SpeedUp()
     {
-        if (GameData.startPlaying)
+        if (RaccoonGameData.startPlaying)
         {
             EvilLaugh.Post(gameObject);
             Notes[0].GetComponent<NoteMovement>().beatTempo += 0.25f;

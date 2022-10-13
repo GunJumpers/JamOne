@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
-public class GameData : MonoBehaviour
+public class RaccoonGameData : MonoBehaviour
 {
     public NoteSpawner Notes;
     public Bullet HitNotes;
@@ -15,16 +15,22 @@ public class GameData : MonoBehaviour
     public float targetTime;
     public float notesPercentage;
     public Text Announcement, Win, GameTime, Lose, Score;
+    public RoomDetector roomDetector;
+    public bool isEnabled;
 
 
     private void Start()
     {
-        Init();
-       
+
     }
     // Update is called once per frame
     void Update()
     {
+        if (!isEnabled)
+        {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Announcement.gameObject.SetActive(false);
@@ -63,15 +69,11 @@ public class GameData : MonoBehaviour
                 Lose.gameObject.SetActive(true);
                 Announcement.text = "Press TO RESTART";
             }
-            if (Input.anyKeyDown)
-            {
-                Init();
-            }
         }
         
     }
 
-    private void Init()
+    public void Init()
     {
         targetTime = 40f;
         Announcement.text = "Press SPACE to Start";
@@ -89,5 +91,29 @@ public class GameData : MonoBehaviour
             Notes.enabled = false;
             HitNotes.enabled = false;
         }
+    }
+
+    public void DisablePuzzle()
+    {
+        isEnabled = false;
+        targetTime = 40f;
+        Announcement.text = "";
+        Announcement.gameObject.SetActive(false);
+        isCompleted = false;
+        GameEnd = false;
+        startPlaying = false;
+        collectNotes = 0;
+        totalNotes = 0;
+        Lose.gameObject.SetActive(false);
+        Win.gameObject.SetActive(false);
+        Score.gameObject.SetActive(false);
+        Notes.enabled = false;
+        HitNotes.enabled = false;
+    }
+
+    public void EnablePuzzle()
+    {
+        isEnabled = true;
+        Init();
     }
 }

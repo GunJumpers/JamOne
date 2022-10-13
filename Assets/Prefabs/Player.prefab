@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 6059941663166267414}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
   isInspecting: 0
   scrollDirection: 0
   scrollModifier: 0
-  isRotate: 0
+  canControlMovement: 1
   _grabPivot: {fileID: 0}
   currentGrabbable: {fileID: 0}
   grabbableForce: 0

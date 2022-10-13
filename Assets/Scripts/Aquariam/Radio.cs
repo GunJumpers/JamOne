@@ -26,7 +26,6 @@ public class Radio : MonoBehaviour
     {
         if (bubbleFX.activeInHierarchy)
         {
-            StartCoroutine(DestoryBubbleFx());
         }
         if (GameStat.radioUsed)
         {
@@ -64,10 +63,11 @@ public class Radio : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("DestroyableCube"))
+        if (other.gameObject.CompareTag("AquariumGoal"))
         {
             Destroy(other.gameObject);
             GameStat.isCompleted = true;
+            GameStat.Instance.FinishLevel();
             
         }
         // Collide with bubble
@@ -76,6 +76,7 @@ public class Radio : MonoBehaviour
             other.gameObject.SetActive(false);
             isBubbled = true;
             interval += 10f;
+            StartCoroutine(DestoryBubbleFx());
             //Debug.Log("Interval: " + interval);
             //Debug.Log("Bubble: " + isBubbled);
             bubbleFX.SetActive (true);
@@ -99,7 +100,7 @@ public class Radio : MonoBehaviour
     private void checkGameOver()
     {
         
-        if (!isBubbled && GameStat.radioUsed && GameStat.playerIsEntered)
+        if (!isBubbled && !GameStat.isCompleted && GameStat.radioUsed && GameStat.playerIsEntered)
         {
             interval = 0;
             bubbleFX.SetActive(false);

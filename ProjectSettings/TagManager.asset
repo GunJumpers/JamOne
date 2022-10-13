@@ -13,6 +13,7 @@ TagManager:
   - Note
   - Wall
   - Water
+  - AquariumGoal
   layers:
   - Default
   - TransparentFX

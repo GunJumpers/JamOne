@@ -12,7 +12,7 @@ public class BulletShoot : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && !GameData.GameEnd)
+        if (RaccoonGameData.startPlaying && !RaccoonGameData.GameEnd && Input.GetMouseButtonDown(0))
         {
             shootSFX.Post(gameObject);
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawner.position, bulletSpawner.rotation);

@@ -15,6 +15,7 @@ public class music : MonoBehaviour
         if (other.gameObject.CompareTag("Fish"))
         {
             other.GetComponent<FishMovement>().isSoothed = true;
+            GameStat.Instance.CheckPuzzleComplete();
             Destroy(gameObject);
         }
     }

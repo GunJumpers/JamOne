@@ -26,26 +26,33 @@ public class FishMovement : MonoBehaviour
     void Update()
     {
        // Fish move right and left
-       if (rb)
+       if (rb != null)
         {
             rb.velocity = new Vector3(dirX * Speed, rb.velocity.y, rb.velocity.z);
         }
-       
-       // Fish follow player
-        if (GameStat.playerIsEntered)
-        {
-            float dist = Vector3.Distance(playerPoint.position, transform.position);
-            if (isSoothed)
-            {
-                Destroy(rb);
-            }
-            else {
-                if (dist > stopDistance)
-                {
-                    transform.position = Vector3.MoveTowards(transform.position, playerPoint.position, Speed * Time.deltaTime);
-                }
-            }
 
+        // Fish follow player
+        /*
+         if (GameStat.playerIsEntered)
+         {
+             float dist = Vector3.Distance(playerPoint.position, transform.position);
+             if (isSoothed)
+             {
+                 Destroy(rb);
+             }
+             else {
+                 if (dist > stopDistance)
+                 {
+                     transform.position = Vector3.MoveTowards(transform.position, playerPoint.position, Speed * Time.deltaTime);
+                 }
+             }
+
+         }
+        */
+
+        if (isSoothed)
+        {
+            Destroy(rb);
         }
     }
 

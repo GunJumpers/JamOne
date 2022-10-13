@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
         {
 
             other.gameObject.GetComponent<NoteMovement>().shoot = true;
-            GameData.collectNotes++;
+            RaccoonGameData.collectNotes++;
             if (other.gameObject.GetComponent<NoteMovement>().notesTag == 1)
             {
                 collideSFX.Post(gameObject);
