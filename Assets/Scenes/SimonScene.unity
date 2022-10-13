@@ -6331,9 +6331,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowTime: 2
-  defaultMaterial: {fileID: 2100000, guid: df2fce3ca626e4746a33b851c42c8d38, type: 2}
-  glowMaterial: {fileID: 2100000, guid: b834191ec48d75044a6e0425b977dee4, type: 2}
-  anim: {fileID: 1545567515}
+  defaultMaterial: {fileID: 2100000, guid: aa38e065e3e96c149b6970624187dfca, type: 2}
+  glowMaterial: {fileID: 2100000, guid: 7682247775dd86c449080f7395e85ac7, type: 2}
+  anim: {fileID: 1343702272}
   plateRenderer: {fileID: 1545567514}
 --- !u!1 &754487530
 GameObject:
@@ -7238,9 +7238,6 @@ MonoBehaviour:
   greenButton: {fileID: 752837336}
   blueButton: {fileID: 1655972044}
   isLevelOneComplete: 0
-  isListCleared: 0
-  isLevelTwoComplete: 0
-  isLevelThreeComplete: 0
   puzzleIndex: 0
   levelOneArray:
   - 0
@@ -11028,12 +11025,6 @@ SkinnedMeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1545567512}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1545567515 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5824474863985123534, guid: 63bac25a7ea36ef43bb7e6d6e73c08e5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1545567512}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1560411884
 GameObject:
   m_ObjectHideFlags: 0
@@ -11746,9 +11737,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowTime: 2
-  defaultMaterial: {fileID: 2100000, guid: df2fce3ca626e4746a33b851c42c8d38, type: 2}
-  glowMaterial: {fileID: 2100000, guid: b834191ec48d75044a6e0425b977dee4, type: 2}
-  anim: {fileID: 1545567515}
+  defaultMaterial: {fileID: 2100000, guid: 67bd7c4d8a27f984590e6c49eac3961e, type: 2}
+  glowMaterial: {fileID: 2100000, guid: 2dec7d4da8ca53b4da8fa415d8bfe8b6, type: 2}
+  anim: {fileID: 1343702272}
   plateRenderer: {fileID: 1545567514}
 --- !u!1 &1659033039
 GameObject:

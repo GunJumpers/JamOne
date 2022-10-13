@@ -102,6 +102,8 @@ public class SimonScript : MonoBehaviour
             CheckPuzzleState();
             Debug.Log("clicked red button");
             evnt_red.Post(gameObject);
+            // button glow
+            redButton.GetComponent<ColorPlate>().ActivatePlate();
             levelOneTestArray.Add(2.0f);
             levelOneCount++;
             if(puzzleIndex == 1)
@@ -120,6 +122,7 @@ public class SimonScript : MonoBehaviour
             CheckPuzzleState();
             Debug.Log("clicked green button");
             evnt_green.Post(gameObject);
+            greenButton.GetComponent<ColorPlate>().ActivatePlate();
             levelOneTestArray.Add(0.0f);
             levelOneCount++;
             if (puzzleIndex == 1)
@@ -137,6 +140,7 @@ public class SimonScript : MonoBehaviour
         {
             CheckPuzzleState();
             Debug.Log("clicked blue button");
+            blueButton.GetComponent<ColorPlate>().ActivatePlate();
             evnt_blue.Post(gameObject);
             levelOneTestArray.Add(1.0f);         
             levelOneCount++;
