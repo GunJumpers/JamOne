@@ -43,6 +43,15 @@ public class Radio : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        
+        if (other.gameObject.CompareTag("Fish"))
+        {
+            other.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
         if (other.gameObject.CompareTag("Finish"))
         {
             GameStat.playerIsEntered = false;
@@ -55,14 +64,7 @@ public class Radio : MonoBehaviour
             GameStat.playerIsEntered = true;
             Debug.Log("WATER");
         }
-        if (other.gameObject.CompareTag("Fish"))
-        {
-            other.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-        }
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
         if (other.gameObject.CompareTag("AquariumGoal"))
         {
             Destroy(other.gameObject);

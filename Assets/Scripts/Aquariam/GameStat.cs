@@ -44,6 +44,10 @@ public class GameStat : UnitySingleton<GameStat>
 
     public void EnablePuzzle()
     {
+        if (isCompleted)
+        {
+            return;
+        }
         isActive = true;
         Init();
     }
@@ -87,6 +91,11 @@ public class GameStat : UnitySingleton<GameStat>
 
     private void GameOverScreen()
     {
+        if (isCompleted)
+        {
+            return;
+        }
+
         changeText(Warning, "GAME OVER", true);
         changeText(Announcement, "PRESS SPACE TO RESTART", true);
         if (Input.GetKeyDown(KeyCode.Space))
@@ -121,6 +130,7 @@ public class GameStat : UnitySingleton<GameStat>
         */
         var goal = Instantiate(winGoalPrefab, winGoalSpawnPosition.position, Quaternion.identity);
         goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Aquarium;
+        isCompleted = true;
     }
 
     public void CheckPuzzleComplete()
