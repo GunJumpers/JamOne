@@ -330,6 +330,77 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="evnt_initMusic" ID="{55546EA6-A56C-4B98-8561-63852A0B6DCF}">
+							<ChildrenList>
+								<Action Name="" ID="{13201163-9E25-455D-A78A-546025F9C289}" ShortID="977684022">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{7FBE5F78-0AFF-4ABD-BA69-158FC9DEB5A8}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{60E1C8D0-E5E0-4E71-BF6C-F9010787B10C}" ShortID="93832417">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer1Bells" ID="{72F3706A-7FE7-4F3C-9807-AB2EF7C7CB6A}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AD56639D-9DAD-4903-BFC4-D26284C70D92}" ShortID="590753784">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer2Bass" ID="{07136627-AD6B-4C74-8FCE-90EEC830EF68}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2AAB7B73-0E79-4F94-B7DB-13A951E3B92B}" ShortID="1019698421">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer3Drum" ID="{A41A4305-90D5-4D4F-9964-5B6135795FF1}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CDB08712-AEF3-482B-99ED-5DB189334158}" ShortID="221137688">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer4Lead" ID="{61452A82-D909-4E6D-A9D8-568F5880EB1C}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FE6F89DE-4B09-4FED-B76A-A06B6E325D6E}" ShortID="883398771">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer5Piano" ID="{4A9B67BB-3F60-41EA-AACE-88F615B9855C}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{88EAB349-CAD8-49F5-80AA-9599DE22ACC9}" ShortID="903671720">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_winLayer6Pads" ID="{1B8E5A3A-CCA1-4E0A-8EB6-EE3F68D20371}" WorkUnitID="{29585ECF-2139-469A-987C-08BC0AEA5735}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Autumn" ID="{0DAFDBC7-28E5-40CC-A436-24CE4ED83100}" ShortID="677974467">
