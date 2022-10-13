@@ -11,9 +11,6 @@ public class MazeNoteCollision : MonoBehaviour
     public GameObject unShrinkPanel;
     public GameObject shrinkpanel;
     public GameObject soundObjects;
-    public AK.Wwise.Event evnt_red = null;
-    public AK.Wwise.Event evnt_green = null;
-    public AK.Wwise.Event evnt_blue = null;
 
     private void Start()
     {
@@ -21,7 +18,7 @@ public class MazeNoteCollision : MonoBehaviour
         mazeBlocks.SetActive(true);
         exWall.SetActive(true);
         unShrinkPanel.SetActive(false);
-        soundObjects.SetActive(false);
+        //soundObjects.SetActive(false);
         shrinkpanel.SetActive(true);   
 
     }
@@ -38,7 +35,7 @@ public class MazeNoteCollision : MonoBehaviour
             //shrink player or unshrink
             gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             Debug.Log("shrunk");
-            soundObjects.SetActive(true);
+            //soundObjects.SetActive(true);
             //shrinkpanel.SetActive(false);
             //unShrinkPanel.SetActive(true);
         }

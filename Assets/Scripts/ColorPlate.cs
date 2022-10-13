@@ -30,6 +30,7 @@ public class ColorPlate : MonoBehaviour
     {
         anim.Play("enable");
         MakeGlow();
+        Debug.Log("inside activate plate");
     }
 
     public void DeactivatePlate()
