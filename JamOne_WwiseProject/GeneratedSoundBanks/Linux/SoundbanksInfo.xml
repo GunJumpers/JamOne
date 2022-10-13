@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\clxrf\Downloads\ShawzinBot-master\ShawzinBot-master\Colege\Fall2022UCSC\CMPM170\Jam1\Repo\JamOne\JamOne_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\clxrf\Downloads\ShawzinBot-master\ShawzinBot-master\Colege\Fall2022UCSC\CMPM170\Jam1\Repo\JamOne\JamOne_WwiseProject\.cache\Linux\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\clxrf\Downloads\ShawzinBot-master\ShawzinBot-master\Colege\Fall2022UCSC\CMPM170\Jam1\Repo\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
+		<ProjectRoot>C:\Games\JamOne\JamOne_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Games\JamOne\JamOne_WwiseProject\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\clxrf\Downloads\ShawzinBot-master\ShawzinBot-master\Colege\Fall2022UCSC\CMPM170\Jam1\Repo\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Games\JamOne\JamOne_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="3887893136">
+		<SoundBank Id="4056684167" Language="SFX" Hash="1705859385">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
