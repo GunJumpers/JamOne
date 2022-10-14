@@ -13,6 +13,7 @@ public class MazeNoteCollision : MonoBehaviour
     public GameObject soundObjects;
     public List<AK.Wwise.Event> noteStartEvents;
     public List<AK.Wwise.Event> noteStopEvents;
+    public bool isWon;
 
     [Header("Win Objects")]
     public GameObject winGoalPrefab;
@@ -64,13 +65,17 @@ public class MazeNoteCollision : MonoBehaviour
         exWall.SetActive(false);
         unShrinkPanel.SetActive(true);
         shrinkpanel.SetActive(false);
-
+        isWon = true;
         var goal = Instantiate(winGoalPrefab, winGoalSpawnLocation.position, Quaternion.identity);
         goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Maze;
     }
 
     public void EnablePuzzle()
     {
+        if (isWon)
+        {
+            return;
+        }
         for (int i = 0; i < soundObjects.transform.childCount; i++)
         {
             noteStartEvents[i].Post(soundObjects.transform.GetChild(i).gameObject);
