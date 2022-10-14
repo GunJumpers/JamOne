@@ -11,6 +11,8 @@ public class MazeNoteCollision : MonoBehaviour
     public GameObject unShrinkPanel;
     public GameObject shrinkpanel;
     public GameObject soundObjects;
+    public List<AK.Wwise.Event> noteStartEvents;
+    public List<AK.Wwise.Event> noteStopEvents;
 
     [Header("Win Objects")]
     public GameObject winGoalPrefab;
@@ -65,5 +67,25 @@ public class MazeNoteCollision : MonoBehaviour
 
         var goal = Instantiate(winGoalPrefab, winGoalSpawnLocation.position, Quaternion.identity);
         goal.GetComponent<GoalCompletion>().roomType = GameManager.RoomType.Maze;
+    }
+
+    public void EnablePuzzle()
+    {
+        for (int i = 0; i < soundObjects.transform.childCount; i++)
+        {
+            noteStartEvents[i].Post(soundObjects.transform.GetChild(i).gameObject);
+
+
+        }
+    }
+
+    public void DisablePuzzle()
+    {
+        for (int i = 0; i < soundObjects.transform.childCount; i++)
+        {
+            noteStopEvents[i].Post(soundObjects.transform.GetChild(i).gameObject);
+
+
+        }
     }
 }

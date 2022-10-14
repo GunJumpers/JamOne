@@ -208,7 +208,6 @@ public class SimonScript : MonoBehaviour
 
     public void WinGame()
     {
-        winObject.SetActive(true);
         startButton.SetActive(false);
         redButton.SetActive(false);
         blueButton.SetActive(false);

@@ -73,7 +73,7 @@ public class RaccoonGameData : MonoBehaviour
                 Lose.text = "YOU LOSE";
                 Score.text = "Score: " + ((int)(notesPercentage * 100)).ToString() + "%";
                 Lose.gameObject.SetActive(true);
-                Announcement.text = "Press TO RESTART";
+                Announcement.text = "Press SPACE TO RESTART";
             }
         }
         
