@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	91348688	evnt_sophiePlateDeactive			\Default Work Unit\Sophie\evnt_sophiePlateDeactive	
 	235107416	evnt_sophieTeleport			\Default Work Unit\Sophie\evnt_sophieTeleport	
 	404810138	evnt_thrishaNote2Stop			\Default Work Unit\Thrisha\evnt_thrishaNote2Stop	
+	441914376	evnt_laserEmitterAmbientStop			\Default Work Unit\Calex\evnt_laserEmitterAmbientStop	
 	451709758	evnt_laserReceiverActivate			\Default Work Unit\Calex\evnt_laserReceiverActivate	
 	752288469	evnt_yiyangShoot			\Default Work Unit\Yiyang\evnt_yiyangShoot	
 	777445139	evnt_thrishaNote3Stop			\Default Work Unit\Thrisha\evnt_thrishaNote3Stop	
@@ -77,7 +78,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	302578298	sfx_sophieCubeSpawn	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_098E250E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieCubeSpawn		491648
 	315006039	mus_winLayer6Pads	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\mus_winLayer6Pads_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\mus_winLayer6Pads		12096128
 	317238490	sfx_footsteps_02	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\Footsteps_Clean_9CA8D6F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\Footsteps\sfx_footsteps_02		158308
-	404550736	sfx_puzzleComplete	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\sfx_puzzleComplete		756128
+	404550736	src_noteBase	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\src_noteBase		756128
 	446482066	sfx_pickup	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\temp_Spoons_DF1B1E4A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\sfx_pickup		51252
 	464287330	sfx_yiyangBeat1	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_31121D92.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat1		446592
 	483305637	sfx_yiyangBeat3	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_3E9D4051.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangBeat3		446592
@@ -96,7 +97,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	924673636	mus_winLayer3Drum	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\mus_winLayer3Drum_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sources\mus_winLayer3Drum		12096128
 	1008727059	sfx_Radio	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\mus_winLayer1Bells_2FA9BDFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Autumn SFX\sfx_Radio		12096128
 	1021860612	sfx_footsteps_01	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\Footsteps_Clean_6286F386.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\Footsteps\sfx_footsteps_01		154988
-	1040249201	sfx_SimonGreen	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\mus_winLayer5Piano_C80FACA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Annie SFX\seq_PuzzleOne\sfx_SimonGreen		243560
+	1040249201	sfx_SimonGreen	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\mus_winLayer5Piano_C80FACA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Annie SFX\seq_PuzzleThree\sfx_SimonGreen		243560
 	1048766804	sfx_sophieButton	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_944AC552.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieButton		209024
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes

@@ -12,12 +12,14 @@ public class LaserReciever : MonoBehaviour
     public bool isEnabled;
     public UnityEvent enableEvent;
     public UnityEvent disableEvent;
+    public AK.Wwise.Event activateSFX;
 
     public void EnableReciever()
     {
         if (!isEnabled)
         {
             isEnabled = true;
+            activateSFX.Post(this.gameObject);
             enableEvent.Invoke();
         }
         

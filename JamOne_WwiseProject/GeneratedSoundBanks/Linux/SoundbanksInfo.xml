@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="3267659350">
+		<SoundBank Id="4056684167" Language="SFX" Hash="2124818520">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -129,6 +129,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="441914376" Name="evnt_laserEmitterAmbientStop" ObjectPath="\Events\Default Work Unit\Calex\evnt_laserEmitterAmbientStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="451709758" Name="evnt_laserReceiverActivate" ObjectPath="\Events\Default Work Unit\Calex\evnt_laserReceiverActivate" DurationType="OneShot" DurationMin="1.349915" DurationMax="1.349915">
 					<IncludedMemoryFiles>
 						<File Id="242711347" Language="SFX">

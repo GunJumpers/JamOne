@@ -140,6 +140,11 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
+  activateSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5ca50ccaf7ac426438f7ef284185e780,
+      type: 2}
 --- !u!65 &4990705712147658899
 BoxCollider:
   m_ObjectHideFlags: 0

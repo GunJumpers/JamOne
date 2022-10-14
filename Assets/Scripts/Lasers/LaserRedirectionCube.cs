@@ -14,6 +14,8 @@ public class LaserRedirectionCube : MonoBehaviour
     public float disableTimer;
     public float maxDisableTimer = 0.5f;
     public float enableTimerRate;
+    public AK.Wwise.Event laserHumStart;
+    public AK.Wwise.Event laserHumStop;
 
     private void Start()
     {
@@ -23,6 +25,9 @@ public class LaserRedirectionCube : MonoBehaviour
 
     public void EnableLaser()
     {
+        if (!emitter.isEmitting)
+            laserHumStart.Post(this.gameObject);
+
         emitter.isEmitting = true;
         if(disableTimer < maxDisableTimer)
         {
@@ -34,6 +39,8 @@ public class LaserRedirectionCube : MonoBehaviour
 
     public void DisableLaser()
     {
+        if (emitter.isEmitting)
+            laserHumStop.Post(this.gameObject);
         emitter.isEmitting = false;
     }
 

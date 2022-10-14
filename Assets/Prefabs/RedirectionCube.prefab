@@ -572,6 +572,16 @@ MonoBehaviour:
   disableTimer: 0
   maxDisableTimer: 0.5
   enableTimerRate: 2
+  laserHumStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 75c7a74508634b94e8a88c40682fbe1b,
+      type: 2}
+  laserHumStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d909df7be0341ff4bac0848ebcb58682,
+      type: 2}
 --- !u!114 &8250432806566209648
 MonoBehaviour:
   m_ObjectHideFlags: 0

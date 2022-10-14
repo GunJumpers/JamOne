@@ -8,6 +8,7 @@
 						<ObjectRef Name="evnt_yiyangEvilLaugh" ID="{170E9E90-4E71-401B-AA96-DA25577F890D}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_puzzleThreeSequence" ID="{949307C0-96C6-405A-8675-55DDDED21E65}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_ambience" ID="{75BD8386-01E5-40A5-B80E-203F7365375D}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_laserEmitterAmbientStop" ID="{38C53C28-694B-40B4-8DAD-DEEB4715E1F3}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_generalUnpauseAll" ID="{7A50534D-994C-40D9-80D4-82621D66DCB4}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_green" ID="{F868D708-81A8-413A-9866-A507CE1CAD78}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_yiyangBeat2" ID="{DA46D158-AFFA-4140-AFF5-1F961421DB06}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>

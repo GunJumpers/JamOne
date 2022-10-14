@@ -677,6 +677,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="evnt_laserEmitterAmbientStop" ID="{38C53C28-694B-40B4-8DAD-DEEB4715E1F3}">
+							<ChildrenList>
+								<Action Name="" ID="{1C39B385-43BA-496C-A3D1-1E648F2A4644}" ShortID="383700442">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_laserHum" ID="{13BBE2C7-83A7-4017-AE46-7F448A9EA236}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

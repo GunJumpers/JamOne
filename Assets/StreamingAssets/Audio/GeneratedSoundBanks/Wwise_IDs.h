@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID EVNT_GREEN = 1463993306U;
         static const AkUniqueID EVNT_INITMUSIC = 4276656312U;
         static const AkUniqueID EVNT_LASEREMITTERAMBIENT = 3581350656U;
+        static const AkUniqueID EVNT_LASEREMITTERAMBIENTSTOP = 441914376U;
         static const AkUniqueID EVNT_LASERRECEIVERACTIVATE = 451709758U;
         static const AkUniqueID EVNT_LASERWINMUSIC = 3609677365U;
         static const AkUniqueID EVNT_MAZEWINMUSIC = 84513623U;
