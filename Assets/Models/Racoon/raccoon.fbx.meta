@@ -9,7 +9,22 @@ ModelImporter:
   - first:
       74: -1901335152038202995
     second: Lose
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: f0fc759589ca2fc4595f298c041d0b80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: c675166ee534dcf4abd60dfc33d52bff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Raccoon _Material
+    second: {fileID: 2100000, guid: 51cde02c4722d644d99be2ef498e18c4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

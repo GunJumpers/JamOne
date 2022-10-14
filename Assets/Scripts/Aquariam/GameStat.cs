@@ -25,9 +25,19 @@ public class GameStat : UnitySingleton<GameStat>
     public GameObject winGoalPrefab;
     public Transform winGoalSpawnPosition;
 
+    public void RestartScenePuzzle()
+    {
+        GameOver = false;
+        playerIsEntered = false;
+        radioUsed = false;
+        isCompleted = false;
+        isActive = false;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        RestartScenePuzzle();
         DisablePuzzle();
         for(int i = 0; i < Fishes.transform.childCount; i++)
         {

@@ -51,6 +51,7 @@ public class GameManager : UnitySingleton<GameManager>
         Time.timeScale = 1;
         PlayerController.Instance.canControlMovement = true;
         FPPUIController.Instance.TogglePauseMenu(false);
+        GameStat.Instance.RestartScenePuzzle();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         SceneManager.LoadScene(0);

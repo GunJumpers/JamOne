@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 public class RaccoonGameData : MonoBehaviour
@@ -25,9 +24,15 @@ public class RaccoonGameData : MonoBehaviour
     public GameObject winGoalPrefab;
     public Transform winGoalSpawnPosition;
 
+    public void RestartScenePuzzle()
+    {
+        GameEnd = false;
+        isCompleted = false;
+    }
 
     private void Start()
     {
+        RestartScenePuzzle();
         DisablePuzzle();
     }
     // Update is called once per frame
