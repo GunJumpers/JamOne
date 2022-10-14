@@ -64,7 +64,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	4236290354	Many_Odd_Harm_Peaks	Wwise Flanger			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	19333414	sfx_yiyangShoot	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\temp_Spoons_FA49D30E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangShoot		82048
+	19333414	sfx_yiyangShoot	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\temp_Spoons_D70B61FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yiyang SFX\sfx_yiyangShoot		45184
 	20002904	sfx_putdown	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\temp_Spoons_BA88DBF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\sfx_putdown		16664
 	25089753	sfx_sophieCubeDespawn	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_98BFD82E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieCubeDespawn		180352
 	108642983	amb_hum	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\Microwave_E103B2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\amb_hum		5355056
@@ -98,7 +98,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1008727059	sfx_Radio	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\mus_winLayer1Bells_2FA9BDFB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Autumn SFX\sfx_Radio		12096128
 	1021860612	sfx_footsteps_01	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\Footsteps_Clean_6286F386.wem		\Actor-Mixer Hierarchy\Default Work Unit\Universal SFX\Footsteps\sfx_footsteps_01		154988
 	1040249201	sfx_SimonGreen	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\mus_winLayer5Piano_C80FACA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Annie SFX\seq_PuzzleThree\sfx_SimonGreen		243560
-	1048766804	sfx_sophieButton	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_944AC552.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieButton		209024
+	1048766804	sfx_sophieButton	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_297D9403.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophieButton		176256
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	32595529	sfx_sophiePlateDeactive	C:\Users\mmoul\Desktop\Unity Projects\170\JamOne\JamOne_WwiseProject\.cache\Mac\SFX\sfx_note_27D15AC8.wem	32595529.wem	\Actor-Mixer Hierarchy\Default Work Unit\Sophie SFX\sfx_sophiePlateDeactive	

@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="2509831942">
+		<SoundBank Id="4056684167" Language="SFX" Hash="3080962822">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -251,7 +251,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1048766804" Language="SFX">
 							<ShortName>sfx_note.wav</ShortName>
-							<Path>SFX\sfx_note_944AC552.wem</Path>
+							<Path>SFX\sfx_note_297D9403.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -359,7 +359,7 @@
 					<IncludedMemoryFiles>
 						<File Id="19333414" Language="SFX">
 							<ShortName>temp_Spoons.wav</ShortName>
-							<Path>SFX\temp_Spoons_FA49D30E.wem</Path>
+							<Path>SFX\temp_Spoons_D70B61FB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
