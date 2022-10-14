@@ -901,6 +901,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_winLayer2Bass" ID="{B6F9272A-9D1C-4C33-B675-5301835359F1}" ShortID="844527626">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -914,7 +917,7 @@
 									<Language>SFX</Language>
 									<AudioFile>mus_winLayer2Bass.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="392711832"/>
+										<MediaID ID="281770944"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -924,6 +927,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_winLayer4Lead" ID="{5B597D99-D322-438E-83FE-C12A156A2631}" ShortID="276275101">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -937,7 +943,7 @@
 									<Language>SFX</Language>
 									<AudioFile>mus_winLayer4Lead.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="624508575"/>
+										<MediaID ID="739429723"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -947,6 +953,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_winLayer1Bells" ID="{370AE77F-DC8B-4E9A-A32F-594AF7D88F55}" ShortID="438520973">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -960,7 +969,7 @@
 									<Language>SFX</Language>
 									<AudioFile>mus_winLayer1Bells.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="910939182"/>
+										<MediaID ID="281463204"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -970,6 +979,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_winLayer3Drum" ID="{8FD485A0-045E-4135-9E64-47A6D0B35AA0}" ShortID="889966635">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -983,7 +995,7 @@
 									<Language>SFX</Language>
 									<AudioFile>mus_winLayer3Drum.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="1067890411"/>
+										<MediaID ID="924673636"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -993,6 +1005,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_winLayer5Piano" ID="{859656A3-BA32-486A-88EC-DE471B99D4DC}" ShortID="782717125">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -1006,7 +1021,7 @@
 									<Language>SFX</Language>
 									<AudioFile>mus_winLayer5Piano.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="903122732"/>
+										<MediaID ID="580144154"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -1016,6 +1031,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_winLayer6Pads" ID="{4F62760F-4BB2-4745-A9DE-358333DD4660}" ShortID="759701090">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8843C634-28EB-4E07-9860-6AEC016E77F7}"/>
@@ -1029,7 +1047,7 @@
 									<Language>SFX</Language>
 									<AudioFile>mus_winLayer6Pads.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="776424856"/>
+										<MediaID ID="315006039"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
