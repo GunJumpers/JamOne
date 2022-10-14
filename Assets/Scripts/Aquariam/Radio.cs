@@ -10,6 +10,7 @@ public class Radio : MonoBehaviour
     public Transform MusicSpawner;
     public GameObject bubbleFX;
     public GameObject MusicPrefab;
+    [SerializeField] private GameObject radioPrefab;
     public List<GameObject> Bubbles = new List<GameObject>();
     private float speed = 3;
     private float interval = 10;
@@ -32,7 +33,6 @@ public class Radio : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && isBubbled)
             {
                 GameObject Music = Instantiate(MusicPrefab, MusicSpawner.position,MusicSpawner.rotation);
-                //radioFizzleSFX.Post(gameObject);
                 Music.GetComponent<Rigidbody>().velocity = MusicSpawner.forward * speed;
             }
         }
@@ -106,6 +106,8 @@ public class Radio : MonoBehaviour
         {
             interval = 0;
             bubbleFX.SetActive(false);
+            radioPrefab.SetActive(false);
+            GameStat.radioUsed = false;
             radioFizzleSFX.Post(gameObject);
             for (int i = 0; i< 3; i++)
             {
