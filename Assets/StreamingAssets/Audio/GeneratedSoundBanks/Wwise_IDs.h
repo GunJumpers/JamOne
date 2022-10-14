@@ -37,6 +37,7 @@ namespace AK
         static const AkUniqueID EVNT_RACCOONWINMUSIC = 1374748551U;
         static const AkUniqueID EVNT_RADIOFIZZLE = 2060608572U;
         static const AkUniqueID EVNT_RADIOSTART = 2904549614U;
+        static const AkUniqueID EVNT_RADIOSTOP = 4059219662U;
         static const AkUniqueID EVNT_RED = 2373191370U;
         static const AkUniqueID EVNT_SIMONWINMUSIC = 1906948062U;
         static const AkUniqueID EVNT_SOPHIEBUTTON = 4207864965U;

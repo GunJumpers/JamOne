@@ -11,6 +11,7 @@
 						<ObjectRef Name="evnt_generalUnpauseAll" ID="{7A50534D-994C-40D9-80D4-82621D66DCB4}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_green" ID="{F868D708-81A8-413A-9866-A507CE1CAD78}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_yiyangBeat2" ID="{DA46D158-AFFA-4140-AFF5-1F961421DB06}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="evnt_radioStop" ID="{BCBE1203-4CD8-416C-97EE-DBEDF95DA4B3}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_sophieCubeDespawn" ID="{82CA1911-F92B-418D-A460-50E81CB9E9AF}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_noteTest_01" ID="{1B486154-4F7D-4268-BBFA-71B94C9C6164}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="evnt_blue" ID="{03BF964F-A33A-4329-A3CC-805F44FC2F84}" WorkUnitID="{9C73607F-A04C-4042-AC34-BDE0609BFF6C}" Origin="Manual" Filter="7"/>

@@ -462,6 +462,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{66F39288-D5E4-447D-8BBA-08F12E791120}" ShortID="1741463">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Radio" ID="{699CB8A6-3904-41D4-ACCD-EBF6873B6387}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="evnt_bubble" ID="{9ADFD202-62BB-49EB-8F8A-BF1FAA18F39E}">
@@ -470,6 +480,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_bubble" ID="{B654273C-9B08-43EA-A7F8-5B7E479E9350}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="evnt_radioStop" ID="{BCBE1203-4CD8-416C-97EE-DBEDF95DA4B3}">
+							<ChildrenList>
+								<Action Name="" ID="{49FF4DB4-6CA5-43BC-B80E-38EEB2C14349}" ShortID="293304844">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Radio" ID="{699CB8A6-3904-41D4-ACCD-EBF6873B6387}" WorkUnitID="{538DA1DB-F621-4E4D-8482-C597C738351B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

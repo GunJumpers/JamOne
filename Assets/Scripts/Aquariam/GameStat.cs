@@ -16,7 +16,9 @@ public class GameStat : UnitySingleton<GameStat>
     [SerializeField] private GameObject radioPrefab;
     [SerializeField] private Transform spawnPosition;
     public AK.Wwise.Event radioStartSFX = null;
-    public AK.Wwise.Event aquariumWinSound = null;
+    public AK.Wwise.Event radioStopSFX = null;
+    public AK.Wwise.Event radioFizzleSFX = null;
+    public AK.Wwise.Event bubbleSFX = null;
     private Vector3 startPosition;
 
     [Header("Win Goal Objects")]
@@ -76,8 +78,12 @@ public class GameStat : UnitySingleton<GameStat>
         if (Input.GetMouseButtonDown(1))
         {
             Announcement.gameObject.SetActive(false);
-            radioStartSFX.Post(gameObject);
+            
             radioPrefab.SetActive(!radioPrefab.activeInHierarchy);
+            if (radioPrefab.activeInHierarchy)
+                radioStartSFX.Post(gameObject);
+            else
+                radioStopSFX.Post(gameObject);
             radioUsed = !radioUsed;
 
         }
@@ -115,7 +121,7 @@ public class GameStat : UnitySingleton<GameStat>
     public void FinishLevel()
     {
         Debug.Log("aquarium level done");
-        aquariumWinSound.Post(this.gameObject);
+        //aquariumWinSound.Post(this.gameObject);
     }
 
     private void WinnerScreen()

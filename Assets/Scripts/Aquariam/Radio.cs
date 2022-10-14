@@ -14,7 +14,7 @@ public class Radio : MonoBehaviour
     private float speed = 3;
     private float interval = 10;
     public AK.Wwise.Event bubbleSFX = null;
-    private AK.Wwise.Event radioFizzleSFX = null;
+    public AK.Wwise.Event radioFizzleSFX = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -82,7 +82,7 @@ public class Radio : MonoBehaviour
             //Debug.Log("Interval: " + interval);
             //Debug.Log("Bubble: " + isBubbled);
             bubbleFX.SetActive (true);
-            //bubbleSFX.Post(gameObject);
+            bubbleSFX.Post(gameObject);
         }
         if (other.gameObject.CompareTag("Fish"))
         {
@@ -106,6 +106,7 @@ public class Radio : MonoBehaviour
         {
             interval = 0;
             bubbleFX.SetActive(false);
+            radioFizzleSFX.Post(gameObject);
             for (int i = 0; i< 3; i++)
             {
                 Bubbles[i].gameObject.SetActive(true);

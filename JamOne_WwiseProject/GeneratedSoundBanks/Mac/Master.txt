@@ -38,6 +38,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3742284042	evnt_puzzleTwoSequence			\Default Work Unit\Annie\evnt_puzzleTwoSequence	
 	3752102144	evnt_puzzleOneSequence			\Default Work Unit\Annie\evnt_puzzleOneSequence	
 	3782541693	evnt_pickUp			\Default Work Unit\General\evnt_pickUp	
+	4059219662	evnt_radioStop			\Default Work Unit\Autumn\evnt_radioStop	
 	4112389820	evnt_generalPauseAll			\Default Work Unit\General\evnt_generalPauseAll	
 	4139737584	evnt_puzzleThreeSequence			\Default Work Unit\Annie\evnt_puzzleThreeSequence	
 	4207864965	evnt_sophieButton			\Default Work Unit\Sophie\evnt_sophieButton	
