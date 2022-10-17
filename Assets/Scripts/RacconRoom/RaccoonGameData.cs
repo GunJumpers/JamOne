@@ -20,6 +20,8 @@ public class RaccoonGameData : MonoBehaviour
     public bool isEnabled;
     public bool isWon;
 
+    public Animator raccoonAnim;
+
     [Header("Win Goal Objects")]
     public GameObject winGoalPrefab;
     public Transform winGoalSpawnPosition;
@@ -89,6 +91,7 @@ public class RaccoonGameData : MonoBehaviour
         Win.text = "YOU WIN";
         Score.text = "Score: " + ((int)(notesPercentage * 100)).ToString() + "%";
         Win.gameObject.SetActive(true);
+        raccoonAnim.Play("lose");
         isCompleted = true;
         isWon = true;
         var goal = Instantiate(winGoalPrefab, winGoalSpawnPosition.position, Quaternion.identity);
